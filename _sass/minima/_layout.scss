@@ -184,6 +184,22 @@
   @include relative-font-size(2);
 }
 
+.post-icon {
+  float: left;
+  height: 45px;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.post-block {
+  display: flex;
+}
+
+.post-element {
+  position:relative;
+  height: auto;
+}
+
 .post-list-heading {
   @include relative-font-size(1.75);
 }
