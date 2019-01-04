@@ -3,6 +3,7 @@ layout: post
 title:  "Grace Hopper Celebration"
 date:   2018-11-24 20:42:41 -0500
 categories: GHC professional
+icon:   "/assets/icons/ghc.png"
 ---
 ![Opening ceremony with Me, Saylee, and Hanh](/assets/projects/ghc-1.jpg)
 Opening ceremony with Me, Saylee, and Hanh
