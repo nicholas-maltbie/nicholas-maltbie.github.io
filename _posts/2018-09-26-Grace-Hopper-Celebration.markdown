@@ -17,8 +17,8 @@ Specifically, I learned that a male ally needs to be committed to supporting wom
 
 An interesting part of GHC 2018 was talking with representatives from companies and hearing how they are attempting to improve their workplace culture and increase their diversity of employees. I attended a presentation by someone working at SAP and learned that they reach out to the local community and promote women at all levels with professional development by sponsoring volunteer and outreach programs that introduce younger students to successful females that are role-models and can become future mentors. By networking with and listening to different speakers, I have broadened my perspective toward diversity and feel more prepared to help women succeed in technology fields. In addition to this personal development, I was also able to network with companies and had four interviews as a result of attending the conference which have led to three current job offers for internships for Summer 2019.
 
-![Me with Thompson Reuters Interviewers](/assets/projects/ghc-3.jpg)
-Me with Thompson Reuters Interviewers
+![Me with Thomson Reuters Interviewers](/assets/projects/ghc-3.jpg)
+Me with Thomson Reuters Interviewers
 
 In summary, GHC promotes women by giving them more professional opportunities, as well as, promoting diversity in the workplace. It is also a powerful experience for male allies who want to learn how to more effectively support women in educational and industry settings.
 
