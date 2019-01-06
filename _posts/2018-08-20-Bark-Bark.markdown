@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Bark Bark"
+date:   2018-8-20 00:00:00 0000
+categories: Coursework Project 
+icon:   "/assets/icons/bark.jpg"
+---
+
+A location based social media app developed for software engineering class during summer 2018. This project is hosted on the domain [https://bark.fyi](https://bark.fyi)
+
+Bark Bark is a web application intended to be a local event finder where you can see what events people are barking at and bark at local events yourself. This social media app helps locate trending events, restaurants and other entertainment while providing additional information with embedded links (e.g. Google Maps, Snapchat).
+
+![Website Homepage](/assets/projects/bark-homepage.png)
+
+A link to the final presentation describing the project. The project is hosted on a github page and is open source. The live version of the project can be found at [https://bark.fyi](https://bark.fyi)
+
+This project was developed over the course of a few months with four other classmates and uses Google Maps, React, Google Firebase as well as a few other technologies.
