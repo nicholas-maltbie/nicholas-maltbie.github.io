@@ -26,4 +26,4 @@ I had spent two years exploring campus so I knew my way around and could easily 
 
 The repo with progress on the project for UC path can be found [here](https://github.com/nicholas-maltbie/UC-Path-Program).
 
-![Screenshot of ](/assets/projects/knee.jpg)](
+![Screenshot of ](/assets/projects/knee.jpg)
