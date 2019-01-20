@@ -2,7 +2,8 @@
 layout: post
 title:  "Accessibility on UC Campus"
 date:   2018-4-20 00:00:00 0000
-categories: Honors Project 
+categories: Honors
+tags: Honors Project 
 icon:   "/assets/icons/stairIcon.png"
 ---
 
@@ -26,4 +27,4 @@ I had spent two years exploring campus so I knew my way around and could easily 
 
 The repo with progress on the project for UC path can be found [here](https://github.com/nicholas-maltbie/UC-Path-Program).
 
-![Screenshot of ](/assets/projects/knee.jpg)
+![Screenshot of ](/assets/projects/knee-project/knee.jpg)
