@@ -196,12 +196,16 @@
 }
 
 .post-block {
-  display: flex;
+  display: block;
 }
 
 .post-element {
   position:relative;
   height: auto;
+}
+
+.post-element-row {
+  display:flex;
 }
 
 .post-list-heading {
