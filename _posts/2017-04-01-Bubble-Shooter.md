@@ -5,6 +5,7 @@ date:       2017-04-01 00:00:00 0001
 categories: Game
 tags:       Project Game
 icon:       "/assets/icons/bubble.png"
+summary: "JavaScript based web browser game."
 ---
 <div align="center">
   <link rel="stylesheet" type="text/css"
