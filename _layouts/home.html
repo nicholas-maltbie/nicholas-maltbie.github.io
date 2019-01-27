@@ -15,7 +15,7 @@ layout: default
       {%- for post in site.posts -%}
       <li class="post-block">
 		<div class="post-element-row">
-			{%- if post.icon -%}
+			{%- if post.icon and post.icon != "" -%}
 			<div class="post-element">
 			  <img class="post-icon" src="{{ post.icon }}"></img>
 			</div>
