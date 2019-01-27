@@ -4,7 +4,7 @@ title:      "Java Projects"
 date:       2014-04-01 00:00:00 0000
 categories: Project
 tags:       Project Java
-icon:       "/assets/icons/java.ico"
+icon:       "/assets/icons/java.jpg"
 summary: 	"Some projects of games I made using java to familiarize myself with the Java programming language."
 ---
 

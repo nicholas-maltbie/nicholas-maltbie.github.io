@@ -4,7 +4,7 @@ title:  "Grace Hopper Celebration"
 date:   2018-11-24 20:42:41 -0500
 categories: Blog
 tags: Blog Professional
-icon:   "/assets/icons/ghc.png"
+icon:   "/assets/icons/ghc.jpg"
 summary: "I got a scholarship from AnitaB.org to attend the Grace Hopper Celebration 2018 to support women in computing as a male ally."
 ---
 ![Opening ceremony with Me, Saylee, and Hanh](/assets/projects/ghc-2018/ghc-1.jpg)

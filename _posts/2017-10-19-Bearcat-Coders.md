@@ -4,7 +4,7 @@ title:      "Bearcat Coders"
 date:       2017-10-19 00:00:00 0000
 categories: Honors
 tags:       Honors Volunteer
-icon:       "/assets/icons/bearcatCoders.png"
+icon:       "/assets/icons/bearcatCoders.jpg"
 summary: 	"For my first Honors Experience, I decided to take a larger involvement in the Association for Computing Machinery, Women's Chapter (ACM-W) and their program to help teach coding to local high school students at Hughes STEM High School."
 ---
 
