@@ -28,6 +28,7 @@ plugins:
   - jekyll-feed
   - image_optim
   - jekyll-pwa-plugin
+  - jekyll-gzip
 
 # image_optim-jekyll-plugin customizations.
 image_optim:

@@ -47,6 +47,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
+    jekyll-gzip (2.0.0)
+      jekyll (~> 3.0)
     jekyll-pwa-plugin (2.2.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -89,6 +91,7 @@ DEPENDENCIES
   image_optim_pack
   jekyll (~> 3.7.4)
   jekyll-feed (~> 0.6)
+  jekyll-gzip
   jekyll-pwa-plugin
   minima (~> 2.0)
   tzinfo-data
