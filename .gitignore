@@ -1,3 +1,5 @@
 _site
 .sass-cache
 .jekyll-metadata
+_image_optim_cache.yml
+
