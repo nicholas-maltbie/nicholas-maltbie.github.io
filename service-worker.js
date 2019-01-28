@@ -27,6 +27,12 @@ workbox.routing.registerRoute(
     workbox.strategies.cacheFirst()
 );
 
+// use `cacheFirst` strategy for style sheets
+workbox.routing.registerRoute(
+    /\.css$/,
+    workbox.strategies.cacheFirst()
+);
+
 // third party files
 workbox.routing.registerRoute(
     /^https?:\/\/cdn.staticfile.org/,
