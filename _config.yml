@@ -31,8 +31,8 @@ plugins:
 
 # image_optim-jekyll-plugin customizations.
 image_optim:
-  archive_dir: "archive/duplicates"
-  cache_file: "tmp/image_cache.yml"
+  archive_dir: "_image_optim_archive"
+  cache_file: "_image_optim_cache.yml"
   image_glob: "assets/**/*.{gif,png,jpg,jpeg}"
 
 pwa:
