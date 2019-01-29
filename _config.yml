@@ -30,13 +30,7 @@ plugins:
   - jekyll-pwa-plugin
   - jekyll-gzip
 
-# image_optim-jekyll-plugin customizations.
-image_optim:
-  archive_dir: "_image_optim_archive"
-  cache_file: "_image_optim_cache.yml"
-  image_glob: "assets/**/*.{gif,png,jpg,jpeg}"
-
-pwa:
+wa:
   sw_src_filepath: service-worker.js # Optional
   sw_dest_filename: service-worker.js # Optional
   dest_js_directory: assets/js # Required
