@@ -19,10 +19,14 @@ function rgb(col) {
 }
 
 function colorGrad(col1, col2, step) {
+  var r1 = col1.r ** 2, r2 = col2.r ** 2
+  var g1 = col1.g ** 2, g2 = col2.g ** 2
+  var b1 = col1.b ** 2, b2 = col2.b ** 2
+  
   return makeColor(
-    col1.r + (col2.r - col1.r) * step, 
-    col1.g + (col2.g - col1.g) * step,
-    col1.b + (col2.b - col1.b) * step
+    Math.sqrt(r1 + (r2 - r1) * step), 
+    Math.sqrt(g1 + (g2 - g1) * step),
+    Math.sqrt(b1 + (b2 - b1) * step)
   ) 
 }
 
