@@ -1,8 +1,30 @@
 var c = document.getElementById("trigBan")
-var w, h, frame;
+var w, h, frame
 
 const ctx = c.getContext('2d')
 
+const trigRad = 20, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#333", defaultOutline = "#FFF"
+
+const col1 = makeColor(0, 0, 0), col2 = makeColor(255, 255, 255)
+
+function makeColor(r, g, b) {
+  return {r: r, g: g, b: b}
+}
+
+function rgb(col) {
+  r = Math.floor(col.r)
+  g = Math.floor(col.g)
+  b = Math.floor(col.b)
+  return ["rgb(",r,",",g,",",b,")"].join("")
+}
+
+function colorGrad(col1, col2, step) {
+  return makeColor(
+    col1.r + (col2.r - col1.r) * step, 
+    col1.g + (col2.g - col1.g) * step,
+    col1.b + (col2.b - col1.b) * step
+  ) 
+}
 
 // Fine function Blindman67 on stackoverflow 
 //   https://stackoverflow.com/questions/44855794/html5-canvas-triangle-with-rounded-corners
@@ -107,13 +129,26 @@ function makePoint(x, y) {
   return {x: x, y: y}
 }
 
+class Triangle {
+  constructor (center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding) {
+    this.center = center;
+    this.radius = radius;
+    this.angle = angle;
+    this.fillColor = fillColor;
+    this.lineColor = lineColor;
+    this.lineWidth = lineWidth;
+    this.cornerRounding = cornerRounding;
+  }
+
+  draw (ctx) {
+    drawTrig(this.center, this.radius, this.angle, this.fillColor, this.lineColor, this.lineWidth, this.cornerRounding)
+  }
+    
+}
+
 function updateDims() {
   w = c.width = c.scrollWidth;
   h = c.height = c.scrollHeight;
-}
-
-function init() {
-  updateDims()
 }
 
 function getTrigCoords(center, radius, angle) {
@@ -126,22 +161,57 @@ function getTrigCoords(center, radius, angle) {
   return trigs
 }
 
-function drawTrig(center, radius, angle, fillColor, lineColor, lineWidth, cornderRounding) {
+function drawTrig(center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding) {
   ctx.lineWidth = lineWidth;
   ctx.fillStyle = fillColor;
   ctx.strokeStyle = lineColor;
   ctx.beginPath();
-  roundedPoly(ctx, getTrigCoords(center, radius, angle), cornderRounding);
+  roundedPoly(ctx, getTrigCoords(center, radius, angle), cornerRounding);
   ctx.stroke();
   ctx.fill();
+}
+
+function dist(p1, p2) {
+  return Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2)
 }
 
 function render() {
   ctx.clearRect(0, 0, w, h);
   
-  drawTrig(makePoint(100, 100), 45, Math.PI / 2, "#888", "#FFF", 0, 5)
-  drawTrig(makePoint(150, 125), 45, Math.PI * 3 / 2, "#888", "#FFF", 0, 5)
-  drawTrig(makePoint(200, 100), 45, Math.PI / 2, "#888", "#FFF", 0, 5)
+  var even_angle = Math.PI / 2
+  var odd_angle = Math.PI * 3 / 2
+  
+  var horizOffset = Math.sqrt(3) * trigRad + trigGap * 2
+  var vertOffset = trigRad * 3 / 2 + trigGap
+  
+  var rows = Math.ceil(h / vertOffset)
+  var cols = Math.ceil(w / horizOffset + 1) * 2
+  
+  var min_x = 0, max_x = (Math.floor(cols / 2) + 0.5) * horizOffset,
+      min_y = 0, max_y = rows * vertOffset + trigRad / 2
+  var min_point = makePoint(min_x, min_y),
+      max_point = makePoint(max_x, max_y)
+  var max_dist = dist(min_point, max_point)
+  
+  for (var row = 0; row < rows; row ++) {
+    for (var col = 0; col < cols; col ++) {
+      var center = makePoint(
+        (Math.floor(col / 2)  + ((row + col) % 2) / 2) * horizOffset,
+        row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
+      //center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding
+      
+      var triCol = rgb(colorGrad(col1, col2, dist(center, min_point) / max_dist))
+      
+      var trig = new Triangle(center, 
+        trigRad, 
+        col % 2 == 0 ? even_angle : odd_angle, 
+        triCol, 
+        defaultOutline, 
+        trigStroke, 
+        trigRound)
+      trig.draw()
+    }
+  }
 }
 
 function anim() {
@@ -152,6 +222,10 @@ function anim() {
   updateDims()
   
   render()
+}
+
+function init() {
+  updateDims()
 }
 
 init()
