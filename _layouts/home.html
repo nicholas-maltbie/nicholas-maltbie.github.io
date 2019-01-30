@@ -1,43 +1,59 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {%- include head.html -%}
 
-  {{ content }}
+  <body>
+  
+    <canvas class="banner" id="trigBan"></canvas>
+    <script src="/assets/scripts/trigBanner.js"></script>
+  
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+          {%- if page.title -%}
+            <h1 class="page-heading">{{ page.title }}</h1>
+          {%- endif -%}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li class="post-block">
-		<div class="post-element-row">
-			{%- if post.icon and post.icon != "" -%}
-			<div class="post-element">
-			  <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-			</div>
-			{%- endif -%}
-			<div class="post-element">
-			  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			  <span class="post-meta">{{ post.date | date: date_format }}</span>
-			  <h3>
-				<a class="post-link" href="{{ post.url | relative_url }}">
-				  {{ post.title | escape }}
-				</a>
-			  </h3>
-			</div>
-		</div>
-        {%- if post.summary -%}
-        <div class="post-element-row">
-          {{ post.summary }}
+          {{ content }}
+
+          {%- if site.posts.size > 0 -%}
+            <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+            <ul class="post-list">
+              {%- for post in site.posts -%}
+              <li class="post-block">
+		        <div class="post-element-row">
+			        {%- if post.icon and post.icon != "" -%}
+			        <div class="post-element">
+			          <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+			        </div>
+			        {%- endif -%}
+			        <div class="post-element">
+			          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+			          <span class="post-meta">{{ post.date | date: date_format }}</span>
+			          <h3>
+				        <a class="post-link" href="{{ post.url | relative_url }}">
+				          {{ post.title | escape }}
+				        </a>
+			          </h3>
+			        </div>
+		        </div>
+                {%- if post.summary -%}
+                <div class="post-element-row">
+                  {{ post.summary }}
+                </div>
+                {%- endif -%}
+              </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+
         </div>
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+      </div>
+    </main>
 
-</div>
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

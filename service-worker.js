@@ -23,18 +23,24 @@ workbox.routing.registerRoute(
 
 // use `cacheFirst` strategy for images
 workbox.routing.registerRoute(
-    /assets\/(img|icons)/,
+    /assets\/(projects|icons)/,
     workbox.strategies.cacheFirst()
 );
 
-// use `cacheFirst` strategy for style sheets
+// use `networkFirst` strategy for scripts
+workbox.routing.registerRoute(
+    /assets\/scripts\/\.js$/,
+    workbox.strategies.networkFirst()
+);
+
+// use `networkFirst` strategy for style sheets
 workbox.routing.registerRoute(
     /\.css$/,
-    workbox.strategies.cacheFirst()
+    workbox.strategies.networkFirst()
 );
 
 // third party files
 workbox.routing.registerRoute(
-    /^https?:\/\/cdn.staticfile.org/,
+    /^https?:\/\/nickmaltbie.com/,
     workbox.strategies.staleWhileRevalidate()
 );
