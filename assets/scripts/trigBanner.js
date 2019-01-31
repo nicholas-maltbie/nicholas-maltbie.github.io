@@ -203,8 +203,7 @@ function render() {
         (Math.floor(col / 2)  + ((row + col) % 2) / 2) * horizOffset,
         row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
       //center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding
-      
-      var triCol = rgb(colorGrad(col1, col2, dist(center, min_point) / max_dist))
+      var triCol = rgb(colorGrad(col1, col2, dist(center, mousePos) / max_dist))
       
       var trig = new Triangle(center, 
         trigRad, 
@@ -232,6 +231,19 @@ function init() {
   updateDims()
 }
 
+var mousePos = makePoint(0, 0)
+
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+}
+
+window.addEventListener('mousemove', function(evt) {
+  mousePos = getMousePos(c, evt);
+}, false);
+
 init()
 anim()
-
