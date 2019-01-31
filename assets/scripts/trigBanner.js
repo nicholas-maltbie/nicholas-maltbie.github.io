@@ -1,9 +1,12 @@
 var c = document.getElementById("trigBan")
 var w, h, frame
+var grid = {}
+
+const framesPerSecond = 20
 
 const ctx = c.getContext('2d')
 
-const trigRad = 20, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#333", defaultOutline = "#FFF"
+const trigRad = 20, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
 
 const gradientColors = [
   makeColor(120, 120, 120), 
@@ -165,12 +168,31 @@ function updateDims() {
   h = c.height = c.scrollHeight;
 }
 
+var cosMemo = {}
+var sinMemo = {}
+
+function getCos(rot) {
+  if (!(rot in cosMemo)) {
+    cosMemo[rot] = Math.cos(rot)
+  }
+  return cosMemo[rot]
+}
+
+function getSin(rot) {
+  if (!(rot in sinMemo)) {
+    sinMemo[rot] = Math.sin(rot)
+  }
+  return sinMemo[rot]
+}
+
 function getTrigCoords(center, radius, angle) {
   trigs = []
   var i = 0
+  
   for (i = 0; i < 3; i++) {
-    trigs.push(makePoint(center.x + radius * Math.cos(angle + i * 2 * Math.PI / 3), 
-                         center.y + radius * Math.sin(angle + i * 2 * Math.PI / 3)))
+    var rot = angle + i * 2 * Math.PI / 3
+    trigs.push(makePoint(center.x + radius * getCos(rot), 
+                         center.y + radius * getSin(rot)))
   }
   return trigs
 }
@@ -198,7 +220,7 @@ function render() {
   var horizOffset = Math.sqrt(3) * trigRad + trigGap * 2
   var vertOffset = trigRad * 3 / 2 + trigGap
   
-  var rows = Math.ceil(h / vertOffset)
+  var rows = Math.round(h / vertOffset)
   var cols = Math.ceil(w / horizOffset + 1) * 2
   
   var min_x = 0, max_x = (Math.floor(cols / 2) + 0.5) * horizOffset,
@@ -215,26 +237,44 @@ function render() {
       //center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding
       var triCol = rgb(colorGrad(gradientColors, dist(center, mousePos) / max_dist))
       
-      var trig = new Triangle(center, 
-        trigRad, 
-        col % 2 == 0 ? even_angle : odd_angle, 
-        triCol, 
-        defaultOutline, 
-        trigStroke, 
-        trigRound)
+      var trig = getTriangle(row, col, vertOffset, horizOffset, even_angle, odd_angle)
+      trig.fillColor = triCol
+      
       trig.draw()
     }
   }
 }
 
+function getTriangle(row, col, vertOffset, horizOffset, even_angle, odd_angle) {
+  var point = [row, col]
+  
+  if (!(point in grid)) {
+    var center = makePoint(
+      (Math.floor(col / 2)  + ((row + col) % 2) / 2) * horizOffset,
+      row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
+    var trig = new Triangle(center, 
+      trigRad, 
+      col % 2 == 0 ? even_angle : odd_angle, 
+      defaultColor, 
+      defaultOutline, 
+      trigStroke, 
+      trigRound)
+    grid[point] = trig
+  }
+  
+  return grid[point]
+}
+
 function anim() {
-  window.requestAnimationFrame( anim )
-  
-  ++frame
-  
-  updateDims()
-  
-  render()
+  setTimeout(function() {
+    window.requestAnimationFrame( anim )
+    
+    ++frame
+    
+    updateDims()
+    
+    render()
+  }, 1000 / framesPerSecond);
 }
 
 function init() {

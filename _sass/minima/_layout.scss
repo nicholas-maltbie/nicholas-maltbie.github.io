@@ -171,12 +171,41 @@
 }
 
 /**
- * Banner images and context
+ * Banner images and canvas
  */
 .banner {
   width: 100%;
-  height: 35vh;
+  height: 45vh;
+  margin-bottom: -45vh;
+  z-index: -1;
 }
+
+.bannerCover {
+  width: 100%;
+  height: 45vh;
+}
+
+.whiteBannerText {
+  margin-top: 5vh;
+  border-radius: 15px;
+  padding: 5px;
+  padding-right: 15px;
+  background-color: white;
+  width: fit-content;
+}
+
+@include media-query($on-palm) {
+  .banner {
+    height: 85vh;
+    margin-bottom: -85vh;
+  }
+
+  .bannerCover {
+    width: 100%;
+    height: 85vh;
+  }
+}
+
 
 /**
  * Page content
@@ -253,6 +282,40 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/**
+ * Animations
+ */
+@-webkit-keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 /**
