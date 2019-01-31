@@ -4,21 +4,22 @@
   {%- include head.html -%}
 
   <body>
+    <script src="/assets/scripts/trigBanner.js"></script>
+    <script src="/assets/scripts/showMores.js"></script>
   
     <canvas class="banner fadeInDown" id="trigBan">
     </canvas>
-    <script src="/assets/scripts/trigBanner.js"></script>
     
     <div class="bannerCover">
       <div class="wrapper">
         <div class="whiteBannerText">
           <h1>Nick Maltbie</h1>
-          <p>Programmer | Student</p>
+          <p>Developer | Student</p>
         </div>
       </div>
     </div>
     
-    <div class="home-navigation">
+    <div class="site-header">
       
     </div>
   
@@ -30,38 +31,65 @@
           {%- endif -%}
 
           {{ content }}
-
-          {%- if site.posts.size > 0 -%}
-            <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-            <ul class="post-list">
-              {%- for post in site.posts -%}
-              <li class="post-block">
-		        <div class="post-element-row">
-			        {%- if post.icon and post.icon != "" -%}
-			        <div class="post-element">
-			          <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-			        </div>
-			        {%- endif -%}
-			        <div class="post-element">
-			          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-			          <span class="post-meta">{{ post.date | date: date_format }}</span>
-			          <h3>
-				        <a class="post-link" href="{{ post.url | relative_url }}">
-				          {{ post.title | escape }}
-				        </a>
-			          </h3>
-			        </div>
-		        </div>
+          {% for category in site.categories %}
+            <h2 name="{{ category | first }}" id="#{{ category | first }}">{{ category | first }}</h2>
+            {% for post in category.last limit:3 %}
+              <div class="post-block">
+                <div class="post-element-row">
+                    {%- if post.icon and post.icon != "" -%}
+                    <div class="post-element">
+                      <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+                    </div>
+                    {%- endif -%}
+                    <div class="post-element">
+                      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                      <span class="post-meta">{{ post.date | date: date_format }}</span>
+                      <h3>
+                        <a class="post-link" href="{{ post.url | relative_url }}">
+                          {{ post.title | escape }}
+                        </a>
+                      </h3>
+                    </div>
+                </div>
                 {%- if post.summary -%}
                 <div class="post-element-row">
                   {{ post.summary }}
                 </div>
                 {%- endif -%}
-              </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
-
+              </div>
+            {% endfor %}
+            {% if category.last.size > 3 %}
+              <div class="hidden" id="#Older-{{ category | first }}">
+              {% for post in category.last offset:3 %}
+                <div class="post-block">
+                  <div class="post-element-row">
+                      {%- if post.icon and post.icon != "" -%}
+                      <div class="post-element">
+                        <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+                      </div>
+                      {%- endif -%}
+                      <div class="post-element">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <span class="post-meta">{{ post.date | date: date_format }}</span>
+                        <h3>
+                          <a class="post-link" href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                          </a>
+                        </h3>
+                      </div>
+                  </div>
+                  {%- if post.summary -%}
+                  <div class="post-element-row">
+                    {{ post.summary }}
+                  </div>
+                  {%- endif -%}
+                </div>
+              {% endfor %}
+              </div>
+              
+              <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
+            {%- endif -%}
+          {% endfor %}
         </div>
       </div>
     </main>

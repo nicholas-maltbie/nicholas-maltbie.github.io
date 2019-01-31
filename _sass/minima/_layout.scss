@@ -210,6 +210,15 @@
 /**
  * Page content
  */
+.SeeMore {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.hidden {
+  display: none;
+}
+ 
 .page-content {
   padding: $spacing-unit 0;
   flex: 1;
@@ -226,13 +235,14 @@
   max-width: 55px;
   max-height: 55px;
   margin-right: 25px;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 5px;
 }
 
 .post-block {
   display: block;
+  margin-top:10px;
 }
 
 .post-element {

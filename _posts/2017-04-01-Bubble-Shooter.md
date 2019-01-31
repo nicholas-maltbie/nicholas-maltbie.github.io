@@ -1,5 +1,6 @@
 ---
 layout:     post
+permalink:  /bubble/
 title:      "Bubble Shooter"
 date:       2017-04-01 00:00:00 0001
 categories: Game
