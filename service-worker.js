@@ -23,7 +23,7 @@ workbox.routing.registerRoute(
 
 // use `cacheFirst` strategy for images
 workbox.routing.registerRoute(
-    /assets\/(projects|icons)/,
+    /assets\/(projects|icons|imgs)/,
     workbox.strategies.cacheFirst()
 );
 
