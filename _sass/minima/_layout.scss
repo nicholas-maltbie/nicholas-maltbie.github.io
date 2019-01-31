@@ -1,6 +1,22 @@
 /**
  * Site header
  */
+.home-nav-link {
+  color: $text-color;
+  line-height: $base-line-height;
+  font-size: 1.5em;
+}
+
+.home-nav-divider {
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.home-nav-container {
+  text-align: center;
+}
+
 .site-header {
   border-top: 5px solid $grey-color-dark;
   border-bottom: 1px solid $grey-color-light;
@@ -173,23 +189,32 @@
 /**
  * Banner images and canvas
  */
+.main-title {
+  margin: 0;
+  font-size: 3em;
+}
+
+.subtitle {
+  margin: 0;
+}
+ 
 .banner {
   width: 100%;
   height: 45vh;
   margin-bottom: -45vh;
-  z-index: -1;
+  z-index: -10;
 }
 
 .bannerCover {
   width: 100%;
   height: 45vh;
+  z-index: 10;
 }
 
 .whiteBannerText {
   margin-top: 5vh;
   border-radius: 15px;
-  padding: 5px;
-  padding-right: 15px;
+  padding: 25px;
   background-color: white;
   width: fit-content;
 }
@@ -204,6 +229,10 @@
     width: 100%;
     height: 85vh;
   }
+  
+  .whiteBannerText {
+    width: inherit;
+  }
 }
 
 
@@ -211,8 +240,7 @@
  * Page content
  */
 .SeeMore {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  
 }
 
 .hidden {
@@ -243,6 +271,7 @@
 .post-block {
   display: block;
   margin-top:10px;
+  margin-bottom: 15px
 }
 
 .post-element {
@@ -297,31 +326,27 @@
 /**
  * Animations
  */
-@-webkit-keyframes fadeInDown {
+@-webkit-keyframes fadeIn {
   0% {
      opacity: 0;
-     -webkit-transform: translateY(-20px);
   }
   100% {
      opacity: 1;
-     -webkit-transform: translateY(0);
   }
 }
 
-@keyframes fadeInDown {
+@keyframes fadeIn {
   0% {
      opacity: 0;
-     transform: translateY(-20px);
   }
   100% {
      opacity: 1;
-     transform: translateY(0);
   }
 }
 
 .fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-duration: 3s;
   animation-duration: 3s;
   -webkit-animation-fill-mode: both;
@@ -331,6 +356,11 @@
 /**
  * Posts
  */
+.cat-title {
+  font-size: 2em;
+  margin-top: 20px;
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }

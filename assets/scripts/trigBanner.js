@@ -1,19 +1,25 @@
 
 function startBanner() {
   var c = document.getElementById("trigBan")
-  var w, h, frame
-  var grid = {}
+  var w, h, frame = 0
 
-  const framesPerSecond = 20
+  const MAX_ROWS = 200
+  const MAX_COLS = 200
+
+  var grid = Array(MAX_ROWS * MAX_COLS)
+
+  const framesPerSecond = 16
 
   var ctx = c.getContext('2d')
 
-  const trigRad = 20, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
+  const trigRad = 25, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
 
   const gradientColors = [
-    makeColor(120, 120, 120), 
-    makeColor(80, 80, 120),
+    makeColor(186, 225, 255),
     makeColor(36, 36, 36)]
+  const gradientSteps = 64
+
+  var calculatedGradient
 
   function makeColor(r, g, b) {
     return {r: r, g: g, b: b}
@@ -24,6 +30,14 @@ function startBanner() {
     g = Math.floor(col.g)
     b = Math.floor(col.b)
     return ["rgb(",r,",",g,",",b,")"].join("")
+  }
+
+  function makeColorGrad(cols, steps) {
+    colors = Array(steps)
+    for (var idx = 0; idx < steps; idx++) {
+      colors[idx] = rgb(colorGrad(cols, idx / steps))
+    }
+    return colors
   }
 
   function colorGrad(cols, step) {
@@ -57,6 +71,16 @@ function startBanner() {
     return trigs
   }
 
+  function roundedPolyQuick(ctx, points, cornerRadius) {
+    ctx.lineJoin = "round"
+    ctx.lineWidth = cornerRadius
+    ctx.moveTo(Math.floor(points[0].x), Math.floor(points[0].y))
+    for (var idx = 1; idx < points.length; idx++) {
+      ctx.lineTo(Math.floor(points[idx].x), Math.floor(points[idx].y))
+    }
+    ctx.closePath()
+  }
+
   // Fine function Blindman67 on stackoverflow 
   //   https://stackoverflow.com/questions/44855794/html5-canvas-triangle-with-rounded-corners
   //   I should be better at math being CS student but it's been a while since
@@ -71,7 +95,7 @@ function startBanner() {
   //    ctx.stroke();
   //    ctx.fill();
   // as it only adds a path and does not render. 
-  function roundedPoly(ctx, points, radiusAll) {
+  function roundedPoly(points, radiusAll) {
     var i, x, y, len, p1, p2, p3, v1, v2, sinA, sinA90, radDirection, drawDirection, angle, halfAngle, cRadius, lenOut,radius;
     // convert 2 points into vector form, polar form, and normalised 
     var asVec = function(p, pp, v) {
@@ -87,6 +111,8 @@ function startBanner() {
     v2 = {};
     len = points.length;
     p1 = points[len - 1];
+
+    draw_cmds = []
     // for each point
     for (i = 0; i < len; i++) {
       p2 = points[(i) % len];
@@ -127,14 +153,14 @@ function startBanner() {
 
       //-----------------------------------------
       // Part 3
-      lenOut = Math.abs(Math.cos(halfAngle) * radius / Math.sin(halfAngle));
+      lenOut = Math.abs(Math.cos(halfAngle) * radius / getSin(halfAngle));
       //-----------------------------------------
 
       //-----------------------------------------
       // Special part A
       if (lenOut > Math.min(v1.len / 2, v2.len / 2)) {
         lenOut = Math.min(v1.len / 2, v2.len / 2);
-        cRadius = Math.abs(lenOut * Math.sin(halfAngle) / Math.cos(halfAngle));
+        cRadius = Math.abs(lenOut * Math.sin(halfAngle) / getCos(halfAngle));
       } else {
         cRadius = radius;
       }
@@ -148,45 +174,66 @@ function startBanner() {
       y += v2.nx * cRadius * radDirection;
       //-----------------------------------------
       // Part 6
-      ctx.arc(x, y, cRadius, v1.ang + Math.PI / 2 * radDirection, v2.ang - Math.PI / 2 * radDirection, drawDirection);
+      draw_cmds.push([x, y, cRadius, v1.ang + Math.PI / 2 * radDirection, v2.ang - Math.PI / 2 * radDirection, drawDirection])
       //-----------------------------------------
       p1 = p2;
       p2 = p3;
     }
-    ctx.closePath();
+    return draw_cmds
   }
 
   function makePoint(x, y) {
     return {x: x, y: y}
   }
+  
+  function pointDelta(p1, p2) {
+    return makePoint(p2.x - p1.x, p2.y - p1.y)
+  }
 
   class Triangle {
     constructor (center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding) {
-      this.center = center;
-      this.radius = radius;
-      this.angle = angle;
-      this.fillColor = fillColor;
-      this.lineColor = lineColor;
-      this.lineWidth = lineWidth;
-      this.cornerRounding = cornerRounding;
+      this.center = center
+      this.radius = radius
+      this.angle = angle
+      this.fillColor = fillColor
+      this.lineColor = lineColor
+      this.lineWidth = lineWidth
+      this.cornerRounding = cornerRounding
+    }
+    
+    calcDraw () {
+      this.draw_cmds = roundedPoly(getTrigCoords(this.center, this.radius, this.angle), this.cornerRounding);
+    }
+    
+    getTranslated (newCenter) {
+      var newTrig = new Triangle(newCenter, this.radius, this.angle, this.fillColor, this.lineColor, this.lineWidth, this.conrnerRounding)
+      newTrig.draw_cmds = []
+      var delta = pointDelta(this.center, newCenter)
+      var dx = delta.x
+      var dy = delta.y
+      
+      for (var cmd_idx = 0; cmd_idx < this.draw_cmds.length; cmd_idx++) {
+        var cmd = this.draw_cmds[cmd_idx]
+        newTrig.draw_cmds.push([cmd[0] + dx, cmd[1] + dy, cmd[2], cmd[3], cmd[4]])
+      }
+      return newTrig
     }
 
     draw (ctx) {
-      drawTrig(ctx, this.center, this.radius, this.angle, this.fillColor, this.lineColor, this.lineWidth, this.cornerRounding)
+      ctx.lineWidth = this.lineWidth;
+      ctx.fillStyle = this.fillColor;
+      ctx.strokeStyle = this.fillColor;
+      ctx.beginPath();
+      if (!this.draw_cmds) {
+        this.calcDraw()
+      }
+      this.draw_cmds.map((cmds) => ctx.arc(cmds[0], cmds[1], cmds[2], cmds[3], cmds[4]))
+      ctx.closePath();
+      //ctx.stroke();
+      ctx.fill();
     }
-      
   }
-
-  function drawTrig(ctx, center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding) {
-    ctx.lineWidth = lineWidth;
-    ctx.fillStyle = fillColor;
-    ctx.strokeStyle = lineColor;
-    ctx.beginPath();
-    roundedPoly(ctx, getTrigCoords(center, radius, angle), cornerRounding);
-    ctx.stroke();
-    ctx.fill();
-  }
-
+  
   function updateDims() {
     w = c.width = c.scrollWidth;
     h = c.height = c.scrollHeight;
@@ -216,51 +263,53 @@ function startBanner() {
   function render() {
     ctx.clearRect(0, 0, w, h);
     
-    var even_angle = Math.PI / 2
-    var odd_angle = Math.PI * 3 / 2
-    
     var horizOffset = Math.sqrt(3) * trigRad + trigGap * 2
     var vertOffset = trigRad * 3 / 2 + trigGap
     
-    var rows = Math.round(h / vertOffset)
-    var cols = Math.ceil(w / horizOffset + 1) * 2
+    var rows = Math.min(Math.round(h / vertOffset), MAX_ROWS)
+    var cols = Math.min(Math.ceil(w / horizOffset + 1) * 2, MAX_COLS)
     
     var min_x = 0, max_x = (Math.floor(cols / 2) + 0.5) * horizOffset,
         min_y = 0, max_y = rows * vertOffset + trigRad / 2
     var min_point = makePoint(min_x, min_y),
         max_point = makePoint(max_x, max_y)
     var max_dist = dist(min_point, max_point)
+
+    var render = 0
     
     for (var row = 0; row < rows; row ++) {
       for (var col = 0; col < cols; col ++) {
-        var center = makePoint(
-          (Math.floor(col / 2)  + ((row + col) % 2) / 2) * horizOffset,
-          row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
         //center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding
-        var triCol = rgb(colorGrad(gradientColors, dist(center, mousePos) / max_dist))
+        if (row + col > frame) {
+          continue
+        }
         
-        var trig = getTriangle(row, col, vertOffset, horizOffset, even_angle, odd_angle)
+        var trig = getTriangle(row, col, vertOffset, horizOffset)
+        var center = trig.center
+        var triCol = calculatedGradient[Math.max(0, Math.min(calculatedGradient.length - 1, Math.floor(dist(center, mousePos) / max_dist * calculatedGradient.length)))]
         trig.fillColor = triCol
-        
         trig.draw(ctx)
+        
+        render ++
       }
     }
   }
 
-  function getTriangle(row, col, vertOffset, horizOffset, even_angle, odd_angle) {
-    var point = [row, col]
+  var even_trig = new Triangle(makePoint(0, 0), trigRad, Math.PI / 2, 
+    defaultColor, defaultOutline, trigStroke, trigRound), 
+    odd_trig = new Triangle(makePoint(0, 0), trigRad, Math.PI * 3 / 2,
+    defaultColor, defaultOutline, trigStroke, trigRound)
+  even_trig.calcDraw()
+  odd_trig.calcDraw()
+
+  function getTriangle(row, col, vertOffset, horizOffset) {
+    var point = row * MAX_COLS + col
     
-    if (!(point in grid)) {
+    if (!grid[point]) {
       var center = makePoint(
-        (Math.floor(col / 2)  + ((row + col) % 2) / 2) * horizOffset,
+        (Math.floor(col / 2)  + (col % 2) * 0.5 + (row % 2) * -0.5) * horizOffset,
         row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
-      var trig = new Triangle(center, 
-        trigRad, 
-        col % 2 == 0 ? even_angle : odd_angle, 
-        defaultColor, 
-        defaultOutline, 
-        trigStroke, 
-        trigRound)
+      var trig = col % 2 == 0 ? even_trig.getTranslated(center) : odd_trig.getTranslated(center)
       grid[point] = trig
     }
     
@@ -281,6 +330,7 @@ function startBanner() {
 
   function init() {
     updateDims()
+    calculatedGradient = makeColorGrad(gradientColors, gradientSteps)
     if (c != null) {
       anim()
     }

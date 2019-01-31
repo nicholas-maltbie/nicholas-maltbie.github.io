@@ -7,23 +7,19 @@
     <script src="/assets/scripts/trigBanner.js"></script>
     <script src="/assets/scripts/showMores.js"></script>
   
-    <canvas class="banner fadeInDown" id="trigBan">
+    <canvas class="banner fadeIn" id="trigBan">
     </canvas>
-    
     <div class="bannerCover">
       <div class="wrapper">
         <div class="whiteBannerText">
-          <h1>Nick Maltbie</h1>
-          <p>Developer | Student</p>
+          <h1 class="main-title">Nick Maltbie</h1>
+          <h2 class="subtitle">Developer | Student</h2>
         </div>
       </div>
     </div>
-    
-    <div class="site-header">
-      
-    </div>
   
     <main class="page-content" aria-label="Content">
+      
       <div class="wrapper">
         <div class="home">
           {%- if page.title -%}
@@ -31,8 +27,18 @@
           {%- endif -%}
 
           {{ content }}
+          
+          <div class="home-nav-container">
           {% for category in site.categories %}
-            <h2 name="{{ category | first }}" id="#{{ category | first }}">{{ category | first }}</h2>
+            <a href="#{{category | first }}" class="home-nav-link">{{category | first }}</a>
+            {% if forloop.last == false %}
+            <span class="home-nav-divider">|</span>
+            {% endif %}
+          {% endfor %}
+          </div>
+          
+          {% for category in site.categories %}
+            <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
             {% for post in category.last limit:3 %}
               <div class="post-block">
                 <div class="post-element-row">
@@ -59,7 +65,7 @@
               </div>
             {% endfor %}
             {% if category.last.size > 3 %}
-              <div class="hidden" id="#Older-{{ category | first }}">
+              <div class="hidden" id="Older-{{ category | first }}">
               {% for post in category.last offset:3 %}
                 <div class="post-block">
                   <div class="post-element-row">
