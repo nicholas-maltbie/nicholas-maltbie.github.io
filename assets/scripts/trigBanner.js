@@ -5,7 +5,10 @@ const ctx = c.getContext('2d')
 
 const trigRad = 20, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#333", defaultOutline = "#FFF"
 
-const col1 = makeColor(0, 0, 0), col2 = makeColor(255, 255, 255)
+const gradientColors = [
+  makeColor(120, 120, 120), 
+  makeColor(80, 80, 120),
+  makeColor(36, 36, 36)]
 
 function makeColor(r, g, b) {
   return {r: r, g: g, b: b}
@@ -18,7 +21,14 @@ function rgb(col) {
   return ["rgb(",r,",",g,",",b,")"].join("")
 }
 
-function colorGrad(col1, col2, step) {
+function colorGrad(cols, step) {
+  step = Math.min(1, Math.max(0, step))
+  step *= cols.length - 1
+  var col1 = cols[Math.floor(step)]
+  var col2 = cols[Math.ceil(step)]
+  
+  step %= 1
+  
   var r1 = col1.r ** 2, r2 = col2.r ** 2
   var g1 = col1.g ** 2, g2 = col2.g ** 2
   var b1 = col1.b ** 2, b2 = col2.b ** 2
@@ -203,7 +213,7 @@ function render() {
         (Math.floor(col / 2)  + ((row + col) % 2) / 2) * horizOffset,
         row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
       //center, radius, angle, fillColor, lineColor, lineWidth, cornerRounding
-      var triCol = rgb(colorGrad(col1, col2, dist(center, mousePos) / max_dist))
+      var triCol = rgb(colorGrad(gradientColors, dist(center, mousePos) / max_dist))
       
       var trig = new Triangle(center, 
         trigRad, 
