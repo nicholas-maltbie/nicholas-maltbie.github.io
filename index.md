@@ -6,4 +6,4 @@ layout: home
 ---
 <img src="/assets/imgs/me.jpg" alt="Me" class="fadeIn roundedPic">
 
-I am a student at the University of Cincinnati currently enrolled in a dual Masters/Bachelors of Science program in Computer Science and expect to graduate in Spring 2021. 
+I am a Computer Science student at the University of Cincinnati currently enrolled in a dual Masters/Bachelors of Science program and expect to graduate in Spring 2021. 

@@ -139,9 +139,15 @@
   margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
+.contact-list {
+  list-style: none;
+  display: inline-block;
+  margin-left: 0;
+}
+
 .social-media-list {
   list-style: none;
+  display: inline-flex;
   margin-left: 0;
 }
 
