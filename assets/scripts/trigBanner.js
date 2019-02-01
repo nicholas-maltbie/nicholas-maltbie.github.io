@@ -12,7 +12,7 @@ function startBanner() {
 
   var ctx = c.getContext('2d')
 
-  const trigRad = 25, trigGap = 2, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
+  const trigRad = 35, trigGap = 5, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
 
   const gradientColors = [
     makeColor(186, 225, 255),
