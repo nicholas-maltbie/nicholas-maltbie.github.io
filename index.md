@@ -4,5 +4,6 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
+<img src="/assets/imgs/me.jpg" alt="Me" class="fadeIn roundedPic">
 
-![Me](/assets/imgs/me.jpg)
+I am a student at the University of Cincinnati currently enrolled in a dual Masters/Bachelors of Science program in Computer Science and expect to graduate in Spring 2021. 

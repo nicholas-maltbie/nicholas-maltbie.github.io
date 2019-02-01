@@ -44,7 +44,9 @@
           {%- endfor -%}
           </div>
 
-          {{ content }}
+          <p>
+            {{ content }}
+          </p>
           
           {% for category in site.categories %}
             <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>

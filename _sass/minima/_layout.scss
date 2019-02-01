@@ -5,16 +5,24 @@
   color: $text-color;
   line-height: $base-line-height;
   font-size: 1.5em;
+  white-space: nowrap;
 }
 
 .home-nav-divider {
   font-size: 1.5em;
   margin-left: 10px;
   margin-right: 10px;
+  font-color: $grey-color-light
 }
 
 .home-nav-container {
   text-align: center;
+}
+
+@include media-query($on-palm) {
+  .home-nav-container {
+    text-align: left
+  }
 }
 
 .site-header {
@@ -200,14 +208,14 @@
  
 .banner {
   width: 100%;
-  height: 45vh;
-  margin-bottom: -45vh;
+  height: 65vh;
+  margin-bottom: -65vh;
   z-index: -10;
 }
 
 .bannerCover {
   width: 100%;
-  height: 45vh;
+  height: 65vh;
   z-index: 10;
 }
 
@@ -344,7 +352,11 @@
   }
 }
 
-.fadeInDown {
+.roundedPic {
+  border-radius: 15px;
+}
+
+.fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 3s;

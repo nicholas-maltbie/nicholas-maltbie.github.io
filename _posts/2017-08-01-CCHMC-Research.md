@@ -2,7 +2,7 @@
 layout:     post
 title:      "CCHMC Research"
 date:       2017-8-01 00:00:00 0000
-categories: Project
+categories: Professional
 tags:       Project Professional
 icon:       "/assets/icons/cchmc.jpg"
 summary: "I worked with Dr. Porollo over the summer in 2017 on multiple research projects."

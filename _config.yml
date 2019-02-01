@@ -16,7 +16,7 @@
 title: Nick Maltbie
 email: nick.dmalt@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Nicholas Maltbie's personal website and portfolio.
+  Nicholas Maltbie's website.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nickmaltbie.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  nicholas-maltbie
