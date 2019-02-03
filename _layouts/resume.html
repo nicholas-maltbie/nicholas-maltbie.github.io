@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+
+<table id="resume">
+  <tr class="header-row">
+    <td colspan= "2">
+      <h1>{{ site.data.resume.name }}</h1>
+      <p>{{ site.data.resume.address }}</p>
+      <p>{{ site.data.resume.phone }}</p>
+      <p><a href="mailto:{{ site.data.resume.email }}">{{ site.data.resume.email }}</a></p>
+      <p><a href="{{ site.data.resume.website }}">{{ site.data.resume.website }}</a></p>
+    </td>
+  </tr>
+  
+  {% for section in site.data.resume.sections %}
+  <tr class="major-row">
+    <td colspan= "2">
+      <h2>{{ section | first }}</h2>
+    </td>
+  </tr>
+  
+  {% for elem in section.last %}
+  <tr class="minor-row-title">
+    <td>
+      <b>{{ elem | first }}</b>
+      {% if elem.last.sub %}
+        - {{ elem.last.sub }}
+      {% endif %}
+    </td>
+    <td>
+      {% if elem.last.date %}
+        {{ elem.last.date }}
+      {% endif %}
+    </td>
+  </tr>
+  
+  {% if elem.last.desc %}
+    <tr class="minor-row-desc">
+      <td colspan= "2">
+        <ul>
+        {% for line in elem.last.desc %}
+          <li>{{ line }}</li>
+        {% endfor %}
+        </ul>
+      </td>
+    </tr>
+  {% endif %}
+  {% endfor %}
+  
+  {% endfor %}
+  
+</table>
+  {{ site.data.resume.name }}
+

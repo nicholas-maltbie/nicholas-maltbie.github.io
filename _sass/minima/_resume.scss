@@ -1,0 +1,28 @@
+#resume {
+  width: 100%;
+}
+
+#resume > tbody > tr > td {
+  border-style: none;
+}
+
+.major-row {
+  background-color: blue;
+}
+
+.minor-row-title {
+  background-color: white;
+}
+
+.minor-row-desc {
+  background-color: lightgrey;
+}
+
+.header-row {
+  text-align: center;
+}
+
+.header-row > p {
+  margin-bottom: 0;
+}
+
