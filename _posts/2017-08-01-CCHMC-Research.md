@@ -4,7 +4,7 @@ title:      "CCHMC Research"
 date:       2017-8-01 00:00:00 0000
 categories: Professional
 tags:       Project Professional
-icon:       "/assets/icons/cchmc.jpg"
+icon:       "/assets/icons/cchmc.gif"
 summary: "I worked with Dr. Porollo over the summer in 2017 on multiple research projects."
 ---
 I created an automated pipeline to generate covariance data about protein sequences (CoeViz: a web-based tool for coevolution analysis of protein residues. Frazier Baker and Aleksey Porollo). Covariance data describes the evolutionary profile of a protein, this is useful for determining interaction sites on proteins and relates to protein folding and function. The data processed was open source data: the Baker's Yeast protein set from National Center for Biotechnology Information (NCBI) database and the BioLiP data is from Jianyi Yang, Ambrish Roy and Yang Zhang at the Department of Computational Medicine and Bioinformatics, University of Michigan. The Baker's Yeast dataset is simply a collection of protein sequences and the BioLiP dataset is a set of labeled sequences with information about structure and interaction sites.
