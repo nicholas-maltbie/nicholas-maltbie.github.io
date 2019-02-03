@@ -7,19 +7,27 @@ function startBanner() {
   const MAX_COLS = 200
 
   var grid = Array(MAX_ROWS * MAX_COLS)
+  var incrementGradient = false
+  var gradientStep = 4
+  var gradientSpeed = 5
+  
+  var ctx = c.getContext('2d')
 
   const framesPerSecond = 16
-
-  var ctx = c.getContext('2d')
 
   const trigRad = 35, trigGap = 5, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
 
   const gradientColors = [
     makeColor(186, 225, 255),
-    makeColor(36, 36, 36)]
+    makeColor(255,179,186),
+    makeColor(255,223,186),
+    makeColor(255,255,186),
+    makeColor(186,255,201)]
   const gradientSteps = 64
 
   var calculatedGradient
+  var gradientLength = gradientSteps
+  var gradientOffset = 0
 
   function makeColor(r, g, b) {
     return {r: r, g: g, b: b}
@@ -286,7 +294,14 @@ function startBanner() {
         
         var trig = getTriangle(row, col, vertOffset, horizOffset)
         var center = trig.center
-        var triCol = calculatedGradient[Math.max(0, Math.min(calculatedGradient.length - 1, Math.floor(dist(center, mousePos) / max_dist * calculatedGradient.length)))]
+        var selColor = 
+          Math.max(
+            (0, 
+            Math.min(
+              gradientLength - 1, 
+              Math.floor(dist(center, mousePos) / max_dist * gradientLength)))
+           + gradientOffset) % calculatedGradient.length
+        var triCol = calculatedGradient[selColor]
         trig.fillColor = triCol
         trig.draw(ctx)
         
@@ -318,6 +333,15 @@ function startBanner() {
 
   function anim() {
     setTimeout(function() {
+      
+      if (incrementGradient) {
+        gradientOffset += gradientSpeed
+      }
+      
+      if (gradientOffset >= gradientSteps) {
+        incrementGradient = false;
+      }
+      
       window.requestAnimationFrame( anim )
       
       ++frame
@@ -330,7 +354,7 @@ function startBanner() {
 
   function init() {
     updateDims()
-    calculatedGradient = makeColorGrad(gradientColors, gradientSteps)
+    updateGradient()
     if (c != null) {
       anim()
     }
@@ -349,6 +373,23 @@ function startBanner() {
   window.addEventListener('mousemove', function(evt) {
     mousePos = getMousePos(c, evt);
   }, false);
+  
+  function updateGradient() {
+    if (incrementGradient == false) {
+      gradientStep += 1
+      if (gradientStep >= gradientColors.length) {
+        gradientStep %= gradientColors.length
+      }
+      calculatedGradient = makeColorGrad([gradientColors[gradientStep != 0 ? gradientStep - 1 : gradientColors.length - 1], gradientColors[gradientStep], gradientColors[(gradientStep + 1) % gradientColors.length]], gradientSteps * 2)
+      incrementGradient = true
+      gradientOffset = 0
+    }
+  }
+  
+  window.addEventListener('click', function(evt) {
+    updateGradient();
+  })
+  
   init()
 }
 
