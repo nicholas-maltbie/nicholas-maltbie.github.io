@@ -2,50 +2,32 @@
 layout: main
 ---
 
-<p>
-  {{ content }}
-</p>
+<div class="wrapper">
+  <p>
+    {{ content }}
+  </p>
 
-{%- assign default_paths = site.pages | map: "path" -%}
-{%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-{%- for path in page_paths -%}
-  {%- assign my_page = site.pages | where: "path", path | first -%}
-  {%- if my_page.title -%}
-    <a class="minor-nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-  {% endif %}
-{%- endfor -%}
+  {%- for path in page_paths -%}
+    {%- assign my_page = site.pages | where: "path", path | first -%}
+    {%- if my_page.title -%}
+      <a class="minor-nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {% endif %}
+  {%- endfor -%}
+</div>
 
 {% for category in site.categories %}
-  <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
-  {% for post in category.last limit:3 %}
-    <div class="post-block">
-      <div class="post-element-row">
-          {%- if post.icon and post.icon != "" -%}
-          <div class="post-element">
-            <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-          </div>
-          {%- endif -%}
-          <div class="post-element">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-              <a class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title | escape }}
-              </a>
-            </h3>
-          </div>
-      </div>
-      {%- if post.summary -%}
-      <div class="post-element-row">
-        {{ post.summary }}
-      </div>
-      {%- endif -%}
-    </div>
-  {% endfor %}
-  {% if category.last.size > 3 %}
-    <div class="hidden" id="Older-{{ category | first }}">
-    {% for post in category.last offset:3 %}
+  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+  {% if thecycle == 'odd' %}
+  <div class="category-wrapper-odd">
+  {% else %}
+  <div class="category-wrapper-even">
+  {% endif %} 
+    <div class="wrapper">
+    <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
+    {% for post in category.last limit:3 %}
       <div class="post-block">
         <div class="post-element-row">
             {%- if post.icon and post.icon != "" -%}
@@ -70,8 +52,38 @@ layout: main
         {%- endif -%}
       </div>
     {% endfor %}
+    {% if category.last.size > 3 %}
+      <div class="hidden" id="Older-{{ category | first }}">
+      {% for post in category.last offset:3 %}
+        <div class="post-block">
+          <div class="post-element-row">
+              {%- if post.icon and post.icon != "" -%}
+              <div class="post-element">
+                <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+              </div>
+              {%- endif -%}
+              <div class="post-element">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span>
+                <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a>
+                </h3>
+              </div>
+          </div>
+          {%- if post.summary -%}
+          <div class="post-element-row">
+            {{ post.summary }}
+          </div>
+          {%- endif -%}
+        </div>
+      {% endfor %}
+      </div>
+      
+      <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
+    {%- endif -%}
     </div>
-    
-    <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
-  {%- endif -%}
+  </div>
 {% endfor %}
+

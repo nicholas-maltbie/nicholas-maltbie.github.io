@@ -14,7 +14,7 @@
 }
 
 .minor-nav-link {
-  line-height: 1em;
+  line-height: 2.5em;
   white-space: nowrap;
   background-color: $button-color;
   padding: 5px;
@@ -289,6 +289,18 @@
 /**
  * Page content
  */
+.category-wrapper-odd {
+  margin-top: 10px;
+  background-color: #dcdcdc;
+  padding-bottom: 25px;
+}
+
+.category-wrapper-even {
+  margin-top: 10px;
+  background-color: #fff;
+  padding-bottom: 25px;
+}
+
 .SeeMore {
   background-color: $button-color;
   padding: 5px;
@@ -421,7 +433,7 @@
  */
 .cat-title {
   font-size: 2em;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .post-header {
