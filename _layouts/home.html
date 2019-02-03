@@ -18,7 +18,8 @@ layout: main
   {%- endfor -%}
 </div>
 
-{% for category in site.categories %}
+{% assign sortedcats = site.categories | reversed %}
+{% for category in sortedcats %}
   {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
   {% if thecycle == 'odd' %}
   <div class="category-wrapper-odd">
@@ -28,56 +29,12 @@ layout: main
     <div class="wrapper">
     <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
     {% for post in category.last limit:3 %}
-      <div class="post-block">
-        <div class="post-element-row">
-            {%- if post.icon and post.icon != "" -%}
-            <div class="post-element">
-              <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-            </div>
-            {%- endif -%}
-            <div class="post-element">
-              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              <span class="post-meta">{{ post.date | date: date_format }}</span>
-              <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                  {{ post.title | escape }}
-                </a>
-              </h3>
-            </div>
-        </div>
-        {%- if post.summary -%}
-        <div class="post-element-row">
-          {{ post.summary }}
-        </div>
-        {%- endif -%}
-      </div>
+      {%- include post.html -%}
     {% endfor %}
     {% if category.last.size > 3 %}
       <div class="hidden" id="Older-{{ category | first }}">
       {% for post in category.last offset:3 %}
-        <div class="post-block">
-          <div class="post-element-row">
-              {%- if post.icon and post.icon != "" -%}
-              <div class="post-element">
-                <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-              </div>
-              {%- endif -%}
-              <div class="post-element">
-                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3>
-                  <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                  </a>
-                </h3>
-              </div>
-          </div>
-          {%- if post.summary -%}
-          <div class="post-element-row">
-            {{ post.summary }}
-          </div>
-          {%- endif -%}
-        </div>
+        {%- include post.html -%}
       {% endfor %}
       </div>
       

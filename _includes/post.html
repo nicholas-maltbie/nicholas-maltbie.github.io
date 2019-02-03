@@ -1,0 +1,36 @@
+<div class="post-block">
+  <div class="post-element-row">
+    {%- if post.icon and post.icon != "" -%}
+    <div class="post-element">
+      <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+    </div>
+    {%- endif -%}
+    <div class="post-element">
+      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <h3>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h3>
+    </div>
+  </div>
+  <div class="post-element-row">
+    <ul class="skills-container">
+      {%- if post.skills and post.skills != "" -%}
+        {% assign skills = post.skills | sort %}
+        {%- for skill in skills -%}
+          <li class="skill">
+            {{ skill }}
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ul>
+  </div>
+  {%- if post.summary -%}
+  <div class="post-element-row">
+    {{ post.summary }}
+  </div>
+  {%- endif -%}
+</div>
+
