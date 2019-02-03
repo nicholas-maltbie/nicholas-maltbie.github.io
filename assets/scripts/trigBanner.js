@@ -300,7 +300,8 @@ function startBanner() {
             Math.min(
               gradientLength - 1, 
               Math.floor(dist(center, mousePos) / max_dist * gradientLength)))
-           + gradientOffset) % calculatedGradient.length
+           + gradientOffset)
+        selColor = Math.min(selColor, calculatedGradient.length - 1)
         var triCol = calculatedGradient[selColor]
         trig.fillColor = triCol
         trig.draw(ctx)
@@ -373,6 +374,16 @@ function startBanner() {
   window.addEventListener('mousemove', function(evt) {
     mousePos = getMousePos(c, evt);
   }, false);
+
+
+  var last_known_scroll_position = 0
+
+  window.addEventListener('scroll', function(evt) {
+    var newpos = window.scrollY
+    var deltay = newpos - last_known_scroll_position
+    last_known_scroll_position = newpos
+    mousePos.y += deltay
+  }, false);
   
   function updateGradient() {
     if (incrementGradient == false) {
@@ -387,7 +398,10 @@ function startBanner() {
   }
   
   window.addEventListener('click', function(evt) {
-    updateGradient();
+    var rect = c.getBoundingClientRect();
+    if (rect.y + rect.height >= 0) {
+      updateGradient();
+    }
   })
   
   init()
