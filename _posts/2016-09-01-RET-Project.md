@@ -2,7 +2,7 @@
 layout:     post
 title:      "Research Experience for Teachers Project"
 date:       2016-10-10 00:00:00 0000
-categories: Project
+categories: Professional
 tags:       Project Research Professional
 icon:       "/assets/icons/ret.gif"
 summary: 	"Research Experience for Teacher projects done with Dr. Franco at the University of Cincinnati to develop coursework and prepare local high school teachers to teach math and cybersecurity."
