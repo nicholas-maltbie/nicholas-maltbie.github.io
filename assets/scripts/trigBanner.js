@@ -374,6 +374,9 @@ function startBanner() {
   window.addEventListener('mousemove', function(evt) {
     mousePos = getMousePos(c, evt);
   }, false);
+  window.addEventListener('touchmove', function(evt) {
+    mousePos = getMousePos(c, evt.changedTouches[0]);
+  }, false);
 
 
   var last_known_scroll_position = 0
@@ -398,6 +401,13 @@ function startBanner() {
   }
   
   window.addEventListener('click', function(evt) {
+    var rect = c.getBoundingClientRect();
+    if (rect.y + rect.height >= 0) {
+      updateGradient();
+    }
+  })
+  
+  window.addEventListener('touchend', function(evt) {
     var rect = c.getBoundingClientRect();
     if (rect.y + rect.height >= 0) {
       updateGradient();
