@@ -1,16 +1,9 @@
 <ul class="social-media-list">
-  {%- if site.facebook_username -%}
-  <li>
-    <a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" title="{{ site.facebook_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/facebook.svg"></img>
-    </a>
-  </li>
-  {%- endif -%}
   
   {%- if site.github_username -%}
   <li>
     <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="{{ site.github_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/github.svg"></img>
+      <img class="svg-icon" src="/assets/icons/github.svg" alt="github social link"></img>
     </a>
   </li>
   {%- endif -%}
@@ -18,7 +11,7 @@
   {%- if site.linkedin_username -%}
   <li>
     <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" title="{{ site.linkedin_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/linkedin.svg"></img>
+      <img class="svg-icon" src="/assets/icons/linkedin.svg" alt="linkedin social link"></img>
     </a>
   </li>
   {%- endif -%}
@@ -26,7 +19,7 @@
   {%- if site.twitter_username -%}
   <li>
     <a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" title="{{ site.twitter_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/twitter.svg"></img>
+      <img class="svg-icon" src="/assets/icons/twitter.svg" alt="twitter social link"></img>
     </a>
   </li>
   {%- endif -%}
@@ -34,7 +27,15 @@
   {%- if site.youtube_username -%}
   <li>
     <a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}" title="{{ site.youtube_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/youtube.svg"></img>
+      <img class="svg-icon" src="/assets/icons/youtube.svg" alt="youtube social link"></img>
+    </a>
+  </li>
+  {%- endif -%}
+  
+  {%- if site.facebook_username -%}
+  <li>
+    <a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" title="{{ site.facebook_username| escape }}">
+      <img class="svg-icon" src="/assets/icons/facebook.svg" alt="facebook social link"></img>
     </a>
   </li>
   {%- endif -%}

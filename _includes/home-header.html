@@ -1,0 +1,22 @@
+<header class="home-header">
+  <script src="/assets/scripts/trigBanner.js"></script>
+  <script src="/assets/scripts/showMores.js"></script>
+
+  <canvas class="banner fadeIn" id="trigBan">
+  </canvas>
+  <div class="bannerCover">
+    <div class="wrapper">
+      <div class="whiteBannerText">
+        <h1 class="main-title">Nick Maltbie</h1>
+        <h2 class="subtitle">Developer | Student</h2>
+      </div>
+             
+      <div class="home-nav-container">
+      {% for category in site.categories %}
+        <a href="#{{category | first }}" class="home-nav-link">{{category | first }}</a>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</header>
+

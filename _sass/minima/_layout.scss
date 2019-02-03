@@ -2,10 +2,37 @@
  * Site header
  */
 .home-nav-link {
-  color: $text-color;
-  line-height: $base-line-height;
-  font-size: 1.5em;
+  line-height: 2.25em;
+  font-size: 1.75em;
   white-space: nowrap;
+  background-color: $button-color;
+  padding: 10px;
+  border-radius: 15px;
+  color: $button-text-color;
+  margin-right: 15px;
+  box-shadow: $button-shadow-bold;
+}
+
+.minor-nav-link {
+  line-height: 1em;
+  white-space: nowrap;
+  background-color: $button-color;
+  padding: 5px;
+  border-radius: 5px;
+  color: $button-text-color;
+  margin-right: 15px;
+  box-shadow: $button-shadow-minimum;
+}
+
+.minor-nav-link:visited, 
+.home-nav-link:visited {
+  color: $button-text-color;
+}
+
+.minor-nav-link:hover, 
+.home-nav-link:hover {
+  color: $button-text-color;
+  background-color: $button-color-hover;
 }
 
 .home-nav-divider {
@@ -16,13 +43,19 @@
 }
 
 .home-nav-container {
-  text-align: center;
+  padding-top: 15px;
+  text-align: left;
 }
 
 @include media-query($on-palm) {
   .home-nav-container {
     text-align: left
   }
+}
+
+.home-header {
+  // Positioning context for the mobile navigation icon
+  position: relative;
 }
 
 .site-header {
@@ -205,7 +238,7 @@
  */
 .main-title {
   margin: 0;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .subtitle {
@@ -215,33 +248,36 @@
 .banner {
   width: 100%;
   height: 65vh;
-  margin-bottom: -65vh;
   z-index: -10;
+  vertical-align: top;
+  position: absolute;
 }
 
 .bannerCover {
+  padding-top: 5vh;
   width: 100%;
-  height: 65vh;
+  height: 60vh;
   z-index: 10;
+  vertical-align: top;
 }
 
 .whiteBannerText {
-  margin-top: 5vh;
   border-radius: 15px;
   padding: 25px;
   background-color: white;
-  width: fit-content;
+  box-shadow: $button-shadow-bold;
+  width: 100%s;
 }
 
 @include media-query($on-palm) {
   .banner {
-    height: 85vh;
-    margin-bottom: -85vh;
+    height: 100vh;
   }
 
   .bannerCover {
     width: 100%;
-    height: 85vh;
+    padding-top: 5vh;
+    height: 95vh;
   }
   
   .whiteBannerText {
@@ -254,7 +290,16 @@
  * Page content
  */
 .SeeMore {
-  
+  background-color: $button-color;
+  padding: 5px;
+  color: $button-text-color;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: $button-shadow-minimum;
+}
+
+.SeeMore:hover {
+  color: $button-text-color;
 }
 
 .hidden {

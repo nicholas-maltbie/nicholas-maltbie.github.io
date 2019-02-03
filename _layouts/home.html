@@ -1,118 +1,77 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: main
+---
 
-  {%- include head.html -%}
+<p>
+  {{ content }}
+</p>
 
-  <body>
-    <script src="/assets/scripts/trigBanner.js"></script>
-    <script src="/assets/scripts/showMores.js"></script>
-  
-    <canvas class="banner fadeIn" id="trigBan">
-    </canvas>
-    <div class="bannerCover">
-      <div class="wrapper">
-        <div class="whiteBannerText">
-          <h1 class="main-title">Nick Maltbie</h1>
-          <h2 class="subtitle">Developer | Student</h2>
-        </div>
-      </div>
-    </div>
-  
-    <main class="page-content" aria-label="Content">
-      
-      <div class="wrapper">
-        <div class="home">
-          {%- assign default_paths = site.pages | map: "path" -%}
-          {%- assign page_paths = site.header_pages | default: default_paths -%}
-          
-          <div class="home-nav-container">
-          {% for category in site.categories %}
-            <a href="#{{category | first }}" class="home-nav-link">{{category | first }}</a>
-            {% if forloop.last == false %}
-            <span class="home-nav-divider">|</span>
-            {% endif %}
-          {% endfor %}
-          
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-              {% if forloop.first == false %}
-                <span class="home-nav-divider">|</span>
-              {% endif %}
-              <a class="home-nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {%- endfor -%}
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
+{%- for path in page_paths -%}
+  {%- assign my_page = site.pages | where: "path", path | first -%}
+  {%- if my_page.title -%}
+    <a class="minor-nav-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+  {% endif %}
+{%- endfor -%}
+
+{% for category in site.categories %}
+  <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
+  {% for post in category.last limit:3 %}
+    <div class="post-block">
+      <div class="post-element-row">
+          {%- if post.icon and post.icon != "" -%}
+          <div class="post-element">
+            <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
           </div>
-
-          <p>
-            {{ content }}
-          </p>
-          
-          {% for category in site.categories %}
-            <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
-            {% for post in category.last limit:3 %}
-              <div class="post-block">
-                <div class="post-element-row">
-                    {%- if post.icon and post.icon != "" -%}
-                    <div class="post-element">
-                      <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-                    </div>
-                    {%- endif -%}
-                    <div class="post-element">
-                      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                      <span class="post-meta">{{ post.date | date: date_format }}</span>
-                      <h3>
-                        <a class="post-link" href="{{ post.url | relative_url }}">
-                          {{ post.title | escape }}
-                        </a>
-                      </h3>
-                    </div>
-                </div>
-                {%- if post.summary -%}
-                <div class="post-element-row">
-                  {{ post.summary }}
-                </div>
-                {%- endif -%}
-              </div>
-            {% endfor %}
-            {% if category.last.size > 3 %}
-              <div class="hidden" id="Older-{{ category | first }}">
-              {% for post in category.last offset:3 %}
-                <div class="post-block">
-                  <div class="post-element-row">
-                      {%- if post.icon and post.icon != "" -%}
-                      <div class="post-element">
-                        <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-                      </div>
-                      {%- endif -%}
-                      <div class="post-element">
-                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                        <span class="post-meta">{{ post.date | date: date_format }}</span>
-                        <h3>
-                          <a class="post-link" href="{{ post.url | relative_url }}">
-                            {{ post.title | escape }}
-                          </a>
-                        </h3>
-                      </div>
-                  </div>
-                  {%- if post.summary -%}
-                  <div class="post-element-row">
-                    {{ post.summary }}
-                  </div>
-                  {%- endif -%}
-                </div>
-              {% endfor %}
-              </div>
-              
-              <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
-            {%- endif -%}
-          {% endfor %}
-        </div>
+          {%- endif -%}
+          <div class="post-element">
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+          </div>
       </div>
-    </main>
-
-    {%- include footer.html -%}
-
-  </body>
-
-</html>
+      {%- if post.summary -%}
+      <div class="post-element-row">
+        {{ post.summary }}
+      </div>
+      {%- endif -%}
+    </div>
+  {% endfor %}
+  {% if category.last.size > 3 %}
+    <div class="hidden" id="Older-{{ category | first }}">
+    {% for post in category.last offset:3 %}
+      <div class="post-block">
+        <div class="post-element-row">
+            {%- if post.icon and post.icon != "" -%}
+            <div class="post-element">
+              <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+            </div>
+            {%- endif -%}
+            <div class="post-element">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+            </div>
+        </div>
+        {%- if post.summary -%}
+        <div class="post-element-row">
+          {{ post.summary }}
+        </div>
+        {%- endif -%}
+      </div>
+    {% endfor %}
+    </div>
+    
+    <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
+  {%- endif -%}
+{% endfor %}
