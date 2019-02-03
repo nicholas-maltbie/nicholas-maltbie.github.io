@@ -8,6 +8,7 @@ sections:
     University of Cincinnati:
       sub: College of Engineering and Applied Science
       date: Class of 2021
+      use_dot: none
       desc:
        - Accelerated Masters/Bachelor of Science in Computer Science
        - GPA 4.0/4.0
@@ -35,10 +36,12 @@ sections:
        - Designed and prepared coursework and activities with Python and Java
   Skills:
     Programming Languages:
+      use_dot: none
       desc:
        - Intermediate - Python, Java, C++, R
        - Basic - C, C#, matlab, LabVIEW, html, JS, CSS, XML, SQL, Bash, Regex, swing
     Software:
+      use_dot: none
       desc:
        - Git, Unity3d, Machine Learning, Anaconda, Databases, Real Time Programming, Linux
   Activities and Involvement:

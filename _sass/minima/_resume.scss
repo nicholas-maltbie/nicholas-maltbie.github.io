@@ -2,27 +2,79 @@
   width: 100%;
 }
 
+#resume,
 #resume > tbody > tr > td {
   border-style: none;
+  padding: 0;
+}
+
+.resume-heading {
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .major-row {
-  background-color: blue;
+  background-color: white !important;
+  border-bottom: 3px solid $theme-color-1;
+  padding-right: 10px;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.title-box {
+  float: left;
+  margin-right: 10px;
+}
+
+.date-box {
+  float: right;
 }
 
 .minor-row-title {
-  background-color: white;
+  display: flow-root;
+  background-color: white !important;
+  vertical-align: top;
 }
 
 .minor-row-desc {
-  background-color: lightgrey;
+  background-color: white !important;
 }
 
 .header-row {
   text-align: center;
 }
 
-.header-row > p {
-  margin-bottom: 0;
+.header-text {
+  padding: 0;
+  margin: 0;
+}
+
+.header-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.no-dot-list {
+  list-style: none;
+}
+
+@include media-query($on-palm) {
+  .minor-row-title {
+    display: inline-block;
+    background-color: white !important;
+    vertical-align: top;
+    clear: left;
+  }
+
+  .title-box {
+    float: left;
+    clear: left;
+  }
+
+  .date-box {
+    float: left;
+    clear: left;
+    margin-bottom: 10px;
+  }
 }
 

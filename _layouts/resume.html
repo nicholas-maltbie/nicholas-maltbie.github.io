@@ -2,55 +2,55 @@
 layout: default
 ---
 
+{{ content }}
 
-<table id="resume">
-  <tr class="header-row">
-    <td colspan= "2">
-      <h1>{{ site.data.resume.name }}</h1>
-      <p>{{ site.data.resume.address }}</p>
-      <p>{{ site.data.resume.phone }}</p>
-      <p><a href="mailto:{{ site.data.resume.email }}">{{ site.data.resume.email }}</a></p>
-      <p><a href="{{ site.data.resume.website }}">{{ site.data.resume.website }}</a></p>
-    </td>
-  </tr>
+<div id="resume">
+  <div class="header-row">
+    <h1 class="header-title">{{ site.data.resume.name }}</h1>
+    <p class="header-text">{{ site.data.resume.address }}</p>
+    <p class="header-text">{{ site.data.resume.phone }}</p>
+    <p class="header-text"><a href="mailto:{{ site.data.resume.email }}">{{ site.data.resume.email }}</a></p>
+    <p class="header-text"><a href="{{ site.data.resume.website }}">{{ site.data.resume.website }}</a></p>
+  </div>
   
   {% for section in site.data.resume.sections %}
-  <tr class="major-row">
-    <td colspan= "2">
-      <h2>{{ section | first }}</h2>
-    </td>
-  </tr>
+  <div class="major-row">
+    <h2 class="resume-heading">{{ section | first }}</h2>
+  </div>
   
   {% for elem in section.last %}
-  <tr class="minor-row-title">
-    <td>
+  <div class="minor-row-title">
+    <div class="title-box">
       <b>{{ elem | first }}</b>
+    </div>
+    <div class="title-box">
       {% if elem.last.sub %}
-        - {{ elem.last.sub }}
+        {{ elem.last.sub }}
       {% endif %}
-    </td>
-    <td>
+    </div>
+    <div class="date-box">
       {% if elem.last.date %}
         {{ elem.last.date }}
       {% endif %}
-    </td>
-  </tr>
+    </div>
+  </div>
   
   {% if elem.last.desc %}
-    <tr class="minor-row-desc">
-      <td colspan= "2">
-        <ul>
-        {% for line in elem.last.desc %}
-          <li>{{ line }}</li>
-        {% endfor %}
-        </ul>
-      </td>
-    </tr>
+  <div class="minor-row-desc">
+    {% if elem.last.use_dot %}
+    <ul class="no-dot-list">
+    {% else %}
+    <ul>
+    {% endif %}
+    {% for line in elem.last.desc %}
+      <li>{{ line }}</li>
+    {% endfor %}
+    </ul>
+  </div>
   {% endif %}
   {% endfor %}
   
   {% endfor %}
   
-</table>
-  {{ site.data.resume.name }}
+</div>
 
