@@ -45,18 +45,15 @@
   font-color: $grey-color-light;
 }
 
-.home-nav-container {
-  list-style: none;
-  display: inline-flex;
-  padding-top: 15px;
-  text-align: left;
-  margin: 0;
+.home-page {
+  display: block;
 }
 
-@include media-query($on-palm) {
-  .home-nav-container {
-    text-align: left
-  }
+.home-nav-container {
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  height: 60px;
 }
 
 .home-header {
@@ -253,7 +250,7 @@
  
 .banner {
   width: 100%;
-  height: 65vh;
+  height: 75vh;
   z-index: -10;
   vertical-align: top;
   position: absolute;
@@ -262,7 +259,7 @@
 .bannerCover {
   padding-top: 5vh;
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   z-index: 10;
   vertical-align: top;
 }
@@ -440,7 +437,6 @@
  */
 .skills-container {
   list-style: none;
-  display: inline-flex;
   margin: 0;
 }
 
