@@ -271,8 +271,8 @@ function startBanner() {
   function render() {
     ctx.clearRect(0, 0, w, h);
     
-    var horizOffset = Math.sqrt(3) * trigRad + trigGap * 2
-    var vertOffset = trigRad * 3 / 2 + trigGap
+    var horizOffset = Math.sqrt(3) * trigRad + trigGap
+    var vertOffset = trigRad * 3 / 2 + trigGap * 2
     
     var rows = Math.min(Math.round(h / vertOffset), MAX_ROWS)
     var cols = Math.min(Math.ceil(w / horizOffset + 1) * 2, MAX_COLS)
@@ -324,7 +324,7 @@ function startBanner() {
     if (!grid[point]) {
       var center = makePoint(
         (Math.floor(col / 2)  + (col % 2) * 0.5 + (row % 2) * -0.5) * horizOffset,
-        row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2))
+        row * vertOffset + (col % 2 == 0 ? 0 : trigRad / 2) - (col % 2 == 0 ? 1 : 0) * trigGap)
       var trig = col % 2 == 0 ? even_trig.getTranslated(center) : odd_trig.getTranslated(center)
       grid[point] = trig
     }
