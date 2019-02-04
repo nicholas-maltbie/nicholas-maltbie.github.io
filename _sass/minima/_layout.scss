@@ -2,25 +2,27 @@
  * Site header
  */
 .home-nav-link {
-  line-height: 2.25em;
   font-size: 1.75em;
   white-space: nowrap;
+  float: left;
   background-color: $button-color;
-  padding: 10px;
+  padding: 5px;
   border-radius: 15px;
   color: $button-text-color;
   margin-right: 15px;
+  margin-bottom: 10px;
   box-shadow: $button-shadow-bold;
 }
 
 .minor-nav-link {
-  line-height: 2.5em;
   white-space: nowrap;
   background-color: $button-color;
   padding: 5px;
   border-radius: 5px;
   color: $button-text-color;
   margin-right: 15px;
+  margin-bottom: 10px;
+  float: left;
   box-shadow: $button-shadow-minimum;
 }
 
@@ -40,12 +42,15 @@
   font-size: 1.5em;
   margin-left: 10px;
   margin-right: 10px;
-  font-color: $grey-color-light
+  font-color: $grey-color-light;
 }
 
 .home-nav-container {
+  list-style: none;
+  display: inline-block;
   padding-top: 15px;
   text-align: left;
+  margin: 0;
 }
 
 @include media-query($on-palm) {
