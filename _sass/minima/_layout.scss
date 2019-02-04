@@ -47,7 +47,7 @@
 
 .home-nav-container {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
   padding-top: 15px;
   text-align: left;
   margin: 0;
@@ -440,6 +440,7 @@
  */
 .skills-container {
   list-style: none;
+  display: inline-flex;
   margin: 0;
 }
 
