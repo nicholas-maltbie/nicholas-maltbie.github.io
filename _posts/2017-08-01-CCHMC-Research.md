@@ -1,6 +1,9 @@
 ---
-layout:     post
-title:      "CCHMC Research"
+layout:     internship
+start_date: 1-5-2016
+end_date:   1-8-2016
+title:      "Research Assistant"
+employer:   "Cincinnati Childrens Hospital Medical Center"
 date:       2017-8-01 00:00:00 0000
 categories: Professional
 tags:       Project Professional

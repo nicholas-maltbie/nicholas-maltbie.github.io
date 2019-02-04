@@ -1,0 +1,24 @@
+---
+layout: post
+---
+{%- if page.skills and page.skills != "" -%}
+  <ul class="skills-container">
+  {% assign skills = page.skills | sort %}
+  {%- for skill in skills -%}
+    <li class="skill">
+      {{ skill }}
+    </li>
+  {% endfor %}
+  </ul>
+  <br></br>
+{% endif %}
+{%- if page.start_date and page.end_date -%}
+  {%- assign date_format = "%b %Y" -%}
+  {{ page.start_date | date: date_format }} to {{ page.end_date | date: date_format }}
+{% endif %}
+{%- if page.employer -%}
+  at {{ page.employer }}
+  <br></br>
+{%- endif -%}
+
+{{ content }}

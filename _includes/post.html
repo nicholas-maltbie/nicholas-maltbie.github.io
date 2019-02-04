@@ -8,25 +8,38 @@
     <div class="post-element">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <span class="post-meta">{{ post.date | date: date_format }}</span>
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
+      <h3 class="post-link">
+        <a href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>
     </div>
   </div>
-  <div class="post-element-row">
-    <ul class="skills-container">
-      {%- if post.skills and post.skills != "" -%}
+
+  {%- if post.skills and post.skills != "" -%}
+    <div class="post-element-row">
+      <ul class="skills-container">
         {% assign skills = post.skills | sort %}
         {%- for skill in skills -%}
           <li class="skill">
             {{ skill }}
           </li>
         {% endfor %}
-      {% endif %}
-    </ul>
+      </ul>
+    </div>
+  {% endif %}
+  {%- if (post.start_date and post.end_date) or post.employer -%}
+  <div class="post-element-row post-date-info">
+    {%- if post.start_date and post.end_date -%}
+      {%- assign date_format = "%b %Y" -%}
+      {{ post.start_date | date: date_format }} to {{ post.end_date | date: date_format }}
+    {% endif %}
+    {%- if post.employer -%}
+      at {{ post.employer }}
+    {%- endif -%}
   </div>
+  {%- endif -%}
+  
   {%- if post.summary -%}
   <div class="post-element-row">
     {{ post.summary }}

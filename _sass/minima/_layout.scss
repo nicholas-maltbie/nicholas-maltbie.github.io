@@ -352,6 +352,10 @@
   height: auto;
 }
 
+.post-date-info {
+  margin-bottom: 5px;
+}
+
 .post-element-row {
   display:flex;
 }
@@ -376,6 +380,7 @@
 
 .post-link {
   display: block;
+  margin-bottom: 0;
   @include relative-font-size(1.5);
 }
 
