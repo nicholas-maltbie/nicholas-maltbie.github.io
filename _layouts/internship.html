@@ -1,7 +1,10 @@
 ---
 layout: post
 ---
+<div class="post-block">
 {%- if page.skills and page.skills != "" -%}
+<div class="post-element">
+  <h3>Skills Used</h3>
   <ul class="skills-container">
   {% assign skills = page.skills | sort %}
   {%- for skill in skills -%}
@@ -10,15 +13,16 @@ layout: post
     </li>
   {% endfor %}
   </ul>
-  <br></br>
+</div>
 {% endif %}
 {%- if page.start_date and page.end_date -%}
+<div class="post-element">
   {%- assign date_format = "%b %Y" -%}
   {{ page.start_date | date: date_format }} to {{ page.end_date | date: date_format }}
 {% endif %}
 {%- if page.employer -%}
   at {{ page.employer }}
-  <br></br>
+</div>
 {%- endif -%}
-
+</div>
 {{ content }}
