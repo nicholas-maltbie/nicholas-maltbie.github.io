@@ -10,7 +10,7 @@ summary: "For an independent project to learn how to use javascript (JS), I deci
 
 # Introduction
 
-Bubble Shooter is a simple javascript game I made. To play the game go to [this page](http://localhost:4000/bubble). This is my report on the project. To see the report as a pdf, click [here](https://drive.google.com/file/d/0B0gCZqueOMVIWEZyQ0V4cmVTVDQ/view).
+Bubble Shooter is a simple javascript game I made. To play the game go to [this page](/bubble). This is my report on the project. To see the report as a pdf, click [here](https://drive.google.com/file/d/0B0gCZqueOMVIWEZyQ0V4cmVTVDQ/view).
 
 # Table of Contents
 
