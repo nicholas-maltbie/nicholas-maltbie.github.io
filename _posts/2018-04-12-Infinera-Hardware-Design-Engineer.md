@@ -1,10 +1,10 @@
 ---
 layout:     internship
-start_date: 1-12-2018
-end_date:   4-16-2018
+start_date: 12-01-2018
+end_date:   16-04-2018
 title:      "Co-op Hardware Design Engineer"
 employer:   "Infinera"
-date:       2018-20-12 00:00:00 0000
+date:       2018-04-20 00:00:00 0000
 categories: Professional
 icon:       "/assets/icons/infinera.jpg"
 skills:     ["C", "C++", "Real Time Programming", "Sqlite", "Java", "Python", "Hardware", "Linux"]
