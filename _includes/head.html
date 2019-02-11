@@ -1,4 +1,8 @@
 <head>
+  {% if jekyll.environment == 'production' %}
+  {% include analytics.html %}
+  {% endif %}
+  
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="manifest" href="/manifest.webmanifest">
