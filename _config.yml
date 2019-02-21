@@ -34,6 +34,7 @@ plugins:
   - image_optim
   - jekyll-pwa-plugin
   - jekyll-gzip
+  - jekyll-sitemap
 
 wa:
   sw_src_filepath: service-worker.js # Optional
