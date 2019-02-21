@@ -35,3 +35,6 @@ gem 'image_optim', :git => 'git://github.com/toy/image_optim.git'
 gem 'image_optim_pack'
 
 gem 'jekyll-sitemap'
+gem 'jekyll-gzip'
+gem 'jekyll-pwa-plugin'
+
