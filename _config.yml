@@ -35,6 +35,7 @@ plugins:
   - jekyll-pwa-plugin
   - jekyll-gzip
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 wa:
   sw_src_filepath: service-worker.js # Optional
