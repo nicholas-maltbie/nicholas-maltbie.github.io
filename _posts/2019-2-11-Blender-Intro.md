@@ -189,7 +189,15 @@ Instead of the widgets, you can also use hotkeys to move the objects. Left click
 |s + x | scale along x axis|
 |s + y | scale along y axis|
 |s + z | scale along z axis|
-
+|g + x + x | translate along relative x axis (if object is rotated) |
+|g + y + y | translate along relative y axis (if object is rotated) |
+|g + z + z | translate along relative z axis (if object is rotated) |
+|r + x + x | rotate along relative x axis |
+|r + y + y | rotate along relative y axis |
+|r + z + z | rotate along relative z axis |
+|s + x + x | scale along relative x axis |
+|s + y + y | scale along relative y axis |
+|s + z + z | scale along relative z axis |
 
 ![Showing different widgets in the panel](/assets/imgs/blogs/Blender-Intro/widgets.gif)
 
@@ -273,6 +281,12 @@ To change the view of a panel, select the dropdown icon in the bottom left of th
 
 To reset the current layout of the screen select the dropdown icon to the right of Help at the top of the screen. This tutorial was all done using the default layout. 
 
+
+## Exercise
+
+![Image of shannon with a hat as exercise](/assets/imgs/blogs/Blender-Intro/exercise.png)
+
+As an attempt to test what you have learned in this tutorial, attempt to make a scene that looks like this, shannon (monkey mesh) with a hat as in the image agove.
 
 ## Conclusion
 
