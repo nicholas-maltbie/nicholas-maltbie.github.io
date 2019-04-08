@@ -23,6 +23,9 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+          {%- for cat in site.categories -%}
+            <a class="page-link" href="/index.html#{{ cat | first }}">{{ cat | first }}</a>
+          {%- endfor -%}
         </div>
       </nav>
     {%- endif -%}

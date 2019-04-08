@@ -2,54 +2,56 @@
 layout: main
 ---
 
-<div class="wrapper">
+<script src="/assets/scripts/showMores.js"></script>
+<script src="/assets/scripts/trigBanner.js"></script>
 
-  {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
+<div class="home-header">
+  <canvas class="banner fadeIn" id="trigBan">
+  </canvas>
+  <div class="bannerCover">
+    <div class="wrapper">
+      <div class="whiteBannerText">
+        <h1 class="main-title">Nick Maltbie</h1>
+        <h2 class="subtitle">Developer | Student</h2>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <div class="home-page">
-    <p>
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
-    </p>
-    <ul class="home-nav-container">
-    {%- for path in page_paths -%}
-      {%- assign my_page = site.pages | where: "path", path | first -%}
-      {%- if my_page.title -%}
-        <li class="minor-nav-link">
-        <a href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-        </li>
-      {% endif %}
-    {%- endfor -%}
-    </ul>
+    </div>
     
     <p>Contact me here</p>
     {%- include social.html -%}
   </div>
-</div>
-
-{% assign sortedcats = site.categories | reversed %}
-{% for category in sortedcats %}
-  {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
-  {% if thecycle == 'odd' %}
-  <div class="category-wrapper-odd">
-  {% else %}
-  <div class="category-wrapper-even">
-  {% endif %} 
-    <div class="wrapper">
-    <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
-    {% for post in category.last limit:3 %}
-      {%- include post.html -%}
-    {% endfor %}
-    {% if category.last.size > 3 %}
-      <div class="hidden" id="Older-{{ category | first }}">
-      {% for post in category.last offset:3 %}
-        {%- include post.html -%}
-      {% endfor %}
+  
+  {% assign sortedcats = site.categories | reversed %}
+  {% for category in sortedcats %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% if thecycle == 'odd' %}
+    <div class="category-wrapper-odd">
+    {% else %}
+    <div class="category-wrapper-even">
+    {% endif %} 
+      <div class="wrapper">
+        <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
+        {% for post in category.last limit:3 %}
+          {%- include post.html -%}
+        {% endfor %}
+        {% if category.last.size > 3 %}
+          <div class="hidden" id="Older-{{ category | first }}">
+          {% for post in category.last offset:3 %}
+            {%- include post.html -%}
+          {% endfor %}
+          </div>
+          
+          <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
+        {%- endif -%}
       </div>
-      
-      <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
-    {%- endif -%}
     </div>
-  </div>
-{% endfor %}
+  {% endfor %}
+</main>
 
