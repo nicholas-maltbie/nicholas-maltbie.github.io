@@ -2,17 +2,26 @@
 layout: main
 ---
 
-<script src="/assets/scripts/showMores.js"></script>
 <script src="/assets/scripts/trigBanner.js"></script>
 
 <div class="home-header">
   <canvas class="banner fadeIn" id="trigBan">
   </canvas>
   <div class="bannerCover">
-    <div class="wrapper">
-      <div class="whiteBannerText">
+    <div class="wide-wrapper">
+      <div class="whiteBanner bannerImg">
+        <img src="/assets/imgs/me.jpg" alt="Me" class="fadeIn roundedPic">
+      </div>
+
+      <div class="whiteBanner">
         <h1 class="main-title">Nick Maltbie</h1>
         <h2 class="subtitle">Developer | Student</h2>
+        <div class="post-content e-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+        
+        <p>Contact me here</p>
+        {%- include social.html -%}
       </div>
     </div>
   </div>
@@ -20,17 +29,12 @@ layout: main
 
 <main class="page-content" aria-label="Content">
   <div class="wrapper">
-    <div class="post-content e-content" itemprop="articleBody">
-      {{ content }}
-    </div>
-    
-    <p>Contact me here</p>
-    {%- include social.html -%}
+  
   </div>
   
   {% assign sortedcats = site.categories | reversed %}
   {% for category in sortedcats %}
-    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+    {% capture thecycle %}{% cycle 'even', 'odd' %}{% endcapture %}
     {% if thecycle == 'odd' %}
     <div class="category-wrapper-odd">
     {% else %}
