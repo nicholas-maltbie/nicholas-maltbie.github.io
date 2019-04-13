@@ -9,11 +9,11 @@
           <li class="p-name">
           {%- if site.author -%}
             {{ site.author | escape }}
-            <li>he/him/his</li>
           {%- else -%}
             {{ site.title | escape }}
           {%- endif -%}
           </li>
+          <li>he/him/his</li>
           {%- if site.email -%}
           <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           {%- endif -%}

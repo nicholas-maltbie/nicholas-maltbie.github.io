@@ -8,20 +8,18 @@ layout: main
   <canvas class="banner fadeIn" id="trigBan">
   </canvas>
   <div class="bannerCover">
-    <div class="wide-wrapper">
-      <div class="whiteBanner bannerImg">
+    <div class="banner-wrapper">
+      <div class="banner-sector">
         <img src="/assets/imgs/me.jpg" alt="Me" class="fadeIn roundedPic">
       </div>
-
-      <div class="whiteBanner">
-        <h1 class="main-title">Nick Maltbie</h1>
-        <h2 class="subtitle">Developer | Student</h2>
-        <div class="post-content e-content" itemprop="articleBody">
-          {{ content }}
-        </div>
-        
-        <p>Contact me here</p>
-        {%- include social.html -%}
+      <div class="banner-sector">
+         <h1 class="main-title">Nick Maltbie</h1>
+         <h2 class="subtitle">Developer | Student</h2>
+         <div class="post-content e-content" itemprop="articleBody">
+           {{ content }}
+         </div>
+         
+         {%- include social.html -%}
       </div>
     </div>
   </div>
