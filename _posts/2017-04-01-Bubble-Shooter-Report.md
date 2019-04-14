@@ -1,8 +1,8 @@
 ---
 layout:     post
+permalink:  "/bubble/report"
 title:      "Bubble Shooter Report"
 date:       2017-4-01 00:00:00 0000
-categories: Project
 tags:       Project Javascript
 icon:       "/assets/icons/bubble.jpg"
 summary: "For an independent project to learn how to use javascript (JS), I decided to make a bubble shooter game. It is a simple game where a player shoots bubbles in a browser JS game."

@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<h1 class="cat-title">Professional</h1>
+
+<a href="/resume"><h2>my resume</h2></a>
+
+{% for post in site.categories.Professional %}
+  {%- include post.html -%}
+{% endfor %}
+

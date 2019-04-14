@@ -3,7 +3,7 @@ layout:     post
 permalink:  /bubble/
 title:      "Bubble Shooter"
 date:       2017-04-01 00:00:00 0001
-categories: Game
+categories: Blog
 tags:       Project Game
 icon:       "/assets/icons/bubble.jpg"
 summary: "JavaScript based web browser game."
@@ -31,5 +31,5 @@ summary: "JavaScript based web browser game."
 
 
 
-This project is hosted on [github](https://github.com/nicholas-maltbie/BubbleShooterJS/). There is also a [report](/project/2017/04/01/Bubble-Shooter-Report.html) that explains the project.
+This project is hosted on [github](https://github.com/nicholas-maltbie/BubbleShooterJS/). There is also a [report](/bubble/report) that explains the project.
 

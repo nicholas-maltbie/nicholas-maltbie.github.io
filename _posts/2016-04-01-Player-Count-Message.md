@@ -2,7 +2,7 @@
 layout:     post
 title:      "Player Count Message"
 date:       2016-04-01 00:00:00 0000
-categories: Project
+categories: Blog
 tags:       Project
 icon:       "/assets/icons/pcm.jpg"
 summary: 	"A software modification for minecraft servers to allow players the ability to modify the server's look in the load screen."

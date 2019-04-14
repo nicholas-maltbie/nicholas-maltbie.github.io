@@ -24,19 +24,4 @@
   </li>
   {%- endif -%}
   
-  {%- if site.youtube_username -%}
-  <li>
-    <a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}" title="{{ site.youtube_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/youtube.svg" alt="youtube social link"></img>
-    </a>
-  </li>
-  {%- endif -%}
-  
-  {%- if site.facebook_username -%}
-  <li>
-    <a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" title="{{ site.facebook_username| escape }}">
-      <img class="svg-icon" src="/assets/icons/facebook.svg" alt="facebook social link"></img>
-    </a>
-  </li>
-  {%- endif -%}
 </ul>

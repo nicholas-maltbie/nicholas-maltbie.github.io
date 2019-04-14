@@ -15,45 +15,19 @@ layout: main
       <div class="banner-sector">
          <h1 class="main-title">Nick Maltbie</h1>
          <h2 class="subtitle">Developer | Student</h2>
-         <div class="post-content e-content" itemprop="articleBody">
-           {{ content }}
-         </div>
          
          {%- include social.html -%}
       </div>
     </div>
   </div>
+  <main class="page-content" aria-label="Content">
+    <ul class="front-list">
+      <li><a class="front-link" href="/about">About Me</a></li>
+      <li><a class="front-link" href="/blog">Blog</a></li>
+      <li><a class="front-link" href="/professional">Professional</a></li>
+      <li><a class="front-link" href="/honors">Honors</a></li>
+    </ul>
+  </div>
 </div>
 
-<main class="page-content" aria-label="Content">
-  <div class="wrapper">
-  
-  </div>
-  
-  {% assign sortedcats = site.categories | reversed %}
-  {% for category in sortedcats %}
-    {% capture thecycle %}{% cycle 'even', 'odd' %}{% endcapture %}
-    {% if thecycle == 'odd' %}
-    <div class="category-wrapper-odd">
-    {% else %}
-    <div class="category-wrapper-even">
-    {% endif %} 
-      <div class="wrapper">
-        <h2 class="cat-title" name="{{ category | first }}" id="{{ category | first }}">{{ category | first }}</h2>
-        {% for post in category.last limit:3 %}
-          {%- include post.html -%}
-        {% endfor %}
-        {% if category.last.size > 3 %}
-          <div class="hidden" id="Older-{{ category | first }}">
-          {% for post in category.last offset:3 %}
-            {%- include post.html -%}
-          {% endfor %}
-          </div>
-          
-          <a tabindex="0" class="SeeMore" group="{{ category | first }}"></a>
-        {%- endif -%}
-      </div>
-    </div>
-  {% endfor %}
-</main>
 

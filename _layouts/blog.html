@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<h1 class="cat-title">Blog</h1>
+{% for post in site.categories.Blog %}
+  {%- include post.html -%}
+{% endfor %}
+
