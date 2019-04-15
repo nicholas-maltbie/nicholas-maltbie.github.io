@@ -87,6 +87,8 @@
 .home-header {
   // Positioning context for the mobile navigation icon
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .site-header { border-top: 5px solid $grey-color-dark; border-bottom: 1px solid $grey-color-light;
@@ -293,13 +295,13 @@
 .bannerCover {
   padding-top: calc(15vh);
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   z-index: 10;
   vertical-align: top;
 
   @include media-query($on-laptop) {
     padding-top: 10vh;
-    height: 90vh;
+    min-height: 90vh;
   }
 }
 
@@ -321,6 +323,7 @@
   background-color: white;
   border-radius: 25px;
   box-shadow: 0 0 15px -10px;
+  overflow: hidden;
 }
 
 .banner-sector {
@@ -343,10 +346,10 @@
 
   .banner-wrapper {
     flex-direction: column;
-    padding-left:25px;
-    padding-right:25px;
-    margin-right:50px;
-    margin-left:50px;
+    padding-left:10px;
+    padding-right:10px;
+    margin-right:20px;
+    margin-left:20px;
   }
 }
 
@@ -509,6 +512,9 @@
 .roundedPic {
   border-radius: 50%;
   padding: 10px;
+  @include media-query($on-palm) {
+    padding: 0;
+  }
 }
 
 .fadeIn {
