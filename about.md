@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "About Me"
-permalink: /about/
+permalink: /about.html
 ---
 
 ![Me and my sibilings](/assets/imgs/about-me.jpg)
