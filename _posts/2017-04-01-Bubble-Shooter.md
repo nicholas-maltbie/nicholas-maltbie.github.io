@@ -31,5 +31,5 @@ summary: "JavaScript based web browser game."
 
 
 
-This project is hosted on [github](https://github.com/nicholas-maltbie/BubbleShooterJS/). There is also a [report](/bubble/report) that explains the project.
+This project is hosted on [github](https://github.com/nicholas-maltbie/BubbleShooterJS/). There is also a [report](/bubble/report.html) that explains the project.
 
