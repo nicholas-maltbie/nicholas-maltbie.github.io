@@ -1,6 +1,7 @@
 
 function startBanner() {
   var c = document.getElementById("trigBan")
+  var ban = document.getElementById("front-ban")
   var w, h, frame = 0
 
   const MAX_ROWS = 200
@@ -284,6 +285,23 @@ function startBanner() {
     var max_dist = dist(min_point, max_point)
 
     var render = 0
+
+    var rect = c.getBoundingClientRect()
+    var real_mouse = {x : 0, y : mousePos.y + rect.y}
+    var ban_rect = ban.getBoundingClientRect()
+    var ban_pos = {x : 0, y : ban_rect.y + ban_rect.height / 2}
+
+    var ban_dist = dist(real_mouse, ban_pos)
+    var selColor = 
+      Math.max(
+        (0, 
+        Math.min(
+          gradientLength - 1, 
+          Math.floor(ban_dist / max_dist * gradientLength)))
+       + gradientOffset)
+    selColor = Math.min(selColor, calculatedGradient.length - 1)
+    
+    ban.style.backgroundColor = calculatedGradient[selColor]
     
     for (var row = 0; row < rows; row ++) {
       for (var col = 0; col < cols; col ++) {
