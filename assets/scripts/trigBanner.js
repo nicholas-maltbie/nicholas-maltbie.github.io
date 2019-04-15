@@ -275,7 +275,7 @@ function startBanner() {
     var horizOffset = Math.sqrt(3) * trigRad + trigGap
     var vertOffset = trigRad * 3 / 2 + trigGap * 2
     
-    var rows = Math.min(Math.round(h / vertOffset), MAX_ROWS)
+    var rows = Math.min(Math.ceil(h / vertOffset), MAX_ROWS)
     var cols = Math.min(Math.ceil(w / horizOffset + 1) * 2, MAX_COLS)
     
     var min_x = 0, max_x = (Math.floor(cols / 2) + 0.5) * horizOffset,

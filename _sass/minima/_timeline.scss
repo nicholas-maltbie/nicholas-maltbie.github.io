@@ -29,7 +29,7 @@ $dot-diameter: 8px;
     content: '';
     position: absolute;
     top: 0px;
-    left:calc(33% + 7px); //$gutter/2
+    left:calc(34% + 6px); //$gutter/2
     bottom: 0px;
     width: $border-width;
     background: #ddd;
@@ -48,7 +48,7 @@ $dot-diameter: 8px;
   .title {
     margin-bottom: .5em;
     float: left;
-    width: 33%;
+    width: 34%;
     padding-right: $gutter;
     text-align: right;
     position: relative;

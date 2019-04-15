@@ -19,16 +19,14 @@ click job titles for more info
         {{ post.start_date | date: date_format }} to {{ post.end_date | date: date_format }}
       </h3>
       <p>
-        {%- if post.employer -%}
-          {{ post.employer }}
-        {%- endif -%}
+        {{ post.employer }}
       </p>
     </div>
     <div class="body">
       <div class="post-element-row">
         {%- if post.icon and post.icon != "" -%}
         <div class="post-element">
-          <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+          <img class="timeline-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
         </div>
         {%- endif -%}
         <div class="post-element">
@@ -39,7 +37,7 @@ click job titles for more info
       </div>
       {%- if post.skills and post.skills != "" -%}
         <div class="post-element-row">
-          <ul class="skills-container">
+          <ul class="timeline-skills-container">
             {% assign skills = post.skills | sort %}
             {%- for skill in skills -%}
               <li class="skill">

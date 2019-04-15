@@ -281,27 +281,38 @@
 }
 
 .subtitle {
-  margin: 0;
+  margin: 15px;
+  margin-top: 0;
+}
+
+.home-wrapper {
+  background-color: white;
+}
+
+.canvas-container {
+  position: relative;
 }
  
 .banner {
+  position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: -10;
   vertical-align: top;
-  position: absolute;
 }
 
 .bannerCover {
-  padding-top: calc(15vh);
+  padding-top: 15vh;
+  margin: auto;
   width: 100%;
   min-height: 80vh;
   z-index: 10;
   vertical-align: top;
 
   @include media-query($on-laptop) {
-    padding-top: 10vh;
-    min-height: 90vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 80vh;
   }
 }
 
@@ -404,15 +415,16 @@
 }
 
 .timeline-icon {
-  float: right;
+  float:left;
   min-width: 55px;
   min-height: 55px;
   max-width: 55px;
   max-height: 55px;
   border-radius: 5px;
-
-  @include media-query($on-laptop) {
-    float:left;
+  margin-right: 25px;
+  margin-bottom: 5px;
+  @include media-query($on-palm) {
+    display: none;
   }
 }
 
@@ -535,6 +547,15 @@
   display: inline-block;
 }
 
+.timeline-skills-container {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+
 .skill {
   float: left;
   background-color: $theme-color-3;
@@ -599,7 +620,7 @@
  * Front page stuff
  */
 .list-wrapper {
-  margin-top: 20px;
+  margin-top: 3px;
   width: 100%;
   background-color: $theme-color-1;
 }
@@ -612,6 +633,9 @@
   overflow: hidden;
   padding-left: $spacing-unit;
   padding-right: $spacing-unit;
+  @include media-query($on-laptop) {
+    padding: 0px;
+  }
 }
 
 .front-link {
@@ -621,6 +645,8 @@
 
   border-color: white;
   border-style: solid;
+
+  border-radius: 10px;
 
   padding: 5px;
   @include relative-font-size(1.5);
