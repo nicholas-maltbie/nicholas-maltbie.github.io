@@ -372,6 +372,19 @@
   border-radius: 5px;
 }
 
+.timeline-icon {
+  float: right;
+  min-width: 55px;
+  min-height: 55px;
+  max-width: 55px;
+  max-height: 55px;
+  border-radius: 5px;
+
+  @include media-query($on-laptop) {
+    float:left;
+  }
+}
+
 .post-block {
   display: block;
   margin-top:10px;
@@ -407,6 +420,18 @@
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+}
+
+.job-link {
+  display: block;
+  margin-bottom: 0;
+  border-radius: 15px;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-style: solid;
+  border-color: $theme-color-1;
+  width: fit-content;
+  @include relative-font-size(1.5);
 }
 
 .post-link {
@@ -539,13 +564,20 @@
 /**
  * Front page stuff
  */
-.front-list {
-  list-style: none;
+.list-wrapper {
+  margin-top: 50px;
+  width: 100%;
   background-color: $theme-color-1;
-  margin: 0;
+}
+
+.front-list {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  list-style: none;
+  margin: auto;
   overflow: hidden;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
 }
 
 .front-link {

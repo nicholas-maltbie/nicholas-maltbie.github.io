@@ -3,9 +3,58 @@ layout: default
 ---
 <h1 class="cat-title">Professional</h1>
 
-<a href="/resume"><h2>my resume</h2></a>
+<a href="/resume"><h2>link to my resume</h2></a>
 
+<h1 class="cat-title">Work Experience</h1>
+
+<div class="timeline-box">
+<div class="timeline">
 {% for post in site.categories.Professional %}
-  {%- include post.html -%}
+  <div class="entry">
+    <div class="title">
+      <h3>
+        {%- assign date_format = "%b %Y" -%}
+        {{ post.start_date | date: date_format }} to {{ post.end_date | date: date_format }}
+      </h3>
+      <p>
+        {%- if post.employer -%}
+          {{ post.employer }}
+        {%- endif -%}
+      </p>
+    </div>
+    <div class="body">
+      <div class="post-element-row">
+        {%- if post.icon and post.icon != "" -%}
+        <div class="post-element">
+          <img class="post-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+        </div>
+        {%- endif -%}
+        <div class="post-element">
+          <a class="job-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </div>
+      </div>
+      {%- if post.skills and post.skills != "" -%}
+        <div class="post-element-row">
+          <ul class="skills-container">
+            {% assign skills = post.skills | sort %}
+            {%- for skill in skills -%}
+              <li class="skill">
+                {{ skill }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {%- endif -%}
+      {%- if post.summary -%}
+      <div class="post-element-row">
+        {{ post.summary }}
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
 {% endfor %}
+</div>
+</div>
 
