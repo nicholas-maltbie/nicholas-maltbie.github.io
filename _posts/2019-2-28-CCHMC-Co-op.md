@@ -1,7 +1,7 @@
 ---
 layout:     internship
 start_date: 18-6-2018
-end_date:   Present
+end_date:   17-5-2019
 title:      "Undergraduate Researcher"
 employer:   "Cincinnati Childrens Hospital Medical Center"
 date:       2019-02-28 00:00:00 0000

@@ -14,9 +14,15 @@ sections:
        - GPA 4.0/4.0
        - University Honors Program, Dean’s List
   Work Experience:
+    Software Engineer Intern:
+      sub: Intuit
+      date: May - Aug 2019
+      desc:
+        - Developed software to interface between Apache Kafka and databases
+        - Investigated solutions for parallel data processing using AWS cloud and Java
     Undergraduate Researcher:
       sub: Cincinnati Children’s Hospital Medical Center
-      date: May - Dec 2018
+      date: May 2018 - Apr 2019
       desc:
        - Investigated Artificial Neural Network via Tensor Flow to analyze patient records to detect infections
        - Automated data generation for published research with python, shell, perl, R and parallel computing
@@ -28,12 +34,6 @@ sections:
        - Improved firmware load time by over 10,000% using Sqlite, C and real time programming
        - Benchmarked various methods of processor communications using C++
        - Developed graphical software for maintaining documentation with Java
-    Research Assistant:
-      sub: Research Experience for Teachers, University of Cincinnati
-      date: July - Aug 2016
-      desc:
-       - Collaborated with and instructed high school teachers in the math and protocols of cryptography
-       - Designed and prepared coursework and activities with Python and Java
   Skills:
     Programming Languages:
       use_dot: none
