@@ -5,7 +5,7 @@ date:       2019-06-04 00:00:00 0000
 categories: Honors
 tags:       Honors Year-in-review
 icon:       ""
-summary: 	"Third Year Review (2017-2018) for University Honors Program"
+summary: 	"Third Year Review (2018-2019) for University Honors Program"
 ---
 
 # Overview of the Year
