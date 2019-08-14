@@ -39,16 +39,14 @@ sections:
     Programming Languages:
       use_dot: none
       desc:
-       - >
-        Java, Python, C++, React, R, SQL, C, C#, MATLAB, LabVIEW, html, Javascript, CSS, XML, Bash, 
+       - Java, Python, C++, React, R, SQL, C, C#, MATLAB, LabVIEW, html, Javascript, CSS, XML, Bash, 
         Regex, Prolog, Haskell, FRIL, Perl
-  Software:
+    Software:
       use_dot: none
       desc:
-       - >
-          Amazon Web Services, S3, Maven, JUnit, Springboot, Kafka, Jenkins, Docker, Git, Unity3d,
-          Blender, Anaconda, Databases, Linux, Redis, H2 database, Scipy, Pandas, TensorFlow, Google Cloud Platform,
-          Firebase, Netflix Hystrix, Weka, Neural Networks, Support Vector Machines, Open Computer Vision
+       - Amazon Web Services, S3, Maven, JUnit, Springboot, Kafka, Jenkins, Docker, Git, Unity3d,
+        Blender, Anaconda, Databases, Linux, Redis, H2 database, Scipy, Pandas, TensorFlow, Google Cloud Platform,
+        Firebase, Netflix Hystrix, Weka, Neural Networks, Support Vector Machines, Open Computer Vision
   Activities and Involvement:
     Logistics Lead Revolution UC:
       sub: Student Hackathon at UC
