@@ -18,39 +18,45 @@ sections:
       sub: Intuit
       date: May - Aug 2019
       desc:
-        - Developed software to interface between Apache Kafka and databases
-        - Investigated solutions for parallel data processing using AWS cloud and Java
+        - Developed a high performance networking tool with Kafka, Maven, H2, SQL, Redis, S3, AWS, and Java
+        - Shipped and tested a user interface to modify server state and configuration with React and Redux
+        - Increased functional, unit, performance and integration testing for projects by over 70% in projects
+        - Deployed a service for continuous integration and deployment with Jenkins, AWS, docker, and Github
     Undergraduate Researcher:
       sub: Cincinnati Children’s Hospital Medical Center
       date: May 2018 - Apr 2019
       desc:
-       - Investigated Artificial Neural Network via Tensor Flow to analyze patient records to detect infections
-       - Automated data generation for published research with python, shell, perl, R and parallel computing
-       - Evaluated machine learning methods, SVM, Random Forest, LSTM to find metalloprotein binding sites
+        - Investigated Artificial Neural Network with Tensor Flow to analyze patient records and detect infections
+        - Automated data generation for research with Python, Perl, R, shell and parallel computing
+        - Evaluated machine learning methods, SVM, Random Forest, LSTM to find metalloprotein binding sites
     Co-Op Hardware Design Engineer:
       sub: Infinera
       date: Jan - Apr 2018
       desc:
-       - Improved firmware load time by over 10,000% using Sqlite, C and real time programming
-       - Benchmarked various methods of processor communications using C++
-       - Developed graphical software for maintaining documentation with Java
+        - Improved firmware load time to be 100 times faster using Sqlite, C and real time programming
+        - Benchmarked various methods of processor communications using C++
   Skills:
     Programming Languages:
       use_dot: none
       desc:
-       - Intermediate - Python, Java, C++, R
-       - Basic - C, C#, matlab, LabVIEW, html, JS, CSS, XML, SQL, Bash, Regex, swing
-    Software:
+       - >
+        Java, Python, C++, React, R, SQL, C, C#, MATLAB, LabVIEW, html, Javascript, CSS, XML, Bash, 
+        Regex, Prolog, Haskell, FRIL, Perl
+  Software:
       use_dot: none
       desc:
-       - Git, Unity3d, Machine Learning, Anaconda, Databases, Real Time Programming, Linux
+       - >
+          Amazon Web Services, S3, Maven, JUnit, Springboot, Kafka, Jenkins, Docker, Git, Unity3d,
+          Blender, Anaconda, Databases, Linux, Redis, H2 database, Scipy, Pandas, TensorFlow, Google Cloud Platform,
+          Firebase, Netflix Hystrix, Weka, Neural Networks, Support Vector Machines, Open Computer Vision
   Activities and Involvement:
-    Association for Computing Machinery (ACM):
-      sub: Student CS Organization at UC
-      date: Aug 2016 - Present
+    Logistics Lead Revolution UC:
+      sub: Student Hackathon at UC
+      date: Aug 2018 - Present
       desc:
-       - Collaborated on a project with other students during Revolution UC hackathon
-       - Participated on committee to organize and host hackathon events at UC
+       - Coordinated logistics of meals, judging, prizes and timetable for 300+ student attendees
+       - Promoted diversity and inclusion for hacker experience in recruitment, project categories, and judging
+       - Coordinated inclusion of 20+ high school students in the event
     Google Ignite CS Mentor:
       sub: Bearcat Coder with ACM-W at UC
       date: Aug 2016 - Present
@@ -60,13 +66,15 @@ sections:
        - Worked with Ms. Grasso (HS teacher) and other UC students to create and deliver instructional material
     Published Software:
       sub: Player Count Message
-      date: Aug 2016 - Present
+      date: Aug 2016 - May 2019
       desc:
        - Published Minecraft modification with over 53,000 downloads
        - Developed software to transmit formatted server status information
   Achievements and Awards:
-    AnitaB.Org Grace Hopper Celebration Student Scholar:
-      date: Fall 2018
     Cincinnatus Scholar at University of Cincinnati:
       date: Aug 2016 - Present
+    Mantei-Mae Scholarship:
+      date: Spring 2019
+    AnitaB.Org Grace Hopper Celebration Student Scholar:
+      date: Fall 2018
 
