@@ -6,7 +6,7 @@
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  z-index: 10001; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #eee; /* Set a background color */
@@ -119,7 +119,7 @@
 }
 
 .site-nav {
-  z-index: 80;
+  z-index: 10000;
   float: right;
   line-height: $base-line-height * $base-font-size * 3;
 
@@ -155,7 +155,6 @@
       float: right;
       width: 36px;
       height: 36px;
-      z-index: 2;
       cursor: pointer;
     }
 
