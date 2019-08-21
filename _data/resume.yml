@@ -20,7 +20,7 @@ sections:
       desc:
         - Developed a high performance networking tool with Kafka, Maven, H2, SQL, Redis, S3, AWS, and Java
         - Shipped and tested a user interface to modify server state and configuration with React and Redux
-        - Increased functional, unit, performance and integration testing for projects by over 70% in projects
+        - Increased functional, unit, performance and integration testing for projects from 0% to 100% coverage
         - Deployed a service for continuous integration and deployment with Jenkins, AWS, docker, and Github
     Undergraduate Researcher:
       sub: Cincinnati Children’s Hospital Medical Center
