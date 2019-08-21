@@ -7,6 +7,7 @@ categories: Blog
 tags:       Project Game
 icon:       "/assets/icons/bubble.jpg"
 summary: "JavaScript based web browser game."
+comments: true
 ---
 <div align="center">
   <link rel="stylesheet" type="text/css"

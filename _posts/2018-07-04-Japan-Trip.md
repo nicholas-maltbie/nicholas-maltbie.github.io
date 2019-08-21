@@ -6,6 +6,7 @@ categories: Honors
 tags:       Honors Travel
 icon:       "/assets/icons/japanIcon.svg"
 summary: 	"After my coop at Infinera, I traveled to Japan for a study tour with other UC students for two weeks. I had fully recovered from my injury and was ready for a new experience."
+comments: true
 ---
 
 ![Group visiting a temple](/assets/projects/japan/japan-1.jpg)

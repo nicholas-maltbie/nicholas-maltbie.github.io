@@ -6,6 +6,7 @@ categories: Honors
 tags:       Honors Volunteer
 icon:       "/assets/icons/bearcatCoders.jpg"
 summary: 	"For my first Honors Experience, I decided to take a larger involvement in the Association for Computing Machinery, Women's Chapter (ACM-W) and their program to help teach coding to local high school students at Hughes STEM High School."
+comments: true
 ---
 
 As my first self designed honors experience, I decided to reflect further upon my work volunteering for the local community. As part of one of the college organizations I'm in, Association for Computing Machinery-Women's Chapter (ACM-W), I go to Hughes STEM High school to help students learn how to code and create animations. I enjoyed this experience as I had taken time to mentor other students while I was in High School so this felt like a natural continuation of my experience. For the most part, I just helped Ms. Grasso, the instructor of the class, with whatever she needed. This varied from simply helping out in the class to attending after school meetings and making course material.

@@ -6,6 +6,7 @@ categories: Blog
 tags:       Professional Project Research
 icon:       "/assets/icons/minecraft.gif"
 summary: 	"Minecraft Playscape at The University of Cincinnati (UC) Arlitt. I designed software to track kids' actions in the Video Game Minecraft and later interpret the data as part of a research project. This project was later presented at the 2014 IT@UC conference."
+comments: true
 ---
 
 Minecraft Playscape at UC Artlitt. I designed software to track kids' actions in the Video Game Minecraft and later interpret the data as part of a research project. Below is the poster presented at the IT@UC 2014 conference.

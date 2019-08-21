@@ -6,6 +6,7 @@ categories: Blog
 tags:       Project
 icon:       "/assets/icons/pcm.jpg"
 summary: 	"A software modification for minecraft servers to allow players the ability to modify the server's look in the load screen."
+comments: true
 ---
 
 [![Project Example](/assets/projects/pcm/display.gif)](https://dev.bukkit.org/bukkit-plugins/player-count-message/ "Project Page")

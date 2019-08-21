@@ -6,6 +6,7 @@ categories: Honors
 tags:       Honors Year-in-review
 icon:       ""
 summary: 	"First Year Review (2016-2017) for University Honors Program"
+comments: true
 ---
 
 This past year was my first year at UC. This was a rather large transition; I lived in a dorm on campus and started taking college classes. I went to Lakota West fore high school before I came to UC. Comparatively, high school was extremely restrictive and full of people less inspired to learn than college. I realize why this is, although, the experience of college for me is much more inviting than that of high school.

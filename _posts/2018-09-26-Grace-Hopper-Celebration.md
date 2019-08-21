@@ -6,6 +6,7 @@ categories: Blog
 tags: Blog Professional
 icon:   "/assets/icons/ghc.gif"
 summary: "I got a scholarship from AnitaB.org to attend the Grace Hopper Celebration 2018 to support women in computing as a male ally."
+comments: true
 ---
 ![Opening ceremony with Me, Saylee, and Hanh](/assets/projects/ghc-2018/ghc-1.jpg)
 Opening ceremony with Me, Saylee, and Hanh

@@ -6,6 +6,7 @@ categories: Honors
 tags:       Honors Year-in-review
 icon:       ""
 summary: 	"Second Year Review (2017-2018) for University Honors Program"
+comments: true
 ---
 
 # Overview of the Year

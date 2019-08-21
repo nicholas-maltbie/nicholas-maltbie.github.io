@@ -5,6 +5,7 @@ date:   2019-03-11 00:14:00 -0000
 categories: Blog
 tags: Blog Blender
 icon:   "/assets/icons/blender.gif"
+comments: true
 ---
 
 Link to tutorial as [google doc](https://docs.google.com/document/d/1Ngz0w9zPPZCZpvLvwerHhZTm4yB3Lanocj2K9eTbkv0/edit?usp=sharing)

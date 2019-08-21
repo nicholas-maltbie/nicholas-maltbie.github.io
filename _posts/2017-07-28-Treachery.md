@@ -6,6 +6,7 @@ categories: Honors
 tags:       Honors Project
 icon:       "/assets/icons/lampIcon.jpg"
 summary: "For my second honors experience, I worked with some of my fellow students to create a video game based on the board game Betrayal at House on the Hill."
+comments: true
 ---
 
 Treachery is a project that I have started on to make a video game/interactive experience. This project is inspired by the board game betrayal at house on the hill made by Avalon Hill. I am working on the project as part of a group and our we are using github to track and manage our work. Our [project page](https://github.com/nicholas-maltbie/treachery) has more information on the project.

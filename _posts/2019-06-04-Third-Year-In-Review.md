@@ -6,6 +6,7 @@ categories: Honors
 tags:       Honors Year-in-review
 icon:       ""
 summary: 	"Third Year Review (2018-2019) for University Honors Program"
+comments: true
 ---
 
 # Overview of the Year
