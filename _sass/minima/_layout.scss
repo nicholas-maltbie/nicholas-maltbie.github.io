@@ -334,6 +334,8 @@
   border-radius: 25px;
   box-shadow: 0 0 15px -10px;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .banner-sector {
