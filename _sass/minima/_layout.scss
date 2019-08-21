@@ -89,6 +89,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+
+  z-index: -10;
 }
 
 .site-header { border-top: 5px solid $grey-color-dark; border-bottom: 1px solid $grey-color-light;
@@ -97,6 +99,8 @@
 
   // Positioning context for the mobile navigation icon
   position: relative;
+
+  z-index: 10;
 }
 
 .header-wrapper {
