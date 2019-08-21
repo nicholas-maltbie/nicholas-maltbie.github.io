@@ -8,7 +8,7 @@ Run website for development
 
 `bundle exec jekyll serve`
 
-Build website (will go into _site folder)
+Build website (will go into `_site` folder)
 
 `JEKYLL_ENV=production bundle exec jekyll build`
 
