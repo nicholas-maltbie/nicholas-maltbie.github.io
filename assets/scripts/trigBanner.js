@@ -14,7 +14,7 @@ function startBanner() {
   
   var ctx = c.getContext('2d')
 
-  const framesPerSecond = 16
+  const framesPerSecond = 12
 
   const trigRad = 35, trigGap = 5, trigRound = 5, trigStroke = 0, defaultColor = "#000", defaultOutline = "#FFF"
 

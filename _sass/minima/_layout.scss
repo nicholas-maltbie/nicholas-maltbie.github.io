@@ -295,6 +295,15 @@
 .canvas-container {
   position: relative;
 }
+
+.front-image {
+  max-height: 85vh;
+}
+
+.front-wrapper {
+  width: fit-content;
+  margin: auto;
+}
  
 .banner {
   position: absolute;
@@ -306,6 +315,7 @@
 
 .bannerCover {
   padding-top: 15vh;
+  padding-bottom: 15vh;
   margin: auto;
   width: 100%;
   min-height: 80vh;
@@ -329,8 +339,6 @@
 .banner-wrapper {
   flex-direction: row;
   display: flex;
-  margin-left:10%;
-  margin-right:10%;
   padding-left:5%;
   padding-right:5%;
   padding: 15px;
@@ -349,7 +357,16 @@
   margin: auto;
 }
 
-@include media-query($on-laptop) {
+@media only screen and (orientation: landscape) {
+  .banner-sector {
+    width: 47%;
+    margin-bottom:10px;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+@media only screen and (orientation: portrait) {
   .main-title {
     font-size: 2.2em;
   }
@@ -364,8 +381,6 @@
     flex-direction: column;
     padding-left:10px;
     padding-right:10px;
-    margin-right:20px;
-    margin-left:20px;
   }
 }
 
