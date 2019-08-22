@@ -1,0 +1,31 @@
+.btn-primary {
+	background: #d9230f!important;
+	border: 1px solid #d9230f!important;
+	font-weight: bold;
+	color: rgba(255,255,255,0.75)!important;
+}
+
+.btn-primary:hover {
+	color: rgba(255,255,255,0.9)!important;
+}
+
+.btn {
+    padding: 5px 10px!important;
+    -webkit-box-shadow: none!important;
+    box-shadow: none!important;
+}
+
+.btn-secondary {
+    border: 1px solid #777777!important; color: #777777!important;
+}
+
+.btn-lg {
+	padding: 8px 18px !important;
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
