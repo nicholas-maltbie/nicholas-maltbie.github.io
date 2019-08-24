@@ -29,7 +29,11 @@ body {
   flex-direction: column;
 }
 
-
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-display: auto;
+  font-weight: $base-font-weight;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm

@@ -363,30 +363,32 @@
   margin: auto;
 }
 
-@media only screen and (orientation: landscape) {
-  .banner-sector {
-    width: 47%;
-    margin-bottom:10px;
-    text-align: center;
-    margin: auto;
-  }
-}
-
-@media only screen and (orientation: portrait) {
-  .main-title {
-    font-size: 2.2em;
+@include media-query($on-palm) {
+  @media only screen and (orientation: landscape) {
+    .banner-sector {
+      width: 47%;
+      margin-bottom:10px;
+      text-align: center;
+      margin: auto;
+    }
   }
 
-  .banner-sector {
-    width: 90%;
-    margin:auto;
-    margin-bottom:25px;
-  }
+  @media only screen and (orientation: portrait) {
+    .main-title {
+      font-size: 2.2em;
+    }
 
-  .banner-wrapper {
-    flex-direction: column;
-    padding-left:10px;
-    padding-right:10px;
+    .banner-sector {
+      width: 90%;
+      margin:auto;
+      margin-bottom:25px;
+    }
+
+    .banner-wrapper {
+      flex-direction: column;
+      padding-left:10px;
+      padding-right:10px;
+    }
   }
 }
 

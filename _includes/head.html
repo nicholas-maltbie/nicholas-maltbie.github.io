@@ -1,18 +1,21 @@
 <head>
   <meta name="norton-safeweb-site-verification" content="90pl-9ylotk4t6ak5p4l0ybq5hiiie5na-z3q-nyea-jloyjmbxk3l3toywo-xxqy0y6-9b-oyc01k1w0-tfy8pu512c2t-weaab3exdbotwnp67mx01pmffe7ehe3-j" />
-
-  <script src="/assets/lib/jquery.min.js"></script>
-  {% include cookie-consent.html %}
   
-  {% include analytics.html %}
-  
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="manifest" href="/manifest.webmanifest">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link rel="manifest" href="/manifest.webmanifest"/>
   <meta name="theme-color" content="#333"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="canonical" href="https://nickmaltbie.com"/>
+
+  <!-- icon in the highest resolution we need it for -->
+  <link rel="icon" sizes="192x192" href="logo_192.png"/>
+  <!-- reuse same icon for Safari -->
+  <link rel="apple-touch-icon" href="logo_512.jpg"/>
+  <!-- multiple icons for IE -->
+  <meta name="msapplication-square310x310logo" content="logo_310.jpg"/>
   
-  <script src="/assets/scripts/showMores.js"></script>
+  <script async src="/assets/scripts/showMores.js"></script>
   
   <script>
   // Check that service workers are registered
@@ -25,10 +28,14 @@
   </script>
   
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"/>
   {%- feed_meta -%}
 
   {% seo %}
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <script src="/assets/scripts/top_button.js"></script>
+
+  <script src="/assets/lib/jquery.min.js"></script>
+  {% include cookie-consent.html %}
+  {% include analytics.html %}
 </head>
