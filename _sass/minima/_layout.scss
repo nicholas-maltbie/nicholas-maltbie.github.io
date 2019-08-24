@@ -303,7 +303,7 @@
 }
 
 .front-wrapper {
-  width: fit-content;
+  width: 100%;
   margin: auto;
 }
  
@@ -316,10 +316,11 @@
 }
 
 .bannerCover {
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+  padding-top: 100px;
+  padding-bottom: 100px;  
   margin: auto;
-  width: 100%;
+  width: 50vw;
+  min-width: 540px;
   min-height: 80vh;
   z-index: 10;
   vertical-align: top;
@@ -327,7 +328,6 @@
   @include media-query($on-laptop) {
     padding-top: 20px;
     padding-bottom: 20px;
-    min-height: 80vh;
   }
 }
 
@@ -349,6 +349,7 @@
   box-shadow: 0 0 15px -10px;
   overflow: hidden;
   position: relative;
+  width: 100%;
   z-index: 1;
 }
 
@@ -364,6 +365,24 @@
     max-height: 85vh;
   }
 
+  .front-wrapper {
+    width: fit-content;
+    height: 80vh;
+  }
+
+  .bannerCover { 
+    width: 100%;
+    min-width: 0px;
+  }
+
+  .main-title {
+    font-size: 2.2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
   @media only screen and (orientation: landscape) {
     .banner-sector {
       width: 47%;
@@ -374,10 +393,6 @@
   }
 
   @media only screen and (orientation: portrait) {
-    .main-title {
-      font-size: 2.2em;
-    }
-
     .banner-sector {
       width: 90%;
       margin:auto;
