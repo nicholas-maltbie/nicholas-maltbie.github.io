@@ -302,10 +302,6 @@
   position: relative;
 }
 
-.front-image {
-  max-height: 85vh;
-}
-
 .front-wrapper {
   width: fit-content;
   margin: auto;
@@ -364,6 +360,10 @@
 }
 
 @include media-query($on-palm) {
+  .front-image {
+    max-height: 85vh;
+  }
+
   @media only screen and (orientation: landscape) {
     .banner-sector {
       width: 47%;
