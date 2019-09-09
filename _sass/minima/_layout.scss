@@ -95,8 +95,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-
-  z-index: 0;
 }
 
 .site-header { border-top: 5px solid $grey-color-dark; border-bottom: 1px solid $grey-color-light;
@@ -229,6 +227,7 @@
   list-style: none;
   display: inline-flex;
   margin-left: 0;
+  position: relative;
 }
 
 .footer-col-wrapper {
@@ -322,7 +321,7 @@
   width: 50vw;
   min-width: 540px;
   min-height: 80vh;
-  z-index: 10;
+  z-index: -1;
   vertical-align: top;
 
   @include media-query($on-laptop) {
