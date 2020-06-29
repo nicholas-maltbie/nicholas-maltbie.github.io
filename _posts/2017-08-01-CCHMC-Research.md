@@ -1,7 +1,7 @@
 ---
 layout:     internship
-start_date: 1-5-2016
-end_date:   1-8-2016
+start_date: 1-5-2017
+end_date:   1-8-2017
 title:      "Research Assistant"
 employer:   "Cincinnati Childrens Hospital Medical Center"
 date:       2017-08-01 00:00:00 0000
