@@ -15,26 +15,25 @@ sections:
        - University Honors Program, Dean’s List
   Work Experience:
     Software Engineer Intern:
+      sub: Microsoft
+      date: May - Aug 2020
+      desc: 
+        - Developed performance testing framework using Azure DevOps for Networking and communication tools
+        - Automated workflows with C#, PowerShell, ServiceFabric and CI/CD pipelines
+        - Designed a Dashboard to parse and complete analysis on log information from distributed datasets
+    Software Engineer Intern:
       sub: Intuit
       date: May - Aug 2019
       desc:
         - Developed a high performance networking tool with Kafka, Maven, H2, SQL, Redis, S3, AWS, and Java
         - Shipped and tested a user interface to modify server state and configuration with React and Redux
-        - Increased functional, unit, performance and integration testing for projects from 0% to 100% coverage
         - Deployed a service for continuous integration and deployment with Jenkins, AWS, docker, and Github
     Undergraduate Researcher:
       sub: Cincinnati Children’s Hospital Medical Center
       date: May 2018 - Apr 2019
       desc:
-        - Investigated Artificial Neural Network with Tensor Flow to analyze patient records and detect infections
         - Automated data generation for research with Python, Perl, R, shell and parallel computing
         - Evaluated machine learning methods, SVM, Random Forest, LSTM to find metalloprotein binding sites
-    Co-Op Hardware Design Engineer:
-      sub: Infinera
-      date: Jan - Apr 2018
-      desc:
-        - Improved firmware load time to be 100 times faster using Sqlite, C and real time programming
-        - Benchmarked various methods of processor communications using C++
   Skills:
     Programming Languages:
       use_dot: none

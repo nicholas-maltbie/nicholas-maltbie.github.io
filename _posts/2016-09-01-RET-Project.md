@@ -1,7 +1,7 @@
 ---
 layout:     internship
-start_date: 1-6-2017
-end_date:   1-8-2017
+start_date: 1-6-2016
+end_date:   1-8-2016
 title:      "Research Experience for Teachers Project"
 employer:   "the University of Cincinnati"
 date:       2016-10-10 00:00:00 0000
