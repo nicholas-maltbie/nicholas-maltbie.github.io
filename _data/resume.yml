@@ -14,21 +14,24 @@ sections:
        - GPA 4.0/4.0
        - University Honors Program, Dean’s List
   Work Experience:
-    Software Engineering Intern:
+    Summer_2020_Internship:
+      title: Software Engineer Intern
       sub: Microsoft
       date: May - Aug 2020
       desc: 
         - Developed performance testing framework using Azure DevOps for Networking and communication tools
         - Automated workflows with C#, PowerShell, ServiceFabric and CI/CD pipelines
         - Designed a Dashboard to parse and complete analysis on log information from distributed datasets
-    Software Engineer Intern:
+    Summer_2019_Internship:
+      title: Software Engineer Intern
       sub: Intuit
       date: May - Aug 2019
       desc:
         - Developed a high performance networking tool with Kafka, Maven, H2, SQL, Redis, S3, AWS, and Java
         - Shipped and tested a user interface to modify server state and configuration with React and Redux
         - Deployed a service for continuous integration and deployment with Jenkins, AWS, docker, and Github
-    Undergraduate Researcher:
+    CCHMC_2018-2019_Research:
+      title: Undergraduate Researcher
       sub: Cincinnati Children’s Hospital Medical Center
       date: May 2018 - Apr 2019
       desc:
