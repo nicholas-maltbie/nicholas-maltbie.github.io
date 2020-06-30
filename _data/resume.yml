@@ -38,43 +38,51 @@ sections:
         - Automated data generation for research with Python, Perl, R, shell and parallel computing
         - Evaluated machine learning methods, SVM, Random Forest, LSTM to find metalloprotein binding sites
   Skills:
-    Programming Languages:
+    Languages:
+      title: Programming Languages
       use_dot: none
       desc:
        - Java, Python, C++, React, R, SQL, C, C#, MATLAB, LabVIEW, html, Javascript, CSS, XML, Bash, 
         Regex, Prolog, Haskell, FRIL, Perl
     Software:
+      title: Software
       use_dot: none
       desc:
        - Amazon Web Services, S3, Maven, JUnit, Springboot, Kafka, Jenkins, Docker, Git, Unity3d,
         Blender, Anaconda, Databases, Linux, Redis, H2 database, Scipy, Pandas, TensorFlow, Google Cloud Platform,
         Firebase, Netflix Hystrix, Weka, Neural Networks, Support Vector Machines, Open Computer Vision
   Activities and Involvement:
-    Logistics Lead Revolution UC:
+    Hackathon UC:
+      title: Logistics Lead Revolution UC
       sub: Student Hackathon at UC
       date: Aug 2018 - Present
       desc:
        - Coordinated logistics of meals, judging, prizes and timetable for 300+ student attendees
        - Promoted diversity and inclusion for hacker experience in recruitment, project categories, and judging
        - Coordinated inclusion of 20+ high school students in the event
-    Google Ignite CS Mentor:
+    Mentor:
+      title: Google Ignite CS Mentor
       sub: Bearcat Coder with ACM-W at UC
       date: Aug 2016 - Present
       desc:
        - igniteCS is a Google initiative to enable college students to tutor CS in their local community
        - Mentored students at Hughes STEM High School in technology classes
        - Worked with Ms. Grasso (HS teacher) and other UC students to create and deliver instructional material
-    Published Software:
+    Software:
+      title: Published Software
       sub: Player Count Message
       date: Aug 2016 - May 2019
       desc:
        - Published Minecraft modification with over 53,000 downloads
        - Developed software to transmit formatted server status information
   Achievements and Awards:
-    Cincinnatus Scholar at University of Cincinnati:
+    scholarship-1:
+      title: Cincinnatus Scholar at University of Cincinnati
       date: Aug 2016 - Present
-    Mantei-Mae Scholarship:
+    scholarship-2:
+      title: Mantei-Mae Scholarship
       date: Spring 2019
-    AnitaB.Org Grace Hopper Celebration Student Scholar:
+    scholarship-3:
+      title: AnitaB.Org Grace Hopper Celebration Student Scholar
       date: Fall 2018
 
