@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-pwa-plugin'
   gem 'jekyll-gzip'
   gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -34,8 +35,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'image_optim', :git => 'git://github.com/toy/image_optim.git'
 gem 'image_optim_pack'
 
-gem 'jekyll-sitemap'
-gem 'jekyll-gzip'
-gem 'jekyll-pwa-plugin'
-gem 'jekyll-seo-tag'
 
