@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/toy/image_optim.git
-  revision: d820429fbb00ad0266774029edd9bd266f0b731e
+  revision: 6803161c019f47e6a593160ba5d7371cd1e54724
   specs:
-    image_optim (0.27.1)
+    image_optim (0.28.0)
       exifr (~> 1.2, >= 1.2.2)
       fspath (~> 3.0)
       image_size (>= 1.5, < 3)
@@ -22,8 +22,8 @@ GEM
     eventmachine (1.2.7)
     eventmachine (1.2.7-x64-mingw32)
     exifr (1.3.9)
-    ffi (1.13.1)
-    ffi (1.13.1-x64-mingw32)
+    ffi (1.14.2)
+    ffi (1.14.2-x64-mingw32)
     forwardable-extended (2.6.0)
     fspath (3.1.2)
     http_parser.rb (0.6.0)
@@ -84,9 +84,9 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    tzinfo (2.0.3)
+    tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
-    tzinfo-data (1.2020.4)
+    tzinfo-data (1.2020.5)
       tzinfo (>= 1.0.0)
     wdm (0.1.1)
 
