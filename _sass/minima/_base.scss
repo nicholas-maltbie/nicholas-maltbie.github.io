@@ -34,6 +34,7 @@ body {
   font-display: auto;
   font-weight: $base-font-weight;
   src: local('Roboto'), url(https://fonts.gstatic.com/s/arvo/v9/rC7kKhY-eUDY-ucISTIf5PesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  font-display: swap;
 }
 
 /**
