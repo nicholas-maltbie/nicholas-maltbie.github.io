@@ -51,6 +51,6 @@ If you wish to remove cookies, follow the steps to remove a cookie based on your
 - [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
 - [Opera](https://kb.wisc.edu/page.php?id=12381)
 
-# Contat Information
+# Contact Information
 
 If you have any other questions or concerns, reach out to me, Nicholas Maltbie, at <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>.
