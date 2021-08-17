@@ -23,8 +23,9 @@ url: "https://nickmaltbie.com" # the base hostname & protocol for your site, e.g
 github_username:   nicholas-maltbie
 linkedin_username: nicholas-maltbie-b543a8137
 twitter_username:  NicholasMaltbie
-youtube_username:  channel/UCoGYwhYV-ar1d7b3niqqDQw
+youtube_channel:  UCoGYwhYV-ar1d7b3niqqDQw
 facebook_username: nicholas.maltbie
+reddit_username: flyQuixote
 
 # Build settings
 markdown: kramdown

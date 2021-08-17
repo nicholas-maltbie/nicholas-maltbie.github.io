@@ -6,7 +6,7 @@ title:      "Co-op Hardware Design Engineer"
 employer:   "Infinera"
 date:       2018-04-20 00:00:00 0000
 categories: Professional
-icon:       "/assets/icons/infinera.jpg"
+icon:       "/assets/icons/posts/infinera.jpg"
 skills:     ["C", "C++", "Real Time Programming", "Sqlite", "Java", "Python", "Hardware", "Linux"]
 summary: "Worked as a Co-Op on the firmware team."
 ---

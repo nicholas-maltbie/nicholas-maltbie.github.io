@@ -2,9 +2,9 @@
 layout:     post
 title:      "Japan Trip"
 date:       2018-07-04 00:00:00 0000
-categories: Honors
+categories: Honors Blog
 tags:       Honors Travel
-icon:       "/assets/icons/japanIcon.svg"
+icon:       "/assets/icons/posts/japanIcon.svg"
 summary: 	"After my coop at Infinera, I traveled to Japan for a study tour with other UC students for two weeks. I had fully recovered from my injury and was ready for a new experience."
 comments: true
 ---

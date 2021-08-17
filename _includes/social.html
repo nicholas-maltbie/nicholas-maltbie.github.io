@@ -24,4 +24,20 @@
   </li>
   {%- endif -%}
   
+  {%- if site.reddit_username -%}
+  <li>
+    <a href="https://www.reddit.com/u/{{ site.reddit_username| cgi_escape | escape }}" title="{{ site.reddit_username| escape }}">
+      <img width=32px height=32px class="svg-icon" src="/assets/icons/reddit.svg" alt="reddit social link"></img>
+    </a>
+  </li>
+  {%- endif -%}
+  
+  {%- if site.youtube_channel -%}
+  <li>
+    <a href="https://www.youtube.com/channel/{{ site.youtube_channel| cgi_escape | escape }}" title="{{ site.youtube_channel| escape }}">
+      <img width=32px height=32px class="svg-icon" src="/assets/icons/youtube.svg" alt="youtube social link"></img>
+    </a>
+  </li>
+  {%- endif -%}
+  
 </ul>

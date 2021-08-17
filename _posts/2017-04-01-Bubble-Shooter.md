@@ -5,7 +5,7 @@ title:      "Bubble Shooter"
 date:       2017-04-01 00:00:00 0001
 categories: Blog
 tags:       Project Game
-icon:       "/assets/icons/bubble.jpg"
+icon:       "/assets/icons/posts/bubble.jpg"
 summary: "JavaScript based web browser game."
 comments: true
 ---

@@ -4,7 +4,7 @@ title:  "Project Cage - Global Game Jam 2021"
 date:   2021-02-02 10:04:00 -0000
 categories: Blog
 tags: Blog Project
-icon:   "/assets/icons/project_cage_icon.png"
+icon:   "/assets/icons/posts/project_cage_icon.png"
 summary: "Project for Game Jam 2021 with IGDA with other students at UC. Working Title: Project Cage"
 comments: true
 ---

@@ -4,7 +4,7 @@ title:      "Gateway to University Honors"
 date:       2016-12-01 00:00:00 0000
 categories: Honors
 tags:       Honors Coursework
-icon:       "/assets/icons/UHP.jpg"
+icon:       "/assets/icons/posts/UHP.jpg"
 summary: 	"As part of the honors curriculum, I had to take the gateway to honors course. This is the introductory course to University Honors Program at UC. To read more about my experience, click the link above."
 ---
 
