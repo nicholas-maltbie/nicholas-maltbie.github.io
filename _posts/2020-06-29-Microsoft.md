@@ -6,7 +6,7 @@ title:      "Software Engineer Intern"
 employer:   "Microsoft"
 date:       2020-06-29 00:00:00 0000
 categories: Professional
-tags:       Project Professional
+tags:       Professional
 icon:       "/assets/icons/posts/microsoft-logo.jpg"
 skills:     ["C#", "Azure", "Service Fabric", "Real Time Programming"]
 summary:    "Working in Azure Networking"

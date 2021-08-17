@@ -2,7 +2,7 @@
 layout:     post
 title:      "Unity DOTS PropHunt"
 date:       2020-12-26 00:00:00 0000
-categories: Honors Blog
+categories: Honors
 tags:       Honors Project
 icon:       "/assets/icons/posts/prop.png"
 summary: "Fifth and final honors experience about making Unity project using data-oriented programming and project management"

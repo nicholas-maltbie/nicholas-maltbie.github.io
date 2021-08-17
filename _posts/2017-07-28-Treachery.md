@@ -2,7 +2,7 @@
 layout:     post
 title:      "Treachery Project"
 date:       2017-07-28 00:00:00 0000
-categories: Honors Blog
+categories: Honors
 tags:       Honors Project
 icon:       "/assets/icons/posts/lampIcon.jpg"
 summary: "For my second honors experience, I worked with some of my fellow students to create a video game based on the board game Betrayal at House on the Hill."
