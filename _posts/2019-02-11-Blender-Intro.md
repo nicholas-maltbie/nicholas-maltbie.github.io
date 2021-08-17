@@ -4,7 +4,7 @@ title:  "Blender Interface"
 date:   2019-03-11 00:14:00 -0000
 categories: Blog
 tags: Blog Blender
-icon:   "/assets/icons/blender.gif"
+icon:   "/assets/icons/posts/blender.gif"
 comments: true
 ---
 

@@ -4,7 +4,7 @@ permalink:  "/bubble/report"
 title:      "Bubble Shooter Report"
 date:       2017-4-01 00:00:00 0000
 tags:       Project Javascript
-icon:       "/assets/icons/bubble.jpg"
+icon:       "/assets/icons/posts/bubble.jpg"
 summary: "For an independent project to learn how to use javascript (JS), I decided to make a bubble shooter game. It is a simple game where a player shoots bubbles in a browser JS game."
 comments: true
 ---
@@ -15,22 +15,23 @@ Bubble Shooter is a simple javascript game I made. To play the game go to [this 
 
 # Table of Contents
 
-* [Introduction](#introduction)
-* [Table of Contents](#table-of-contents)
-* [Description](#description)
-* [Gameplay / Instructions](#gameplay-instructions)
-  * [Game Design](#game-design)
-  * [Class Layout](#class-layout)
-  * [Shooter Design](#shooter-design)
-  * [Grid Design](#grid-design)
-    * [Collision Detection](#collision-detection)
-    * [Saving the Grid in Memory](#saving-the-grid-in-memory)
-    * [Contigious Color Identification](#contigious-color-identification)
-  * [Bubble Design](#bubble-design)
-  * [Manager Design](#manager-design)
-* [Future Improvements](#future-improvements)
-* [Development](#development)
-* [References](#references)
+- [Introduction](#introduction)
+- [Table of Contents](#table-of-contents)
+- [Description](#description)
+- [Gameplay / Instructions](#gameplay--instructions)
+- [Implementation](#implementation)
+  - [Game Design](#game-design)
+  - [Class Layout](#class-layout)
+  - [Shooter Design](#shooter-design)
+  - [Grid Design](#grid-design)
+    - [Collision Detection](#collision-detection)
+    - [Saving the Grid in Memory](#saving-the-grid-in-memory)
+    - [Contiguous Color Identification Algorithm](#contiguous-color-identification-algorithm)
+  - [Bubble Design](#bubble-design)
+  - [Manager Design](#manager-design)
+- [Future Improvements](#future-improvements)
+- [Development](#development)
+- [References](#references)
 
 # Description
 

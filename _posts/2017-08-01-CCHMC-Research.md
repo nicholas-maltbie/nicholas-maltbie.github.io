@@ -6,8 +6,8 @@ title:      "Research Assistant"
 employer:   "Cincinnati Childrens Hospital Medical Center"
 date:       2017-08-01 00:00:00 0000
 categories: Professional
-tags:       Project Professional
-icon:       "/assets/icons/cchmc.gif"
+tags:       Professional
+icon:       "/assets/icons/posts/cchmc.gif"
 skills:     ["Python", "Bash", "Machine Learning", "C++", "R", "Linux"]
 summary: "I worked with Dr. Porollo over the summer in 2017 on multiple research projects."
 ---

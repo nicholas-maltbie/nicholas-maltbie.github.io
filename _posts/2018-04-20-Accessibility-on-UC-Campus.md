@@ -4,7 +4,7 @@ title:  "Accessibility on UC Campus"
 date:   2018-04-20 00:00:00 0000
 categories: Honors
 tags: Honors Project 
-icon:   "/assets/icons/stairIcon.gif"
+icon:   "/assets/icons/posts/stairIcon.gif"
 summary: "In fall of last year, I tore my meniscus doing everyday activities and needed to get surgery to repair the injury. This experience is me reflecting upon the experience and the effect it has had on me."
 comments: true
 ---

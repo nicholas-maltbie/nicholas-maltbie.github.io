@@ -6,9 +6,9 @@ title:      "Research Experience for Teachers Project"
 employer:   "the University of Cincinnati"
 date:       2016-10-10 00:00:00 0000
 categories: Professional
-tags:       Project Research Professional
+tags:       Research Professional
 skills:     ["Python", "Java", "Cybersecurity", "Education"]
-icon:       "/assets/icons/ret.gif"
+icon:       "/assets/icons/posts/ret.gif"
 summary: 	"Research Experience for Teacher projects done with Dr. Franco at the University of Cincinnati to develop coursework and prepare local high school teachers to teach math and cybersecurity."
 ---
 

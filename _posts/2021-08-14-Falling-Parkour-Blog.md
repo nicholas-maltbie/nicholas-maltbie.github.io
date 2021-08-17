@@ -4,7 +4,7 @@ title:  "Falling Parkour Blog Exists"
 date:   2021-08-14 21:45:00 -0000
 categories: Blog
 tags: Blog Project
-icon:   "/assets/icons/falling_parkour.png"
+icon:   "/assets/icons/posts/falling_parkour.png"
 summary: "Falling parkour project blog now exists"
 comments: true
 ---

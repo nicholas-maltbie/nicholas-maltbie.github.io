@@ -6,8 +6,8 @@ title:      "Undergraduate Researcher"
 employer:   "Cincinnati Childrens Hospital Medical Center"
 date:       2019-02-28 00:00:00 0000
 categories: Professional
-tags:       Project Professional
-icon:       "/assets/icons/cchmc.gif"
+tags:       Professional
+icon:       "/assets/icons/posts/cchmc.gif"
 skills:     ["Python", "Bash", "Machine Learning", "C++", "R", "Linux", "Weka", "Libsvm", "Parallel Computing"]
 summary: "I worked with Dr. Porollo part time over summer 2018, as a fultime coop in fall 2018 and part time in spring 2019."
 ---
