@@ -1,7 +1,5 @@
 name: Nicholas Maltbie
-address: 5349 Christopher Ct., Hamilton, OH, 45011, USA
-phone: (513) 893-0656
-email: maltbind@mail.uc.edu
+email: nick.dmalt@gmail.com
 website: nickmaltbie.com
 sections: 
   Education:
@@ -14,6 +12,13 @@ sections:
        - GPA 4.0/4.0
        - University Honors Program, Dean’s List
   Work Experience:
+    Microsoft_SWE:
+      title: Software Engineer
+      sub: Microsoft
+      date: June 2021 - Present
+      desc: 
+        - Working as part of Azure Networking team to improve network communication
+        - Developing C# and .NET distributed system code for server infrastructure
     Summer_2020_Internship:
       title: Software Engineer Intern
       sub: Microsoft
