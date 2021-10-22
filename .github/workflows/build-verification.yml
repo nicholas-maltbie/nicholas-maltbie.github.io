@@ -1,0 +1,38 @@
+name: Build and Deploy
+
+on:
+  pull_request:
+
+jobs:
+  github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create LFS file list
+        run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
+
+      # Use GitHub Actions' cache to shorten build times and decrease load on servers
+      - uses: actions/cache@v2
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+            ${{ runner.os }}-gems-
+
+      - name: Cache git lfs
+        uses: actions/cache@v2
+        with:
+          path: .git/lfs
+          key: ${{ runner.os }}-lfs-${{ hashFiles('.lfs-assets-id') }}-v1
+          # use previous cache if current one is not found
+          restore-keys: |
+            ${{ runner.os }}-lfs-
+
+      - name: Pull lfs data, if not cached
+        run: git lfs pull
+
+      # Standard usage
+      - uses:  helaili/jekyll-action@v2
+        with:
+          build_only: true
