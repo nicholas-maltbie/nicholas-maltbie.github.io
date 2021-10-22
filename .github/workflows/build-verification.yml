@@ -1,9 +1,7 @@
-name: Build and Deploy
+name: Build Verification
 
 on:
-  push:
-    branches:
-      - master
+  pull_request:
 
 jobs:
   github-pages:
@@ -37,5 +35,4 @@ jobs:
       # Standard usage
       - uses:  helaili/jekyll-action@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          target_branch: 'gh-pages'
+          build_only: true
