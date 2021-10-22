@@ -4,3 +4,4 @@
 ## git-lfs ##
 
 OpenKCC/Build/*.data filter=lfs diff=lfs merge=lfs
+OpenKCC/Build/*.wasm filter=lfs diff=lfs merge=lfs
