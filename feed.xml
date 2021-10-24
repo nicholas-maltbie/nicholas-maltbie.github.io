@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://nickmaltbie.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://nickmaltbie.com/" rel="alternate" type="text/html" /><updated>2021-10-24T10:39:36+00:00</updated><id>https://nickmaltbie.com/feed.xml</id><title type="html">Nick Maltbie</title><subtitle>Nicholas Maltbie's website.</subtitle><entry><title type="html">Falling Parkour Blog Exists</title><link href="https://nickmaltbie.com/blog/2021/08/14/Falling-Parkour-Blog.html" rel="alternate" type="text/html" title="Falling Parkour Blog Exists" /><published>2021-08-14T21:45:00+00:00</published><updated>2021-08-14T21:45:00+00:00</updated><id>https://nickmaltbie.com/blog/2021/08/14/Falling-Parkour-Blog</id><content type="html" xml:base="https://nickmaltbie.com/blog/2021/08/14/Falling-Parkour-Blog.html">&lt;p&gt;Hello world, I just made a new project blog for a hobby project i’ve been working on, Falling Parkour. I’ll probably be posting a lot of new content and posts to this page in the near future. Feel free to check it out hosted here - &lt;a href=&quot;https://nickmaltbie.com/FallingParkourDevLog/&quot;&gt;https://nickmaltbie.com/FallingParkourDevLog/&lt;/a&gt;. Check out the first post: &lt;a href=&quot;https://nickmaltbie.com/FallingParkourDevLog/update/2021/08/13/First-Post.html&quot;&gt;Hello World&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also posted a short progress update video on YouTube here showing what the game play looks like right now.&lt;/p&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+&lt;iframe width=&quot;722&quot; height=&quot;511&quot; src=&quot;https://www.youtube.com/embed/uh7MN0BLsrk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; class=&quot;video&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Any comments and suggestions are welcomed. Also, we need a new name for the project :)&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><category term="Blog" /><category term="Project" /><summary type="html">Hello world, I just made a new project blog for a hobby project i’ve been working on, Falling Parkour. I’ll probably be posting a lot of new content and posts to this page in the near future. Feel free to check it out hosted here - https://nickmaltbie.com/FallingParkourDevLog/. Check out the first post: Hello World.</summary></entry><entry><title type="html">Project Cage - Global Game Jam 2021</title><link href="https://nickmaltbie.com/blog/2021/02/02/Project-Cage.html" rel="alternate" type="text/html" title="Project Cage - Global Game Jam 2021" /><published>2021-02-02T10:04:00+00:00</published><updated>2021-02-02T10:04:00+00:00</updated><id>https://nickmaltbie.com/blog/2021/02/02/Project-Cage</id><content type="html" xml:base="https://nickmaltbie.com/blog/2021/02/02/Project-Cage.html">&lt;div class=&quot;container&quot;&gt;
+&lt;iframe width=&quot;722&quot; height=&quot;511&quot; src=&quot;https://www.youtube.com/embed/9KOe5DeHk6E&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; class=&quot;video&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We worked with a team of about 10 people to design and create a game for Global Game Jam 2021. We participated at the local IDGA game jam site with our local university. We wanted to make a fun, online multiplayer game on January 29th-31st. We made the game using &lt;a href=&quot;https://unity.com/&quot;&gt;Unity 3D&lt;/a&gt; and the &lt;a href=&quot;https://mirror-networking.com/&quot;&gt;Mirror Networking&lt;/a&gt; library for online communications. The &lt;a href=&quot;https://github.com/nicholas-maltbie/ProjectCage&quot;&gt;github page&lt;/a&gt; for this project has details and all the related assets for this project.&lt;/p&gt;
+
+&lt;p&gt;Project Cage is an online multiplayer game where you and your friends compete to recapture zoo animals which have escaped their homes!&lt;/p&gt;
+
+&lt;p&gt;Useful Links:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Project game site - &lt;a href=&quot;https://globalgamejam.org/2021/games/project-cage-0&quot;&gt;https://globalgamejam.org/2021/games/project-cage-0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Github page - &lt;a href=&quot;https://github.com/nicholas-maltbie/ProjectCage&quot;&gt;https://github.com/nicholas-maltbie/ProjectCage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was a fun 48 hour experience to make and build a game from scratch with a bunch of friends.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/Project-Cage/groupphoto.png&quot; alt=&quot;Team photo of avatars of each person who helped out with project&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who helped make the project! Global Gam Jam 2021&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Nicholas Maltbie - Leader, Code &amp;amp; Design&lt;/li&gt;
+  &lt;li&gt;Samuel Scherer - Leader, Code &amp;amp; Design&lt;/li&gt;
+  &lt;li&gt;Alex Heyl - Sound  &amp;amp; Music&lt;/li&gt;
+  &lt;li&gt;Allan Ong - Art, Players &amp;amp; Animations&lt;/li&gt;
+  &lt;li&gt;Cara McCarthy - Art &amp;amp; Design&lt;/li&gt;
+  &lt;li&gt;Daniel Sennett - Art &amp;amp; Sprites&lt;/li&gt;
+  &lt;li&gt;Jake Glass - Art &amp;amp; Backgrounds&lt;/li&gt;
+  &lt;li&gt;Joseph Mak - Code &amp;amp; Design&lt;/li&gt;
+  &lt;li&gt;Timmy Buchanan - Code &amp;amp; Design&lt;/li&gt;
+  &lt;li&gt;Zachary Scherer - Art &amp;amp; Backgrounds&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Blog" /><category term="Blog" /><category term="Project" /><summary type="html"></summary></entry><entry><title type="html">Unity DOTS PropHunt</title><link href="https://nickmaltbie.com/honors/2020/12/26/Honors-Unity-DOTS.html" rel="alternate" type="text/html" title="Unity DOTS PropHunt" /><published>2020-12-26T00:00:00+00:00</published><updated>2020-12-26T00:00:00+00:00</updated><id>https://nickmaltbie.com/honors/2020/12/26/Honors-Unity-DOTS</id><content type="html" xml:base="https://nickmaltbie.com/honors/2020/12/26/Honors-Unity-DOTS.html">&lt;p&gt;This is a game made to emulate the &lt;a href=&quot;https://steamcommunity.com/sharedfiles/filedetails/?id=135509255&quot;&gt;PropHunt&lt;/a&gt; game mode from the game &lt;a href=&quot;https://store.steampowered.com/app/4000/Garrys_Mod/&quot;&gt;Gary’s Mod&lt;/a&gt;. This project is made using &lt;a href=&quot;https://unity.com/&quot;&gt;Unity3D&lt;/a&gt;, &lt;a href=&quot;https://unity.com/dots&quot;&gt;Data Oriented Technology Stack (dots)&lt;/a&gt;, &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.physics@0.0/manual/index.html&quot;&gt;Dots Physics&lt;/a&gt;, and &lt;a href=&quot;https://docs.unity3d.com/Packages/com.unity.netcode@0.0/manual/index.html&quot;&gt;Dots netcode&lt;/a&gt; to make a multiplayer game. This is all open source and a learning exercise to better understand Data Oriented Programming.&lt;/p&gt;
+
+&lt;p&gt;The project can be found on github here - &lt;a href=&quot;https://github.com/nicholas-maltbie/PropHunt0&quot;&gt;https://github.com/nicholas-maltbie/PropHunt&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;This was a great honors project where I learned about data-oriented programming, game design, network coding, collaboration with remote colleagues, and more about GitHub and its design and collaboration features.&lt;/p&gt;
+
+&lt;div class=&quot;container&quot;&gt;
+&lt;iframe width=&quot;722&quot; height=&quot;511&quot; src=&quot;https://www.youtube.com/embed/N4uKXMWs4aE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; class=&quot;video&quot;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;reflection&quot;&gt;Reflection&lt;/h1&gt;
+
+&lt;p&gt;This is my final honors project. It is right now the winter break for the last semester. This is a universal sentiment, but I had no idea what 2021 had in store and the changes to come this year. Thankfully, I have fared well during this year and have avoided any major injuries or surgeries (Looking at you 2017-2019). It is a bit sad seeing as this is my last honors experience. The process of personally reflecting on experiences has taught me a lot. I have really enjoyed working on these projects and the ability to write down my thoughts and reflect upon them have been invaluable.&lt;/p&gt;
+
+&lt;p&gt;As far as the actual honors experience, I learned a lot more than I was expecting. I thought this would be like my first honors experience when I tired to make a game, learn about unity, and 3d modeling. But this one was quite a bit different. Although I set out to make this project on my own, I ended up getting about 10 other people that have helped in adding features, troubleshooting, finding bugs, and experiencing the game. Most of these people were friends I know in person but a few I met online while posting and sharing experiences about the project. My ability to write, reflect, and log experiences has been refined by this project as well as my other honors projects and this skill is invaluable for personal development and growth. I have been seeing a counselor for anxiety and depression the past few years and this experience of talking though issues with someone else and reflecting on mistakes or successes of the past is difficult. 
+I’ve been working on a blog to add posts every week. I missed that milestone but wrote about 10 or so posts over the course of the project (should have had 16 or so total). Here is the website/blog with all the posts. &lt;a href=&quot;https://nickmaltbie.com/PropHuntDevLog/&quot;&gt;https://nickmaltbie.com/PropHuntDevLog/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Writing the log and having weekly reflections helped me track progress. I learned a lot about GitHub and collaborating with other people as I was able to host my project there &lt;a href=&quot;https://github.com/nicholas-maltbie/PropHunt&quot;&gt;https://github.com/nicholas-maltbie/PropHunt&lt;/a&gt;. Collaborating with others is quite difficult especially when we only work on the project part time and mostly have jobs, classes, or are otherwise busy. Overall, the experience has taught me a lot of great digital communication methodologies due to COVID and having to communicate online with other people for the project progress. One of the people I am working with I have never met in person but hopefully will be able to meet up with them in Seattle when I graduate, and whenever people can meet in person again (staying at home for now though).&lt;/p&gt;
+
+&lt;p&gt;Overall, the project did not hit all the original goals. In fact, we only hit the goals for October… but we did learn a lot about Unity, Data Oriented Programming, and GitHub. I knew that in the original goals were to learn but I am a bit sad that we did not develop all the features and make a working game. Overall, the project is going well, and I hope to continue development into the next year and add more features. Although I did not hit the original goals, I am happy with the current progress and have learned quite a bit throughout the experience by communicating with remote workers and learning about data-oriented programming, network code, and project management.&lt;/p&gt;
+
+&lt;p&gt;I made a short video to talk about project on my YouTube channel &lt;a href=&quot;https://www.youtube.com/watch?v=N4uKXMWs4aE&quot;&gt;https://www.youtube.com/watch?v=N4uKXMWs4aE&lt;/a&gt; I shared this with so colleagues, friends, and my honors advisor. I can learn more about video editing sharing experiences, but I had great feedback from them. I look forward to documenting more features and additions to the project and making technical showcase videos as well as just showing new features and development updates.&lt;/p&gt;</content><author><name></name></author><category term="Honors" /><category term="Honors" /><category term="Project" /><summary type="html">This is a game made to emulate the PropHunt game mode from the game Gary’s Mod. This project is made using Unity3D, Data Oriented Technology Stack (dots), Dots Physics, and Dots netcode to make a multiplayer game. This is all open source and a learning exercise to better understand Data Oriented Programming.</summary></entry><entry><title type="html">Software Engineer Intern</title><link href="https://nickmaltbie.com/professional/2020/06/29/Microsoft.html" rel="alternate" type="text/html" title="Software Engineer Intern" /><published>2020-06-29T00:00:00+00:00</published><updated>2020-06-29T00:00:00+00:00</updated><id>https://nickmaltbie.com/professional/2020/06/29/Microsoft</id><content type="html" xml:base="https://nickmaltbie.com/professional/2020/06/29/Microsoft.html">&lt;p&gt;Worked with microsoft on the Azure Networking team as an intern for summer 2020. This was a remote co-op where I was shipped resources and worked from home in Cincinnati Ohio with the rest of my team that was mostly based in Seattle. This was my first time doing remote work so I ran into quite a few difficulties working with the team remotely and with a 3 hour time difference between me and the rest of the team. I managed to stay healthy and safe during the COVID-19 pandemic and was able to develop quite a testing suite and automated workflow reporting for the project.&lt;/p&gt;
+
+&lt;p&gt;I enjoyed my time working with Microsoft and look forward to joining them full time next year. This may be the last post in professional for a while if all things go well working at Microsoft.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Developing performance testing framework using Azure DevOps for Networking and communication tools&lt;/li&gt;
+  &lt;li&gt;Automated workflows with C#, PowerShell, ServiceFabric and CI/CD pipelines&lt;/li&gt;
+  &lt;li&gt;Designing a Dashboard to parse and complete analysis on log information from distributed datasets&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Professional" /><category term="Professional" /><summary type="html">Worked with microsoft on the Azure Networking team as an intern for summer 2020. This was a remote co-op where I was shipped resources and worked from home in Cincinnati Ohio with the rest of my team that was mostly based in Seattle. This was my first time doing remote work so I ran into quite a few difficulties working with the team remotely and with a 3 hour time difference between me and the rest of the team. I managed to stay healthy and safe during the COVID-19 pandemic and was able to develop quite a testing suite and automated workflow reporting for the project.</summary></entry><entry><title type="html">Fourth Year in Review</title><link href="https://nickmaltbie.com/honors/2020/06/22/Fourth-Year-In-Review.html" rel="alternate" type="text/html" title="Fourth Year in Review" /><published>2020-06-22T22:52:00+00:00</published><updated>2020-06-22T22:52:00+00:00</updated><id>https://nickmaltbie.com/honors/2020/06/22/Fourth-Year-In-Review</id><content type="html" xml:base="https://nickmaltbie.com/honors/2020/06/22/Fourth-Year-In-Review.html">&lt;h1 id=&quot;overview-of-the-year&quot;&gt;Overview of the Year&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;Spoilers: It doesn’t end well.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;summer-2019&quot;&gt;Summer 2019&lt;/h2&gt;
+
+&lt;p&gt;The happy times of 2019 were quite interesting and exciting. At the end of the summer 2019 I was finishing up my internship in Bay Area, CA, working for Intuit. I was enjoying my weekends going to San Francisco, spending time with other friends, recovering from my second knee surgery and first jaw surgery, overall enjoying myself.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/fourthyear-in-review/summer-2019.jpg&quot; alt=&quot;Me and my Friends at an amusement park&quot; /&gt;
+Me: Spending time with friends in summer of 2019. (Not socially distancing, gasp)&lt;/p&gt;
+
+&lt;h2 id=&quot;academic-year-fall-2019&quot;&gt;Academic Year Fall 2019&lt;/h2&gt;
+&lt;p&gt;The academic year in 2019 was also quite fun, I got to spend time with friends and family. I was in a new apartment by myself, playing games with friends every weekend there. I also went on quite a few trips from Grace Hopper, a trip for a scholarship to the Bay Area (again, yay Bay Area), and a last minute flight to Seattle for an interview with Microsoft. Overall was a great semester and was some of the best experiences and friends that I’ve had while in college.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/fourthyear-in-review/2019-collage.jpg&quot; alt=&quot;Bay Area trip (top left), friends at apartment (top right), me at microsoft (bottom left), and group from UC at GHC (bottom right).&quot; /&gt;
+Bay Area trip (top left), friends at apartment (top right), me at microsoft (bottom left), and group from UC at GHC (bottom right).&lt;/p&gt;
+
+&lt;h2 id=&quot;academic-year-spring-2020&quot;&gt;Academic Year Spring 2020&lt;/h2&gt;
+
+&lt;p&gt;2020 started out pretty well, I was working with my senior design group on our undergraduate capstone project &lt;a href=&quot;https://puppy-project-2020.neocities.org/&quot;&gt;PUPPy&lt;/a&gt;. Classes went relatively well but the course load was much more difficult  given that I was taking graduate courses.&lt;/p&gt;
+
+&lt;p&gt;Coronavirus also caused this semester to go remote. In response I baked far too many cookies at home and didn’t have as many people to share them with.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/fourthyear-in-review/2020-collage.jpg&quot; alt=&quot;Lots of different cookies&quot; /&gt;
+Many different kinds of cookies&lt;/p&gt;
+
+&lt;p&gt;But in all seriousness, I had to adjust my schedule, move home, and have been dealing with these changes to the best of my abilities.&lt;/p&gt;
+
+&lt;h2 id=&quot;microsoft-internship-summer-2020&quot;&gt;Microsoft Internship Summer 2020&lt;/h2&gt;
+
+&lt;p&gt;Summer 2020 is starting off remotely working from home with Microsoft. Many difficulties getting this setup but so far the experience has been going well and I’ve been enjoying the experience and am grateful to have such a great opportunity.&lt;/p&gt;
+
+&lt;h2 id=&quot;so-what&quot;&gt;So What&lt;/h2&gt;
+
+&lt;p&gt;This is the reflection part of the experience. The most significant event of the past year was probably my senior design capstone project. I worked with Dr. Atluri and three other students, Nick Engle, Meghna Gupta, and Emily Weyda. This was a research based project where we developed a machine learning solution to predict the position of a user from IMU data collected by phones. This was a very enjoyable but also intense experience.&lt;/p&gt;
+
+&lt;p&gt;Even though this project wasn’t an Honors experience (Only have one left and I have a fun idea for it), I have been able to learn quite a bit about what I want for my future and what I would like form a workplace. Things such as conversation style, co-worker attitude, and types of project have different views. Before I was very obsessed with being on the bleeding edge of technology and research, and after spending some time there I realize that I don’t want to do that kind of work. The amount and types of effort required for research just aren’t my style right now and I would rather work as an engineer for the next few years.&lt;/p&gt;
+
+&lt;h2 id=&quot;now-what&quot;&gt;Now What&lt;/h2&gt;
+
+&lt;p&gt;From this I learned what I really wanted to do for my masters project and have decided that I would probably like to take a break and get some professional experience before I do anything such as a PhD or further graduate school. This is significant for me because it will guide my next few years. I will probably work at Microsoft or somewhere else when I graduate instead of going back to school for 5-8 more years doing graduate work. This summer internship is remote so it has its flaws but working full time will be much much more smooth (I hope).&lt;/p&gt;
+
+&lt;p&gt;Next year I’m going to work on finishing my masters experience with a well scoped project with Dr. Niu. This will hopefully be a much improved experience compared to my experience with the PUPPy, senior capstone project. Big new career and academic goals, will be interesting to see how they pan out.&lt;/p&gt;</content><author><name></name></author><category term="Honors" /><category term="Honors" /><category term="Year-in-review" /><summary type="html">Overview of the Year</summary></entry><entry><title type="html">Software Engineer Intern</title><link href="https://nickmaltbie.com/professional/2019/06/11/Intuit.html" rel="alternate" type="text/html" title="Software Engineer Intern" /><published>2019-06-11T00:00:00+00:00</published><updated>2019-06-11T00:00:00+00:00</updated><id>https://nickmaltbie.com/professional/2019/06/11/Intuit</id><content type="html" xml:base="https://nickmaltbie.com/professional/2019/06/11/Intuit.html">&lt;p&gt;I worked at intuit as part of the Mint team. I was working on the backend
+notification system using Java, SpringBoot, and AWS. My project for the
+summer was setting up a Kafak Connector that would read entries from a
+database and forward them as notifications to users. An example of this
+would be whenever a data analysis pipeline stored events in a database,
+this connector would read out new events in the database at a rate of 
+1000x per minute to send notifications.&lt;/p&gt;
+
+&lt;p&gt;A big portion of the project was throttling the system and monitoring how
+many events were being sent. The system could only handle a fixed number
+of messages pre minute from all services so my system had to have a 
+configurable messaging rate and not overwhelm other existing systems.&lt;/p&gt;
+
+&lt;p&gt;I must say I really enjoyed living in the bay area while completing this internship.
+Intuit was quite supportive and helped establish a community amount the interns
+while we were working at intuit.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Developed a high performance networking tool with Kafka, Maven, H2, SQL, Redis, S3, AWS, and Java&lt;/li&gt;
+  &lt;li&gt;Shipped and tested a user interface to modify server state and configuration with React and Redux&lt;/li&gt;
+  &lt;li&gt;Increased functional, unit, performance and integration testing for projects from 0% to 100% coverage&lt;/li&gt;
+  &lt;li&gt;Deployed a service for continuous integration and deployment with Jenkins, AWS, docker, and Github&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Professional" /><category term="Professional" /><summary type="html">I worked at intuit as part of the Mint team. I was working on the backend notification system using Java, SpringBoot, and AWS. My project for the summer was setting up a Kafak Connector that would read entries from a database and forward them as notifications to users. An example of this would be whenever a data analysis pipeline stored events in a database, this connector would read out new events in the database at a rate of 1000x per minute to send notifications.</summary></entry><entry><title type="html">Third Year in Review</title><link href="https://nickmaltbie.com/honors/2019/06/04/Third-Year-In-Review.html" rel="alternate" type="text/html" title="Third Year in Review" /><published>2019-06-04T00:00:00+00:00</published><updated>2019-06-04T00:00:00+00:00</updated><id>https://nickmaltbie.com/honors/2019/06/04/Third-Year-In-Review</id><content type="html" xml:base="https://nickmaltbie.com/honors/2019/06/04/Third-Year-In-Review.html">&lt;h1 id=&quot;overview-of-the-year&quot;&gt;Overview of the Year&lt;/h1&gt;
+
+&lt;p&gt;Last year in review, I just finished a trip from Japan, after an internship in California, AFTER getting surgery on my knee. I got away with all of that and I kept going strong. Ater getting back from Japan:&lt;/p&gt;
+
+&lt;p&gt;(in mostly chronological order)&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;I started doing research as well as taking a full class load over the summer.&lt;/li&gt;
+  &lt;li&gt;Started doing research at Cincinnati Childrens at the end of the semester.&lt;/li&gt;
+  &lt;li&gt;Interviewed with Google and got to the final phases before my deadline with other offers.&lt;/li&gt;
+  &lt;li&gt;Attended GenCon by taking a bus from UC to Indianapolis during my classes.&lt;/li&gt;
+  &lt;li&gt;I injured my knee again and kept doing research full time (for the most part).&lt;/li&gt;
+  &lt;li&gt;Before knee surgery, while on crutches, I attended GHC and got my current internship at Intuit.&lt;/li&gt;
+  &lt;li&gt;Had surgery on my knee for the second time, this one with more serious repairs.&lt;/li&gt;
+  &lt;li&gt;Finished my coop after recovering from surgery.&lt;/li&gt;
+  &lt;li&gt;Helped prepare a poster for a conference for the research we did at Childrens.&lt;/li&gt;
+  &lt;li&gt;Got surgery to repair my jaw with major reconstruction of my face to fix alignment.&lt;/li&gt;
+  &lt;li&gt;Started the new semester commuting because UC Housing did not work out.&lt;/li&gt;
+  &lt;li&gt;Found a new apartment and secured a sublease within one week after school started.&lt;/li&gt;
+  &lt;li&gt;Helped organize and run Revolution UC despite surgery recovery.&lt;/li&gt;
+  &lt;li&gt;Attended a conference for Women in Technology.&lt;/li&gt;
+  &lt;li&gt;Worked with a research professor for possible future Master’s Project and took his seminar class.&lt;/li&gt;
+  &lt;li&gt;Continued doing research at Childrens during the semester as a part time worker.&lt;/li&gt;
+  &lt;li&gt;Worked on independent projects.&lt;/li&gt;
+  &lt;li&gt;Volunteered at an extracurricular activities at Mt. Washington Elementary School.&lt;/li&gt;
+  &lt;li&gt;Managed to keep interacting and spending time with friends despite a busy schedule.&lt;/li&gt;
+  &lt;li&gt;Worked on publishing a research paper with my work for Children’s hospital.&lt;/li&gt;
+  &lt;li&gt;Went off to California to start a coop at Intuit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/back-to-school.jpg&quot; alt=&quot;Moving back to UC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All of these things were packed into a short 10 month span from last summer to end of this spring. Looking back, this was a major experience. I have had more surgeries in the past 14 months or so than most people have in their entire lives. Overall, I have a great job, I even managed to my 4.0 GPA by some black magic. I can definitely say “One life is too short for doing everything” (Massimo Vignelli) but certainly took a shot at trying it this year. I’d expect that I would have a more profound view on life after going through this but I am mostly tired and need much more time to fully understand what I have experienced. It has been a great experience but also far too much, I wouldn’t make it through if I wasn’t 20 years old and with limited responsibilities.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/work-at-childrens.jpg&quot; alt=&quot;Back at Childrens Hospital Research&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I must say that I started off with great expectations coming home from a nice two week trip to Japan. It was a great feeling and I love visiting new places and learning about new cultures. Moving back to Cincinnati was nice because I got to see my old friends and come back home and quite relaxing. I had missed the first week of classes but it was a worthwhile exchange. There are always these tradeoffs of time versus experience and this opportunity cost never goes away. Taking in new experiences though is a great investment and I hope to be able to do this again in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/trip-to-indianopolis.jpg&quot; alt=&quot;Trip to Indianopolis&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It was quite fun interviewing with Google as I got the opportunity through FooBar coding challenges which are a hidden coding challenge Google hides in their services for programmers to find and complete. It was a great experience but the behemoth of a company moves very slow and couldn’t find me a position to match me with before my other offers expired and I had to take another job. Additionally, over the summer, since I was much more confident with mass transit (previous coop in California), I took a bus from UC to downtown indianapolis to join my family in a board game convention. That experience has proven invaluable and has helped me to see the world from a much more transit oriented perspective.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/board-game.jpg&quot; alt=&quot;Board games with my data&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I sadly had injured my knee again. This time I was forced to see how it impacted my life and ability to get around as it almost stopped me from being able to finish my coop at Children’s hospital (which I had been working at over the summer as well). Although I did not work an honors experience out of this (yet), I did have a chance to spend much more time talking to my physical therapist that I went to. I was able to learn quite a bit from Matt as I was able to learn more about what injuries other people face and how they get them. I learned that those popular scooters that people use lead to many leg/back/mobility injuries (expected but hearing stories from his was interesting). More interestingly, I was able to learn how other people face their injuries and reactions. Although it was my second time, I was mostly just going through the motions and apathetic because I knew I had to do this again and I had VERY recently gone through the experience before. Most people that have to face these injuries are older and have quite a bit of experience and can handle the change well. Younger people like me tend to be more careless and injure themselves again after a recovery. I did not quite fall into the younger people’s category but I can say that I realize how great it is to walk and always want to help those around me. Although I would have rather not done this again, I really understand the importance of my mobility and will &lt;del&gt;never stand up or do sports again&lt;/del&gt; (not serious, just jokingly) appreciate my ability to walk and enjoy it while I still can (hopefully another 50 years at least).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/ghc-trip.jpg&quot; alt=&quot;Grace Hopper Conference sponsor trip&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Before I had surgery to correct my knee, I got to attend GHC (Grace Hopper Celebration) as an Anita B Scholar (chosen by people who run the conference). It was a great experience to attend the conference and learn how to be a more effective male ally in the workplace. Walking around with a non weight bearing leg at a conference was in short, a terrible idea. Although there were 4 other people I meet who also had leg injuries, only one had a non weight bearing leg (can’t put the leg on the ground with pressure) like me. I meet many great people and also won a coding competition which I got a fitbit as a prize. Although it was a terrible idea, I am extremely grateful that I went just like the Japan trip and wouldn’t trade the experience for the world. I meet so many people and learned a lot about how to reflect on my previous experiences and how to support those around me. I also got my current coop at Intuit by interviewing at GHC (which forced me to turn down Google but Intuit is a great company and Google had pushed my patience to the limit by the time I was at my deadline). Hearing men and women’s stories of how to be supportive in the tech community were inspiring and I hope to carry these lessons with me while I am working as a coop this summer at Intuit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/puffy-face-and-poro.jpg&quot; alt=&quot;Puffy face with a poro&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In addition, when I finished my coop, the week after I fly home, I will have a Jaw surgery to fix my misaligned jaw and had a corrected of about 1.1 centimeters in movement between my upper and lower jaw. I still today have to wear rubber bands and braces (hopefully will be done by the end of the year), and need to have another minor surgery when I finish my coop to remove the metal plates left in my jaw. Just a part of living and having surgery, no one’s body is perfect and mine just needs a bit of work.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/new-apartment-cooking.jpg&quot; alt=&quot;New apartment cookies&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This essay is getting quite long and I haven’t even got to the busiest part of the year yet. During spring, I hit the ground running and didn’t slow down at all. From helping to organize and run a Hackathon for my College (will write a blog soon, I swear), to finding and moving  into a sublease a week after the semester started was quite busy. In addition to working at Children’s I participated in a professor’s seminar and volunteered at an afterschool program for a nearby elementary school. As with many of the things I did this last year, this could be considered a generally bad idea (seems to be a motif of my year), but I wouldn’t have traded this time for anything. I took my time and energy and applied it to greatly improve my skills. One class in particular, Intelligent Data Analysis taught by Dr. Atluri (he is the professor who’s seminar I attended), although difficult has expanded my understanding of data science by orders of magnitude and formalized much of what I had known before.&lt;/p&gt;
+
+&lt;p&gt;Believe it or not (quite easy to believe in hindsight), this hectic semester has taught me the importance of saying “no” and taking charge of my own time. Although, if I choose what to focus on and direct my time effectively I can achieve great things. I was also still recovering from two surgeries to put more stress on my time.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/me-and-sibilings-before-cali.jpg&quot; alt=&quot;Me and my sibilings at lunch&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a great time at these experiences throughout the year especially the tasks I took on in the Spring. These experiences, although trying and quite difficult, helped me grow in more ways than I can really understand as of yet. I will need to spend a bit of time reflecting on my own beyond this lengthy essay to fully understand them. I paced myself and managed to mostly not overcommit myself to what I could not achieve. The world is a wonderful place but I must be prepared to face what comes ahead. I am due for a long break and hopefully I will be able to relax in sunny California while working for Intuit.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/projects/thirdyear-in-review/cali-apartment.jpg&quot; alt=&quot;Apartment at California&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I will continue to apply myself, reflect, and grow to more fully understand myself. These experiences, although sometimes difficult, have provided me with a great chance for growth and I only have to take the opportunity. Hopefully I will have a chance to record my thoughts about all the activities that I have listed above in future blog posts and short essays.&lt;/p&gt;
+
+&lt;p&gt;I know not what the future holds but the future will be full of opportunities.&lt;/p&gt;</content><author><name></name></author><category term="Honors" /><category term="Honors" /><category term="Year-in-review" /><summary type="html">Overview of the Year Last year in review, I just finished a trip from Japan, after an internship in California, AFTER getting surgery on my knee. I got away with all of that and I kept going strong. Ater getting back from Japan: (in mostly chronological order) I started doing research as well as taking a full class load over the summer. Started doing research at Cincinnati Childrens at the end of the semester. Interviewed with Google and got to the final phases before my deadline with other offers. Attended GenCon by taking a bus from UC to Indianapolis during my classes. I injured my knee again and kept doing research full time (for the most part). Before knee surgery, while on crutches, I attended GHC and got my current internship at Intuit. Had surgery on my knee for the second time, this one with more serious repairs. Finished my coop after recovering from surgery. Helped prepare a poster for a conference for the research we did at Childrens. Got surgery to repair my jaw with major reconstruction of my face to fix alignment. Started the new semester commuting because UC Housing did not work out. Found a new apartment and secured a sublease within one week after school started. Helped organize and run Revolution UC despite surgery recovery. Attended a conference for Women in Technology. Worked with a research professor for possible future Master’s Project and took his seminar class. Continued doing research at Childrens during the semester as a part time worker. Worked on independent projects. Volunteered at an extracurricular activities at Mt. Washington Elementary School. Managed to keep interacting and spending time with friends despite a busy schedule. Worked on publishing a research paper with my work for Children’s hospital. Went off to California to start a coop at Intuit. All of these things were packed into a short 10 month span from last summer to end of this spring. Looking back, this was a major experience. I have had more surgeries in the past 14 months or so than most people have in their entire lives. Overall, I have a great job, I even managed to my 4.0 GPA by some black magic. I can definitely say “One life is too short for doing everything” (Massimo Vignelli) but certainly took a shot at trying it this year. I’d expect that I would have a more profound view on life after going through this but I am mostly tired and need much more time to fully understand what I have experienced. It has been a great experience but also far too much, I wouldn’t make it through if I wasn’t 20 years old and with limited responsibilities. I must say that I started off with great expectations coming home from a nice two week trip to Japan. It was a great feeling and I love visiting new places and learning about new cultures. Moving back to Cincinnati was nice because I got to see my old friends and come back home and quite relaxing. I had missed the first week of classes but it was a worthwhile exchange. There are always these tradeoffs of time versus experience and this opportunity cost never goes away. Taking in new experiences though is a great investment and I hope to be able to do this again in the future. It was quite fun interviewing with Google as I got the opportunity through FooBar coding challenges which are a hidden coding challenge Google hides in their services for programmers to find and complete. It was a great experience but the behemoth of a company moves very slow and couldn’t find me a position to match me with before my other offers expired and I had to take another job. Additionally, over the summer, since I was much more confident with mass transit (previous coop in California), I took a bus from UC to downtown indianapolis to join my family in a board game convention. That experience has proven invaluable and has helped me to see the world from a much more transit oriented perspective. I sadly had injured my knee again. This time I was forced to see how it impacted my life and ability to get around as it almost stopped me from being able to finish my coop at Children’s hospital (which I had been working at over the summer as well). Although I did not work an honors experience out of this (yet), I did have a chance to spend much more time talking to my physical therapist that I went to. I was able to learn quite a bit from Matt as I was able to learn more about what injuries other people face and how they get them. I learned that those popular scooters that people use lead to many leg/back/mobility injuries (expected but hearing stories from his was interesting). More interestingly, I was able to learn how other people face their injuries and reactions. Although it was my second time, I was mostly just going through the motions and apathetic because I knew I had to do this again and I had VERY recently gone through the experience before. Most people that have to face these injuries are older and have quite a bit of experience and can handle the change well. Younger people like me tend to be more careless and injure themselves again after a recovery. I did not quite fall into the younger people’s category but I can say that I realize how great it is to walk and always want to help those around me. Although I would have rather not done this again, I really understand the importance of my mobility and will never stand up or do sports again (not serious, just jokingly) appreciate my ability to walk and enjoy it while I still can (hopefully another 50 years at least). Before I had surgery to correct my knee, I got to attend GHC (Grace Hopper Celebration) as an Anita B Scholar (chosen by people who run the conference). It was a great experience to attend the conference and learn how to be a more effective male ally in the workplace. Walking around with a non weight bearing leg at a conference was in short, a terrible idea. Although there were 4 other people I meet who also had leg injuries, only one had a non weight bearing leg (can’t put the leg on the ground with pressure) like me. I meet many great people and also won a coding competition which I got a fitbit as a prize. Although it was a terrible idea, I am extremely grateful that I went just like the Japan trip and wouldn’t trade the experience for the world. I meet so many people and learned a lot about how to reflect on my previous experiences and how to support those around me. I also got my current coop at Intuit by interviewing at GHC (which forced me to turn down Google but Intuit is a great company and Google had pushed my patience to the limit by the time I was at my deadline). Hearing men and women’s stories of how to be supportive in the tech community were inspiring and I hope to carry these lessons with me while I am working as a coop this summer at Intuit. In addition, when I finished my coop, the week after I fly home, I will have a Jaw surgery to fix my misaligned jaw and had a corrected of about 1.1 centimeters in movement between my upper and lower jaw. I still today have to wear rubber bands and braces (hopefully will be done by the end of the year), and need to have another minor surgery when I finish my coop to remove the metal plates left in my jaw. Just a part of living and having surgery, no one’s body is perfect and mine just needs a bit of work. This essay is getting quite long and I haven’t even got to the busiest part of the year yet. During spring, I hit the ground running and didn’t slow down at all. From helping to organize and run a Hackathon for my College (will write a blog soon, I swear), to finding and moving into a sublease a week after the semester started was quite busy. In addition to working at Children’s I participated in a professor’s seminar and volunteered at an afterschool program for a nearby elementary school. As with many of the things I did this last year, this could be considered a generally bad idea (seems to be a motif of my year), but I wouldn’t have traded this time for anything. I took my time and energy and applied it to greatly improve my skills. One class in particular, Intelligent Data Analysis taught by Dr. Atluri (he is the professor who’s seminar I attended), although difficult has expanded my understanding of data science by orders of magnitude and formalized much of what I had known before. Believe it or not (quite easy to believe in hindsight), this hectic semester has taught me the importance of saying “no” and taking charge of my own time. Although, if I choose what to focus on and direct my time effectively I can achieve great things. I was also still recovering from two surgeries to put more stress on my time. I had a great time at these experiences throughout the year especially the tasks I took on in the Spring. These experiences, although trying and quite difficult, helped me grow in more ways than I can really understand as of yet. I will need to spend a bit of time reflecting on my own beyond this lengthy essay to fully understand them. I paced myself and managed to mostly not overcommit myself to what I could not achieve. The world is a wonderful place but I must be prepared to face what comes ahead. I am due for a long break and hopefully I will be able to relax in sunny California while working for Intuit. I will continue to apply myself, reflect, and grow to more fully understand myself. These experiences, although sometimes difficult, have provided me with a great chance for growth and I only have to take the opportunity. Hopefully I will have a chance to record my thoughts about all the activities that I have listed above in future blog posts and short essays. I know not what the future holds but the future will be full of opportunities.</summary></entry><entry><title type="html">Blender Interface</title><link href="https://nickmaltbie.com/blog/2019/03/11/Blender-Intro.html" rel="alternate" type="text/html" title="Blender Interface" /><published>2019-03-11T00:14:00+00:00</published><updated>2019-03-11T00:14:00+00:00</updated><id>https://nickmaltbie.com/blog/2019/03/11/Blender-Intro</id><content type="html" xml:base="https://nickmaltbie.com/blog/2019/03/11/Blender-Intro.html">&lt;p&gt;Link to tutorial as &lt;a href=&quot;https://docs.google.com/document/d/1Ngz0w9zPPZCZpvLvwerHhZTm4yB3Lanocj2K9eTbkv0/edit?usp=sharing&quot;&gt;google doc&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;blender-into&quot;&gt;Blender Into&lt;/h1&gt;
+
+&lt;p&gt;Blender is an open source 3d graphics software.&lt;/p&gt;
+
+&lt;h1 id=&quot;dont-panic&quot;&gt;DON’T PANIC&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.giudansky.com/downloads/learnwithaposter/blender-poster-infographic/blender-infographic-SM-1280.png&quot;&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/blender-infographic-SM-1280.png&quot; alt=&quot;Blender Cheatsheet&quot; /&gt;&lt;/a&gt;
+Blender Infographic from Giuliano DANSKY D’Angelo — GIUDANSKY.COM&lt;/p&gt;
+
+&lt;h2 id=&quot;objective&quot;&gt;Objective&lt;/h2&gt;
+
+&lt;p&gt;This is a simple tutorial meant for a one hour session on 3/11/19. This tutorial only is meant to give a simple overview of the software and how to navigate and use the 3d view interface.&lt;/p&gt;
+
+&lt;p&gt;This tutorial will be using blender 2.79b&lt;/p&gt;
+
+&lt;p&gt;For more in-depth tutorials, try following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Blender’s &lt;a href=&quot;https://www.youtube.com/watch?v=kes2qmijy7w&amp;amp;list=PLa1F2ddGya_8V90Kd5eC5PeBjySbXWGK1&amp;amp;index=1&quot;&gt;Blender Fundamentals&lt;/a&gt; for a more detailed explanation of how to use blender&lt;/li&gt;
+  &lt;li&gt;Blender Guru’s &lt;a href=&quot;https://www.youtube.com/watch?v=VT5oZndzj68&amp;amp;list=PLjEaoINr3zgHs8uzT3yqe4iHGfkCmMJ0P&amp;amp;index=1&quot;&gt;Blender Beginner Tutorial Series&lt;/a&gt; for an intro to 3d modeling and using blender&lt;/li&gt;
+  &lt;li&gt;Games From Scratch’s &lt;a href=&quot;https://www.gamefromscratch.com/page/Complete-Blender-Game-Art-Tutorial-From-zero-experience-to-2D-or-3D-game-ready-asset.aspx&quot;&gt;Complete Blender Game Art Tutorial&lt;/a&gt; as a fully text based tutorial&lt;/li&gt;
+  &lt;li&gt;Looking up any problem that you have on reddit, forums, google, youtube until you find what you need.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I learned blender on a tutorial that was written in 2013 from Neal Hirsig and is still online &lt;a href=&quot;https://vimeo.com/channels/blendervideotutorials&quot;&gt;https://vimeo.com/channels/blendervideotutorials&lt;/a&gt;. This was a project based tutorial to learn 3d modeling and I enjoyed this method the best. Any tutorial can work no matter how old it may seem because all the principles stay the same, only some widgets and tools will change along the way.&lt;/p&gt;
+
+&lt;p&gt;Learning blender and 3d modeling will take time and is well worth pursuing on your own.&lt;/p&gt;
+
+&lt;h2 id=&quot;overview-of-3d&quot;&gt;Overview of 3D&lt;/h2&gt;
+
+&lt;p&gt;When making a 3d model, there are a few key aspects that need to be kept in mind.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Modeling - the shape of an object&lt;/li&gt;
+  &lt;li&gt;Texturing - how an object looks&lt;/li&gt;
+  &lt;li&gt;Lighting - what parts are seen and what shadows are cast&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We will be going over the simple modeling and manipulating objects in this tutorial.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup&quot;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Blender runs on almost any operating system (you can download and compile the &lt;a href=&quot;https://developer.blender.org/diffusion/B/&quot;&gt;source&lt;/a&gt; if you cannot find a precompiled version for your system even). To download blender go to their download’s page: &lt;a href=&quot;https://www.blender.org/download/&quot;&gt;https://www.blender.org/download/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;When using blender, there are two major things you will want&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;A mouse with a scroll wheel&lt;/li&gt;
+  &lt;li&gt;Keyboard with number pad (not necessary)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Follow the instructions for the install and once it’s done and launched you should see a screen like this.
+&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/Blender-Start.PNG&quot; alt=&quot;Startup Screen&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;extra-setup-for-laptop&quot;&gt;Extra Setup for Laptop&lt;/h3&gt;
+
+&lt;p&gt;If your computer does not have a number pad, navigate in the top left menu to File then select User Preferences&lt;/p&gt;
+
+&lt;p&gt;This will open up the user preferences panel. From this select ‘Input’ as the sub menu and then click the box next to ‘emulate numpad’ (left side) and a check mark will appear showing that this setting has been activated. Once this is done click ‘Save User Settings’ on the bottom of the menu and you will have activated the number keys to act as your emulated number pad.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;File &amp;gt; User Preferences &amp;gt; Input &amp;gt; emulate numpad
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/emulate-numpad.PNG&quot; alt=&quot;emulate numpad screen selection&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;interface&quot;&gt;Interface&lt;/h2&gt;
+
+&lt;p&gt;Don’t panic, blender seems a bit strange but has all the tools you need for any 3d graphics software.&lt;/p&gt;
+
+&lt;p&gt;The window is an adjustable interface and the default workspace layout is good for modeling and editing software. The interface is composed of a few different areas. These areas are how you can interact with your blender environment file.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/interface.png&quot; alt=&quot;Main 3D view interface&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I have highlighted the “3d view” area in the image above. We will just be going over this area for the purposes of this tutorial.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/navigation.gif&quot; alt=&quot;Main 3D view interface&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Basic controls for 3d view&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Button&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Middle mouse button&lt;/td&gt;
+      &lt;td&gt;Orbit around focal point&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Middle mouse button + shift&lt;/td&gt;
+      &lt;td&gt;Move left/right or up/down&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Scroll wheel&lt;/td&gt;
+      &lt;td&gt;zoom in (scroll up) or out (scroll down) on focal point&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Left click&lt;/td&gt;
+      &lt;td&gt;move 3d cursor&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Right click&lt;/td&gt;
+      &lt;td&gt;select object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Period on number pad&lt;/td&gt;
+      &lt;td&gt;focus on selected object.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;z&lt;/td&gt;
+      &lt;td&gt;toggle wireframe mode&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The number pad can change the view angle of the screen (very helpful if you’re like me and get lost in a scene)&lt;/p&gt;
+
+&lt;p&gt;Number pad actions&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Button&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;toggle isometric view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;front view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + 1&lt;/td&gt;
+      &lt;td&gt;right view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;right view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + 3&lt;/td&gt;
+      &lt;td&gt;left view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;7&lt;/td&gt;
+      &lt;td&gt;top view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl + 7&lt;/td&gt;
+      &lt;td&gt;bottom view&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;0&lt;/td&gt;
+      &lt;td&gt;camera view&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/panels.png&quot; alt=&quot;Diagram of blender scene with panels highlighted&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The 3d view area also has two panels (on the sides) and a header (bottom box) highlighted in the image above. These boxes will show all the information relating to the current scene and selected object.&lt;/p&gt;
+
+&lt;p&gt;Any of these panels can be opened by clicking the plus button on the side of the view or closed by dragging them shut with the mouse. These panels can also be toggled by pressing t for the toolbar panel (left side) or n for the properties panel (right side)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/panel.gif&quot; alt=&quot;Opening and closing a panel&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each of these panels can be scrolled up or down to view all the options for each panel.&lt;/p&gt;
+
+&lt;h2 id=&quot;selecting-objects&quot;&gt;Selecting Objects&lt;/h2&gt;
+
+&lt;p&gt;While in the 3d view area, you can interact with objects in the scene by selecting and moving them.&lt;/p&gt;
+
+&lt;p&gt;To select an object, right click (not left click) on the object. When an object is selected it will have an orange outline and a manipulator tool will appear.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/selected.png&quot; alt=&quot;Selected object in blender&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There is a lot of information in that small space. The manipulator will have a central dot. This is the origin of the selected object. The three arrows are widgets to translate the object in the X (red) Y (green) or Z (blue) axis. If ever need a reference for these directions there is a small widget in the bottom left of the 3d view area that shows the current positive x, y and z directions.&lt;/p&gt;
+
+&lt;p&gt;Left clicking on the screen will move the 3d cursor (shown by the red, white circle with a small black cross hair). The 3d cursor is important for interacting with the scene and manipulating objects.&lt;/p&gt;
+
+&lt;p&gt;If there are multiple objects in the scene, you can select multiple objects by right clicking an object then holding shift and selecting then right clicking on the next object. When you add a new object it will gain an orange outline and the other selected objects will have a red outline. Selecting a red outlined object while holding shift will make it the active (orange outlined) object and selecting the active object while holding shift again will deselect this object.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/selecting.gif&quot; alt=&quot;Selecting objects in blender&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(I am holding shift and right clicking in this animation)&lt;/p&gt;
+
+&lt;p&gt;To toggle select all, simply press a (no other buttons). This will toggle selecting all objects or selecting none of the objects in the current scene.&lt;/p&gt;
+
+&lt;p&gt;Other tools to select objects are the box select tool and the circle select tool.&lt;/p&gt;
+
+&lt;h3 id=&quot;box-select&quot;&gt;Box Select&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/box.gif&quot; alt=&quot;Me performing three box selections, first two with left mouse button, last one with middle mouse button to select the objects in the box&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Box select is opened by pressing b, then this will bring up a cursor. With the cursor, use the left mouse button to drag the box of desired items and this will add the items to the current selection. If you use the middle mouse button, you will deselect the items in the box. The right mouse button will cancel the current box command.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Button&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Left mouse button&lt;/td&gt;
+      &lt;td&gt;select objects&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Middle mouse button&lt;/td&gt;
+      &lt;td&gt;deselect objects&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Right mouse button&lt;/td&gt;
+      &lt;td&gt;cancel action&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;circle-select&quot;&gt;Circle Select&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/circle.gif&quot; alt=&quot;me performing a circle selection&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Circle select works similarly to box select except the cursor is a circle and works more like a paintbrush. Open circle select by pressing c. Left clicking will add objects, middle mouse button will deselect objects, right clicking will cancel. You can use the mouse wheel to increase or decrease the size of the circle.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Button&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Left mouse button&lt;/td&gt;
+      &lt;td&gt;select objects&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Middle mouse button&lt;/td&gt;
+      &lt;td&gt;deselect objects&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Scroll wheel&lt;/td&gt;
+      &lt;td&gt;change size of circle&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Right mouse button&lt;/td&gt;
+      &lt;td&gt;cancel action&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;transforming-objects&quot;&gt;Transforming Objects&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/transform.gif&quot; alt=&quot;me performing different transformation operations&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Translating objects is very useful in blender. To translate a selected object, you can use the transform widget by selecting one of the arrows with left click and moving the object along that axis. You can also right click on the selected object and drag the object across the screen in the current plane of view.&lt;/p&gt;
+
+&lt;p&gt;Instead of the widgets, you can also use hotkeys to move the objects. Left click to confirm any transformation, and right click to cancel the current action.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Button&lt;/th&gt;
+      &lt;th&gt;Action&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g&lt;/td&gt;
+      &lt;td&gt;grab object (same as right clicking)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r&lt;/td&gt;
+      &lt;td&gt;rotate object along viewplan&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s&lt;/td&gt;
+      &lt;td&gt;scale an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + g&lt;/td&gt;
+      &lt;td&gt;reset location&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + r&lt;/td&gt;
+      &lt;td&gt;reset rotation&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Alt + s&lt;/td&gt;
+      &lt;td&gt;reset scale of an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g + x&lt;/td&gt;
+      &lt;td&gt;translate along x axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g + y&lt;/td&gt;
+      &lt;td&gt;translate along y axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g + z&lt;/td&gt;
+      &lt;td&gt;translate along z axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r + x&lt;/td&gt;
+      &lt;td&gt;rotate along x axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r + y&lt;/td&gt;
+      &lt;td&gt;rotate along y axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r + z&lt;/td&gt;
+      &lt;td&gt;rotate along z axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s + x&lt;/td&gt;
+      &lt;td&gt;scale along x axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s + y&lt;/td&gt;
+      &lt;td&gt;scale along y axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s + z&lt;/td&gt;
+      &lt;td&gt;scale along z axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g + x + x&lt;/td&gt;
+      &lt;td&gt;translate along relative x axis (if object is rotated)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g + y + y&lt;/td&gt;
+      &lt;td&gt;translate along relative y axis (if object is rotated)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;g + z + z&lt;/td&gt;
+      &lt;td&gt;translate along relative z axis (if object is rotated)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r + x + x&lt;/td&gt;
+      &lt;td&gt;rotate along relative x axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r + y + y&lt;/td&gt;
+      &lt;td&gt;rotate along relative y axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r + z + z&lt;/td&gt;
+      &lt;td&gt;rotate along relative z axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s + x + x&lt;/td&gt;
+      &lt;td&gt;scale along relative x axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s + y + y&lt;/td&gt;
+      &lt;td&gt;scale along relative y axis&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;s + z + z&lt;/td&gt;
+      &lt;td&gt;scale along relative z axis&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/widgets.gif&quot; alt=&quot;Showing different widgets in the panel&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are additional widgets for scale and rotation that can be selected at the bottom of the screen as the cursor, curve and diamond objects.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-and-deleting-objects&quot;&gt;Adding and Deleting Objects&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/delete.gif&quot; alt=&quot;Deleting an object from the scene&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To delete an object, select an object, then press x to open the delete menu. Once this menu is open, the delete option can be selected to remove the object form the scene. Instead of left clicking, you can also press enter to achieve the same action. Another way to complete this is to press delete then hit enter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/add.gif&quot; alt=&quot;Adding an object to the scene&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To add a primitive to a scene, use the hotkey shift + a to open the add menu. The basic objects are meshes. If you select a mesh it will add a mesh at the 3d cursor. To move the 3d cursor left click.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/toolbar.gif&quot; alt=&quot;Adding an object to the scene using the toolbar&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can also press t (or click the plus on the left) to open the toolbar panel (left side) to add other objects under the create menu with the same options as before.&lt;/p&gt;
+
+&lt;h2 id=&quot;layers-and-visibility&quot;&gt;Layers and Visibility&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/hiding.gif&quot; alt=&quot;Example of hiding objects in a scene&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can use h with a selected objects to hide the object. You can also use Alt + h to unhide all objects.&lt;/p&gt;
+
+&lt;p&gt;The hierarchical outline view of the scene in the top right lets you select view objects are visible. The eye icon (third from the right column).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/layers.gif&quot; alt=&quot;Example of using layers in a scene&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Layers are also used to organize objects. This concept is also found in tools like photoshop or GIMP. The layer selection grid is in the bottom middle of the 3D view panel.&lt;/p&gt;
+
+&lt;p&gt;Selecting a square in the grid selects that layer as visible. Holding shift while selecting a square selects multiple layers. If you do not have the emulated numpad activated, you can use the numbers on the keyboard to change between the layer and Alt + numbers to change between the second set of layers.&lt;/p&gt;
+
+&lt;p&gt;If an object is selected, you can use the hotkey m to move the selected object to another layer. If you do not have the enumerated numpad activated, you can use the numbers on the keyboard to select a layer to move the object to or Alt + numbers to select a layer in the second set of layers.&lt;/p&gt;
+
+&lt;p&gt;If a layer contains your selected object it will have an orange dot in the square. If a layer contains any object it will have a dark grey dot in the square. Layers do not hide objects but achieve a similar effect to a user. Using the h and Alt + h hotkeys will only affect objects on the current layer. You can only interact with objects in the current layer.&lt;/p&gt;
+
+&lt;p&gt;Layers are a very powerful tool for organizing a scene.&lt;/p&gt;
+
+&lt;h2 id=&quot;menus&quot;&gt;Menus&lt;/h2&gt;
+
+&lt;p&gt;There is a multitude of other menus in blender, here is a basic overview of the other menus in the default view.&lt;/p&gt;
+
+&lt;h3 id=&quot;other-menus&quot;&gt;Other Menus&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/other-panels.PNG&quot; alt=&quot;Other editing menus&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;There are other menus in the bottom left area of the screen. There is a set of tabs (icons) on the top of the area and they are described below. If you cannot see all the objects, hold the middle mouse button on the tabs and move the cursor left or right to see more tabs.&lt;/p&gt;
+
+&lt;p&gt;These tabs are not necessary for understanding basic blender, just useful for understand the basic overview of the software and what might be referred to in other tutorials&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Panel&lt;/th&gt;
+      &lt;th&gt;Icon&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Render&lt;/td&gt;
+      &lt;td&gt;Camera&lt;/td&gt;
+      &lt;td&gt;Handles rendering settings for the scene.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Render layers&lt;/td&gt;
+      &lt;td&gt;Picture&lt;/td&gt;
+      &lt;td&gt;Determine how the scene is rendered (not as important for now)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Scene&lt;/td&gt;
+      &lt;td&gt;Sphere and Cylinder&lt;/td&gt;
+      &lt;td&gt;How the scene is managed for physics, colors, units and other related settings&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;World&lt;/td&gt;
+      &lt;td&gt;globe icon&lt;/td&gt;
+      &lt;td&gt;Handles the sky and how the world looks&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Object&lt;/td&gt;
+      &lt;td&gt;orange cube&lt;/td&gt;
+      &lt;td&gt;Object tab, very important for managing object settings through rotation, scale and location of the currently selected object. This determines all aspects of the object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Object Constraints&lt;/td&gt;
+      &lt;td&gt;Chain&lt;/td&gt;
+      &lt;td&gt;Add constraints to how an object can act and follow other elements in the scene.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Modifiers Tab&lt;/td&gt;
+      &lt;td&gt;Wrench&lt;/td&gt;
+      &lt;td&gt;Blender is a modifier based software. This tab determines how to edit objects with powerful tools such as mirror, subdivision subsurface, decimate, array, and many others. These will modify mesh and are powerful for mesh, animation, rigging and simulation.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Data Mesh Tab&lt;/td&gt;
+      &lt;td&gt;Triangle&lt;/td&gt;
+      &lt;td&gt;Determines how the mesh, UV mapping, and texture is managed for an object.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Material Tab&lt;/td&gt;
+      &lt;td&gt;Circle with square pattern&lt;/td&gt;
+      &lt;td&gt;Determines how materials are applied to an object&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Texture Tab&lt;/td&gt;
+      &lt;td&gt;Checkered Square&lt;/td&gt;
+      &lt;td&gt;Determines how images are linked to the materials of the object.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Particles Tab&lt;/td&gt;
+      &lt;td&gt;Sparkles&lt;/td&gt;
+      &lt;td&gt;Determines the particle effects&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Physics&lt;/td&gt;
+      &lt;td&gt;Bouncing Ball&lt;/td&gt;
+      &lt;td&gt;An interface to adjust how physics is managed for the scene&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;timeline&quot;&gt;Timeline&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/animation.gif&quot; alt=&quot;Simple overview of animation panel in blender&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is all about animation. To play the animation, hit the play button. This panel can be navigated by moving the line with the cursor or holding alt and scrolling.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-and-removing-panels&quot;&gt;Adding and Removing Panels&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/editing-panels.gif&quot; alt=&quot;Example of modifying areas in blender&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As mentioned earlier, the blender view is made up of different panels. Each panel has a small triangle at the top right and bottom left corners. If you want to change the size of a panel, move the cursor to the edge of the panel and drag the arrow marker in the direction that you with to extend or shrink the panel. You can Drag a corner into its own panel to duplicate it. To remove a panel Drag one triangle from an adjacent panel over the panel you want to remove (this will make an arrow appear over the panel about to be removed). You can only remove a panel if it shares an edge fully with another panel.&lt;/p&gt;
+
+&lt;p&gt;To change the view of a panel, select the dropdown icon in the bottom left of the panel and select the new view you wish to see.&lt;/p&gt;
+
+&lt;p&gt;To reset the current layout of the screen select the dropdown icon to the right of Help at the top of the screen. This tutorial was all done using the default layout.&lt;/p&gt;
+
+&lt;h2 id=&quot;exercise&quot;&gt;Exercise&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/Blender-Intro/exercise.png&quot; alt=&quot;Image of shannon with a hat as exercise&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As an attempt to test what you have learned in this tutorial, attempt to make a scene that looks like this, shannon (monkey mesh) with a hat as in the image agove.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;That is a very basic overview of the 3d view area and how to navigate it. These same tools of how to navigate the scene and manipulate objects are also used when creating meshes and editing almost anything about a 3d object.&lt;/p&gt;
+
+&lt;p&gt;Just as that scene I showed earlier was made up of a set of objects, a mesh is composed of a set of points, edges and faces and can be edited in the same manner using the same tools.&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><category term="Blog" /><category term="Blender" /><summary type="html">Link to tutorial as google doc Blender Into Blender is an open source 3d graphics software. DON’T PANIC Blender Infographic from Giuliano DANSKY D’Angelo — GIUDANSKY.COM Objective This is a simple tutorial meant for a one hour session on 3/11/19. This tutorial only is meant to give a simple overview of the software and how to navigate and use the 3d view interface. This tutorial will be using blender 2.79b For more in-depth tutorials, try following: Blender’s Blender Fundamentals for a more detailed explanation of how to use blender Blender Guru’s Blender Beginner Tutorial Series for an intro to 3d modeling and using blender Games From Scratch’s Complete Blender Game Art Tutorial as a fully text based tutorial Looking up any problem that you have on reddit, forums, google, youtube until you find what you need. I learned blender on a tutorial that was written in 2013 from Neal Hirsig and is still online https://vimeo.com/channels/blendervideotutorials. This was a project based tutorial to learn 3d modeling and I enjoyed this method the best. Any tutorial can work no matter how old it may seem because all the principles stay the same, only some widgets and tools will change along the way. Learning blender and 3d modeling will take time and is well worth pursuing on your own. Overview of 3D When making a 3d model, there are a few key aspects that need to be kept in mind. Modeling - the shape of an object Texturing - how an object looks Lighting - what parts are seen and what shadows are cast We will be going over the simple modeling and manipulating objects in this tutorial. Setup Blender runs on almost any operating system (you can download and compile the source if you cannot find a precompiled version for your system even). To download blender go to their download’s page: https://www.blender.org/download/. When using blender, there are two major things you will want A mouse with a scroll wheel Keyboard with number pad (not necessary) Follow the instructions for the install and once it’s done and launched you should see a screen like this. Extra Setup for Laptop If your computer does not have a number pad, navigate in the top left menu to File then select User Preferences This will open up the user preferences panel. From this select ‘Input’ as the sub menu and then click the box next to ‘emulate numpad’ (left side) and a check mark will appear showing that this setting has been activated. Once this is done click ‘Save User Settings’ on the bottom of the menu and you will have activated the number keys to act as your emulated number pad. File &amp;gt; User Preferences &amp;gt; Input &amp;gt; emulate numpad Interface Don’t panic, blender seems a bit strange but has all the tools you need for any 3d graphics software. The window is an adjustable interface and the default workspace layout is good for modeling and editing software. The interface is composed of a few different areas. These areas are how you can interact with your blender environment file. I have highlighted the “3d view” area in the image above. We will just be going over this area for the purposes of this tutorial. Basic controls for 3d view Button Action Middle mouse button Orbit around focal point Middle mouse button + shift Move left/right or up/down Scroll wheel zoom in (scroll up) or out (scroll down) on focal point Left click move 3d cursor Right click select object Period on number pad focus on selected object. z toggle wireframe mode The number pad can change the view angle of the screen (very helpful if you’re like me and get lost in a scene) Number pad actions Button Action 5 toggle isometric view 1 front view Ctrl + 1 right view 3 right view Ctrl + 3 left view 7 top view Ctrl + 7 bottom view 0 camera view The 3d view area also has two panels (on the sides) and a header (bottom box) highlighted in the image above. These boxes will show all the information relating to the current scene and selected object. Any of these panels can be opened by clicking the plus button on the side of the view or closed by dragging them shut with the mouse. These panels can also be toggled by pressing t for the toolbar panel (left side) or n for the properties panel (right side) Each of these panels can be scrolled up or down to view all the options for each panel. Selecting Objects While in the 3d view area, you can interact with objects in the scene by selecting and moving them. To select an object, right click (not left click) on the object. When an object is selected it will have an orange outline and a manipulator tool will appear. There is a lot of information in that small space. The manipulator will have a central dot. This is the origin of the selected object. The three arrows are widgets to translate the object in the X (red) Y (green) or Z (blue) axis. If ever need a reference for these directions there is a small widget in the bottom left of the 3d view area that shows the current positive x, y and z directions. Left clicking on the screen will move the 3d cursor (shown by the red, white circle with a small black cross hair). The 3d cursor is important for interacting with the scene and manipulating objects. If there are multiple objects in the scene, you can select multiple objects by right clicking an object then holding shift and selecting then right clicking on the next object. When you add a new object it will gain an orange outline and the other selected objects will have a red outline. Selecting a red outlined object while holding shift will make it the active (orange outlined) object and selecting the active object while holding shift again will deselect this object. (I am holding shift and right clicking in this animation) To toggle select all, simply press a (no other buttons). This will toggle selecting all objects or selecting none of the objects in the current scene. Other tools to select objects are the box select tool and the circle select tool. Box Select Box select is opened by pressing b, then this will bring up a cursor. With the cursor, use the left mouse button to drag the box of desired items and this will add the items to the current selection. If you use the middle mouse button, you will deselect the items in the box. The right mouse button will cancel the current box command. Button Action Left mouse button select objects Middle mouse button deselect objects Right mouse button cancel action Circle Select Circle select works similarly to box select except the cursor is a circle and works more like a paintbrush. Open circle select by pressing c. Left clicking will add objects, middle mouse button will deselect objects, right clicking will cancel. You can use the mouse wheel to increase or decrease the size of the circle. Button Action Left mouse button select objects Middle mouse button deselect objects Scroll wheel change size of circle Right mouse button cancel action Transforming Objects Translating objects is very useful in blender. To translate a selected object, you can use the transform widget by selecting one of the arrows with left click and moving the object along that axis. You can also right click on the selected object and drag the object across the screen in the current plane of view. Instead of the widgets, you can also use hotkeys to move the objects. Left click to confirm any transformation, and right click to cancel the current action. Button Action g grab object (same as right clicking) r rotate object along viewplan s scale an object Alt + g reset location Alt + r reset rotation Alt + s reset scale of an object g + x translate along x axis g + y translate along y axis g + z translate along z axis r + x rotate along x axis r + y rotate along y axis r + z rotate along z axis s + x scale along x axis s + y scale along y axis s + z scale along z axis g + x + x translate along relative x axis (if object is rotated) g + y + y translate along relative y axis (if object is rotated) g + z + z translate along relative z axis (if object is rotated) r + x + x rotate along relative x axis r + y + y rotate along relative y axis r + z + z rotate along relative z axis s + x + x scale along relative x axis s + y + y scale along relative y axis s + z + z scale along relative z axis There are additional widgets for scale and rotation that can be selected at the bottom of the screen as the cursor, curve and diamond objects. Adding and Deleting Objects To delete an object, select an object, then press x to open the delete menu. Once this menu is open, the delete option can be selected to remove the object form the scene. Instead of left clicking, you can also press enter to achieve the same action. Another way to complete this is to press delete then hit enter. To add a primitive to a scene, use the hotkey shift + a to open the add menu. The basic objects are meshes. If you select a mesh it will add a mesh at the 3d cursor. To move the 3d cursor left click. You can also press t (or click the plus on the left) to open the toolbar panel (left side) to add other objects under the create menu with the same options as before. Layers and Visibility You can use h with a selected objects to hide the object. You can also use Alt + h to unhide all objects. The hierarchical outline view of the scene in the top right lets you select view objects are visible. The eye icon (third from the right column). Layers are also used to organize objects. This concept is also found in tools like photoshop or GIMP. The layer selection grid is in the bottom middle of the 3D view panel. Selecting a square in the grid selects that layer as visible. Holding shift while selecting a square selects multiple layers. If you do not have the emulated numpad activated, you can use the numbers on the keyboard to change between the layer and Alt + numbers to change between the second set of layers. If an object is selected, you can use the hotkey m to move the selected object to another layer. If you do not have the enumerated numpad activated, you can use the numbers on the keyboard to select a layer to move the object to or Alt + numbers to select a layer in the second set of layers. If a layer contains your selected object it will have an orange dot in the square. If a layer contains any object it will have a dark grey dot in the square. Layers do not hide objects but achieve a similar effect to a user. Using the h and Alt + h hotkeys will only affect objects on the current layer. You can only interact with objects in the current layer. Layers are a very powerful tool for organizing a scene. Menus There is a multitude of other menus in blender, here is a basic overview of the other menus in the default view. Other Menus There are other menus in the bottom left area of the screen. There is a set of tabs (icons) on the top of the area and they are described below. If you cannot see all the objects, hold the middle mouse button on the tabs and move the cursor left or right to see more tabs. These tabs are not necessary for understanding basic blender, just useful for understand the basic overview of the software and what might be referred to in other tutorials Panel Icon Description Render Camera Handles rendering settings for the scene. Render layers Picture Determine how the scene is rendered (not as important for now) Scene Sphere and Cylinder How the scene is managed for physics, colors, units and other related settings World globe icon Handles the sky and how the world looks Object orange cube Object tab, very important for managing object settings through rotation, scale and location of the currently selected object. This determines all aspects of the object Object Constraints Chain Add constraints to how an object can act and follow other elements in the scene. Modifiers Tab Wrench Blender is a modifier based software. This tab determines how to edit objects with powerful tools such as mirror, subdivision subsurface, decimate, array, and many others. These will modify mesh and are powerful for mesh, animation, rigging and simulation. Data Mesh Tab Triangle Determines how the mesh, UV mapping, and texture is managed for an object. Material Tab Circle with square pattern Determines how materials are applied to an object Texture Tab Checkered Square Determines how images are linked to the materials of the object. Particles Tab Sparkles Determines the particle effects Physics Bouncing Ball An interface to adjust how physics is managed for the scene Timeline This is all about animation. To play the animation, hit the play button. This panel can be navigated by moving the line with the cursor or holding alt and scrolling. Adding and Removing Panels As mentioned earlier, the blender view is made up of different panels. Each panel has a small triangle at the top right and bottom left corners. If you want to change the size of a panel, move the cursor to the edge of the panel and drag the arrow marker in the direction that you with to extend or shrink the panel. You can Drag a corner into its own panel to duplicate it. To remove a panel Drag one triangle from an adjacent panel over the panel you want to remove (this will make an arrow appear over the panel about to be removed). You can only remove a panel if it shares an edge fully with another panel. To change the view of a panel, select the dropdown icon in the bottom left of the panel and select the new view you wish to see. To reset the current layout of the screen select the dropdown icon to the right of Help at the top of the screen. This tutorial was all done using the default layout. Exercise As an attempt to test what you have learned in this tutorial, attempt to make a scene that looks like this, shannon (monkey mesh) with a hat as in the image agove. Conclusion That is a very basic overview of the 3d view area and how to navigate it. These same tools of how to navigate the scene and manipulate objects are also used when creating meshes and editing almost anything about a 3d object. Just as that scene I showed earlier was made up of a set of objects, a mesh is composed of a set of points, edges and faces and can be edited in the same manner using the same tools.</summary></entry><entry><title type="html">Ohio Celebration of Women in Computing</title><link href="https://nickmaltbie.com/blog/2019/02/28/OCWIC.html" rel="alternate" type="text/html" title="Ohio Celebration of Women in Computing" /><published>2019-02-28T18:47:00+00:00</published><updated>2019-02-28T18:47:00+00:00</updated><id>https://nickmaltbie.com/blog/2019/02/28/OCWIC</id><content type="html" xml:base="https://nickmaltbie.com/blog/2019/02/28/OCWIC.html">&lt;p&gt;&lt;img src=&quot;/assets/imgs/blogs/OCWiC/group.jpg&quot; alt=&quot;Me and the other UC Students at OCWiC&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I attended Ohio Celebration of Women in Computing (OCWiC) with other UC students as a male ally. After attending &lt;a href=&quot;/blog/2018/11/24/Grace-Hopper-Celebration.html&quot;&gt;GHC last year&lt;/a&gt;, I was more inspired to take a part in the programs on my campus. OCWiC is a small conference that happens every other year at Sawmill Creek Resort near Sandusky Ohio. It was a great way to network and meet other male allies and women in computer science and engineering.&lt;/p&gt;
+
+&lt;p&gt;I did not know that the event was happening until a few weeks before but was still able to sign up to attend with my university. I volunteered to drive all my some of my classmates from UC to the event. This was quite the drive but well worth the trip. While at the event, I got to hear about many research projects that women in engineering were working on. I also got to meet many people who run programs in Ohio like someone from Microsoft TEALS program. The TEALS program was specifically focused on community outreach and relates to the &lt;a href=&quot;/honors/2017/10/19/Bearcat-Coders.html&quot;&gt;Bearcat Coders&lt;/a&gt; program that I participate in at UC. In addition to finding out about great programs, I also had the opportunity to listen to great speakers.&lt;/p&gt;
+
+&lt;p&gt;I had fun, was able to meet many new people, and learned a lot.&lt;/p&gt;</content><author><name></name></author><category term="Blog" /><category term="Blog" /><category term="Professional" /><summary type="html"></summary></entry><entry><title type="html">Undergraduate Researcher</title><link href="https://nickmaltbie.com/professional/2019/02/28/CCHMC-Co-op.html" rel="alternate" type="text/html" title="Undergraduate Researcher" /><published>2019-02-28T00:00:00+00:00</published><updated>2019-02-28T00:00:00+00:00</updated><id>https://nickmaltbie.com/professional/2019/02/28/CCHMC-Co-op</id><content type="html" xml:base="https://nickmaltbie.com/professional/2019/02/28/CCHMC-Co-op.html">&lt;p&gt;I worked at CCHMC as a researched with Frazier Baker and Dr. Alexey Porollo. While working here I worked on a variety of projects mostly focusing on one project in particular. We hope to have the paper published soon and, as of February 2019, we are working on finalizing our results. The research I am completing is related to the &lt;a href=&quot;/project/2018/07/09/ISCB-2018-Poster.html&quot;&gt;ISCB Poster&lt;/a&gt; that my colleagues presented earlier this year.
+The date of this coop are so wide because I worked part time in the summer 2018 along with classes, full time as a coop in fall 2018, and again part time in spring 2019 along with classes.&lt;/p&gt;
+
+&lt;p&gt;I worked as part of the lab to develop and test a machine learning system for our project. I mainly focused on improving the process and making it efficient enough to work with our very large datasets. This consisted of working with the tools and options provided by Weka, Libsvm and other systems. As part of our research, we had access to a computational cluster. This allowed us to test and run permutations of our program much more efficiently. This involved getting quite familiar with how parallel computing works and how to use the bsub suite. I wrote many shell, python, perl and other scripts to handle this kind of data and distributed computing. Along with my operating systems and computer networking courses, I finally understand and appreciate how these different processes interact and work together.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, this coop rotation came with quite a few difficulties. I injured my knee yet again and had to have another surgery to repair a torn meniscus during my coop rotation. This came with another 6 week period with a non-weight bearing left leg and a 6-8 month recovery time. I was still able to do work but it was quite a challenge managing recovery along with working. I am very happy that I was working close to home so I didn’t have to fly back with an injury and completely cancel my work. It kept me closer to a 25-30 hour week for about half of the coop but I still able to learn quite a bit and apply myself throughout the experience.&lt;/p&gt;
+
+&lt;p&gt;While working during summer 2018 and spring 2018, I had to work towards managing my own time between classes and work. During summer, extra curriculars were lessened so managing my time was quite easy. Although, in spring 2019, I had just finished my second knee surgery and jaw surgery from Fall/Winter 2018. This was quite the extra amount of effort especially since many extra curricular activities happen during the school year such as RevolutionUC. I definitely have overcommitted myself for what I have been able to do so I need to be careful about managing my time. I am not perfect at this task but this experience has provided me with good practice about how long I can work without a break and remembering to say no to requests when I do not have enough time or energy (say recovering from surgery).&lt;/p&gt;
+
+&lt;p&gt;I am quite happy with my progress and work and hope to have the final research published soon. I will be wrapping up my work with CCHMC to go off for another internship at the end of my classes spring semester 2019 which should make for another interesting article.&lt;/p&gt;</content><author><name></name></author><category term="Professional" /><category term="Professional" /><summary type="html">I worked at CCHMC as a researched with Frazier Baker and Dr. Alexey Porollo. While working here I worked on a variety of projects mostly focusing on one project in particular. We hope to have the paper published soon and, as of February 2019, we are working on finalizing our results. The research I am completing is related to the ISCB Poster that my colleagues presented earlier this year. The date of this coop are so wide because I worked part time in the summer 2018 along with classes, full time as a coop in fall 2018, and again part time in spring 2019 along with classes.</summary></entry></feed>
