@@ -1,6 +1,7 @@
 name: Nicholas Maltbie
 email: nick.dmalt@gmail.com
 website: nickmaltbie.com
+youtube: youtube.com/@nickmaltbie
 sections: 
   Education:
     University of Cincinnati:
@@ -17,8 +18,11 @@ sections:
       sub: Microsoft
       date: June 2021 - Present
       desc: 
-        - Working as part of Azure Networking team to improve network communication
-        - Developing C# and .NET distributed system code for server infrastructure
+        - Developed C# and .NET code for maintaining distributed networking infrastructure for data centers
+        - Expanded server infrastructure to minimize downtime during traffic increases
+        - Automated scale and performance testing and proactively addressed errors
+        - Participated in on-call rotations to maintain network of worldwide networking infrastructure
+        - Improved team development processes and iteration following agile workflow
     Summer_2020_Internship:
       title: Software Engineer Intern
       sub: Microsoft
@@ -35,32 +39,34 @@ sections:
         - Developed a high performance networking tool with Kafka, Maven, H2, SQL, Redis, S3, AWS, and Java
         - Shipped and tested a user interface to modify server state and configuration with React and Redux
         - Deployed a service for continuous integration and deployment with Jenkins, AWS, docker, and Github
-    CCHMC_2018-2019_Research:
-      title: Undergraduate Researcher
-      sub: Cincinnati Children’s Hospital Medical Center
-      date: May 2018 - Apr 2019
-      desc:
-        - Automated data generation for research with Python, Perl, R, shell and parallel computing
-        - Evaluated machine learning methods, SVM, Random Forest, LSTM to find metalloprotein binding sites
   Skills:
     Languages:
       title: Programming Languages
       use_dot: none
       desc:
-       - Java, Python, C++, React, R, SQL, C, C#, MATLAB, LabVIEW, html, Javascript, CSS, XML, Bash, 
-        Regex, Prolog, Haskell, FRIL, Perl
+       - C#, PowerShell, Java, Python, C++, React, R, SQL, C, MATLAB, Javascript, BASH, Haskell
     Software:
       title: Software
       use_dot: none
       desc:
-       - Amazon Web Services, S3, Maven, JUnit, Springboot, Kafka, Jenkins, Docker, Git, Unity3d,
-        Blender, Anaconda, Databases, Linux, Redis, H2 database, Scipy, Pandas, TensorFlow, Google Cloud Platform,
-        Firebase, Netflix Hystrix, Weka, Neural Networks, Support Vector Machines, Open Computer Vision
+       - .NET, Azure, Service Fabric, Amazon Web Services, Maven, JUnit, Springboot, Kafka, Jenkins,
+        Docker, Git, Unity3d, Blender, Anaconda, Linux, Redis, Scipy, Pandas, TensorFlow,
+        Google Cloud Platform
   Activities and Involvement:
+    OpenKCC:
+      title: OpenKCC
+      sub: Unity Game Engine - nickmaltbie.com/OpenKCC
+      date: Oct 2021 - Present
+      desc:
+        - Created an open source framework for 3D player movement space with over 100 monthly downloads
+        - Presented the project technology via YouTube videos with over 45k views and 1.3k hours of watch time
+        - Developed extensions for network communication leveraging existing libraries
+        - Automated deployment and testing of software via CI/CD in GitHub with WebGL and DocFx
+        - Collaborated with people from around the world to troubleshoot, debug, and improve the framework
     Hackathon UC:
       title: Logistics Lead Revolution UC
       sub: Student Hackathon at UC
-      date: Aug 2018 - Present
+      date: Aug 2018 - Apr 2020
       desc:
        - Coordinated logistics of meals, judging, prizes and timetable for 300+ student attendees
        - Promoted diversity and inclusion for hacker experience in recruitment, project categories, and judging
@@ -68,26 +74,18 @@ sections:
     Mentor:
       title: Google Ignite CS Mentor
       sub: Bearcat Coder with ACM-W at UC
-      date: Aug 2016 - Present
+      date: Aug 2016 - Apr 2020
       desc:
-       - igniteCS is a Google initiative to enable college students to tutor CS in their local community
-       - Mentored students at Hughes STEM High School in technology classes
-       - Worked with Ms. Grasso (HS teacher) and other UC students to create and deliver instructional material
-    Software:
-      title: Published Software
-      sub: Player Count Message
-      date: Aug 2016 - May 2019
-      desc:
-       - Published Minecraft modification with over 53,000 downloads
-       - Developed software to transmit formatted server status information
+       - IgniteCS is a Google initiative to enable college students to tutor CS in their local community
+       - Mentored students at Hughes STEM High School in technology classes encouraging a growth mindset
   Achievements and Awards:
-    scholarship-1:
-      title: Cincinnatus Scholar at University of Cincinnati
-      date: Aug 2016 - Present
-    scholarship-2:
+    scholarship-3:
       title: Mantei-Mae Scholarship
       date: Spring 2019
-    scholarship-3:
+    scholarship-2:
       title: AnitaB.Org Grace Hopper Celebration Student Scholar
       date: Fall 2018
+    scholarship-1:
+      title: Cincinnatus Scholar at University of Cincinnati
+      date: Aug 2016
 
