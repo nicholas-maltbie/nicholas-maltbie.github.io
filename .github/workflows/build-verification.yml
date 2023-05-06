@@ -32,17 +32,12 @@ jobs:
       - name: Pull lfs data, if not cached
         run: git lfs pull
 
-      # Standard usage
-      - uses:  helaili/jekyll-action@v2
+      - name: Build
+        uses: nielsdelestinne/jekyll-build@v1.0.0
         with:
-          build_only: true
-          target_path: ${GITHUB_WORKSPACE}/_site
-
-      - run: ls ${GITHUB_WORKSPACE}
-      - run: ls ${GITHUB_WORKSPACE}/_site
+          verbose: true
 
       - name: Upload Site Artifact
         uses: actions/upload-pages-artifact@v1
         with:
           name: github-pages
-          path: ${GITHUB_WORKSPACE}/_site
