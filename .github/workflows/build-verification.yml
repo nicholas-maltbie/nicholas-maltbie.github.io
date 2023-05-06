@@ -36,12 +36,13 @@ jobs:
       - uses:  helaili/jekyll-action@v2
         with:
           build_only: true
-          target_path: _site
+          target_path: ${GITHUB_WORKSPACE}/_site
 
-      - run: ls /github/jekyll_build
+      - run: ls ${GITHUB_WORKSPACE}
+      - run: ls ${GITHUB_WORKSPACE}/_site
 
       - name: Upload Site Artifact
         uses: actions/upload-pages-artifact@v1
         with:
           name: github-pages
-          path: /github/jekyll_build/_site
+          path: ${GITHUB_WORKSPACE}/_site
