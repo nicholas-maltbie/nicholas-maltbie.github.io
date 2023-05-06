@@ -38,6 +38,9 @@ jobs:
           build_only: true
           target_path: _site
 
+      - run: ls .
+      - run: ls ..
+
       - name: Upload Site Artifact
         uses: actions/upload-pages-artifact@v1
         with:
