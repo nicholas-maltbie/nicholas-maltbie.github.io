@@ -38,10 +38,10 @@ jobs:
           build_only: true
           target_path: _site
 
-      - run: ls .
-      - run: ls ..
+      - run: ls /github/jekyll_build
 
       - name: Upload Site Artifact
         uses: actions/upload-pages-artifact@v1
         with:
           name: github-pages
+          path: /github/jekyll_build/_site
