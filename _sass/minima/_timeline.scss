@@ -99,7 +99,7 @@ $dot-diameter: 8px;
   .timeline {
     padding-top: 50px;
     &:before {
-      left: $border-width/2;
+      left: calc($border-width / 2);
     }
   }
   .entry {
@@ -109,7 +109,7 @@ $dot-diameter: 8px;
       padding-left: $gutter;
       padding-right: 0;
       &:before {
-        left: -$dot-diameter/2;
+        left: calc(-1 * $dot-diameter / 2);
       }
     }
     .body {
