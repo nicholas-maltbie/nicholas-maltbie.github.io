@@ -36,3 +36,9 @@ jobs:
       - uses:  helaili/jekyll-action@v2
         with:
           build_only: true
+          target_path: _site
+
+      - name: Upload Site Artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          name: github-pages
