@@ -2,17 +2,11 @@
 layout: default
 ---
 
-<p>
-I am driven to find creative and unique solutions to the world's problems through software and problem solving.
-</p>
-
 {{ content }}
 
 <div id="resume">
   <div class="header-row">
     <h1 class="header-title">{{ site.data.resume.name }}</h1>
-    <p class="header-text">{{ site.data.resume.address }}</p>
-    <p class="header-text">{{ site.data.resume.phone }}</p>
     <p class="header-text"><a href="mailto:{{ site.data.resume.email }}">{{ site.data.resume.email }}</a></p>
     <p class="header-text"><a href="https://{{ site.data.resume.website }}">{{ site.data.resume.website }}</a></p>
   </div>
@@ -38,7 +32,33 @@ I am driven to find creative and unique solutions to the world's problems throug
       {% endif %}
     </div>
   </div>
+
+  {% if elem.last.previous %}
+  {% for previous in elem.last.previous %}
+  <div class="minor-row-title">
+    <div class="title-box">
+      <b>{{ previous.last.title }}</b>
+    </div>
+    <div class="title-box">
+      {% if previous.last.sub %}
+        {{ previous.last.sub }}
+      {% endif %}
+    </div>
+    <div class="date-box">
+      {% if previous.last.date %}
+        {{ previous.last.date }}
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  {% endif %}
   
+  {% if elem.last.header %}
+  <div class="minor-row-desc">
+    {{ elem.last.header }}
+  </div>
+  {% endif %}
+
   {% if elem.last.desc %}
   <div class="minor-row-desc">
     {% if elem.last.use_dot %}
@@ -53,7 +73,6 @@ I am driven to find creative and unique solutions to the world's problems throug
   </div>
   {% endif %}
   {% endfor %}
-  
   {% endfor %}
   
 </div>
