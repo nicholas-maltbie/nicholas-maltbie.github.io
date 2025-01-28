@@ -32,7 +32,7 @@ function setupSeeMore(elem, block, group) {
 }
 
 window.addEventListener('load', () => {
-  seeMores = document.getElementsByClassName("SeeMore")
+  seeMores = document.getElementsByClassName("see-more")
   
   var index = 0
   

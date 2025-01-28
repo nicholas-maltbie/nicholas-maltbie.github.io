@@ -1,0 +1,97 @@
+/**
+ * Videos
+ */
+.container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Extra post configuration.
+ */
+
+.post-icon {
+  float: right;
+  min-width: 55px;
+  min-height: 55px;
+  max-width: 55px;
+  max-height: 55px;
+  margin-right: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.post-block {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 15px
+}
+
+.post-element {
+  position: relative;
+  height: auto;
+}
+
+.post-date-info {
+  margin-bottom: 5px;
+}
+
+.post-element-row {
+  display: flex;
+}
+
+.category-wrapper-odd {
+  margin-top: 10px;
+  background-color: #f8fafb;
+  padding-bottom: 25px;
+}
+
+.category-wrapper-even {
+  margin-top: 10px;
+  background-color: #fff;
+  padding-bottom: 25px;
+}
+
+
+/**
+ * Other
+ */
+
+.rounded-pic {
+  border-radius: 50%;
+  padding: 10px;
+
+  @include media-query($on-palm) {
+    padding: 0;
+  }
+}
+
+.see-more {
+  background-color: $button-color;
+  padding: 5px;
+  color: $button-text-color;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: $button-shadow-minimum;
+}
+
+.hidden {
+  display: none;
+}
+
+.cookie-prompt {
+  background-color: #333;
+  color: white;
+  padding: 5px;
+}

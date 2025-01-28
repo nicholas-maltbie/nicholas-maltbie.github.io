@@ -1,32 +1,76 @@
 .btn-primary {
-	background: #00468b!important;
-	border: 1px solid #00468b!important;
-	font-weight: bold;
-	color: rgba(255,255,255,0.75)!important;
+  background: #00468b !important;
+  border: 1px solid #00468b !important;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .btn-primary:hover {
-	color: rgba(255,255,255,0.9)!important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .btn {
-    padding: 5px 10px!important;
-    -webkit-box-shadow: none!important;
-    box-shadow: none!important;
+  padding: 5px 10px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 .btn-secondary {
-    border: 1px solid #999!important;
-    color: #999!important;
+  border: 1px solid #999 !important;
+  color: #999 !important;
 }
 
 .btn-lg {
-	padding: 8px 18px !important;
+  padding: 8px 18px !important;
 }
 
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm,
+.btn-group-sm>.btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
+}
+
+
+/** 
+ * Back to top button
+ */
+#back-top-top-button {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 40px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 10001;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #eee;
+  /* Set a background color */
+  color: black;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+  border-style: solid;
+  border-color: white;
+}
+
+#back-top-top-button:hover {
+  color: white;
+  background-color: #aaa;
+  /* Add a dark-grey background on hover */
 }

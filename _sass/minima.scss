@@ -57,10 +57,14 @@ $on-laptop:        800px !default;
 
 // Import partials.
 @import
+  "minima/animations",
   "minima/base",
+  "minima/button",
+  "minima/front-page",
   "minima/layout",
-  "minima/syntax-highlighting",
+  "minima/misc",
+  "minima/nav",
   "minima/resume",
-  "minima/timeline",
-  "minima/button"
+  "minima/syntax-highlighting",
+  "minima/timeline"
 ;

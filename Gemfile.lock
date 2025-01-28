@@ -124,7 +124,7 @@ PLATFORMS
 DEPENDENCIES
   image_optim
   image_optim_pack
-  jekyll (~> 4.3)
+  jekyll (~> 4.4)
   jekyll-feed (~> 0.6)
   jekyll-gzip
   jekyll-pwa-plugin (= 2.2.3)
