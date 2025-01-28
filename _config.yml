@@ -41,6 +41,10 @@ plugins:
 disqus:
   shortname: nickmaltbie
 
+pwa:
+  enabled: true # Optional
+  precache_recent_posts_num: 5 # Optional
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

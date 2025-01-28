@@ -3,7 +3,7 @@
 // set names for both precache & runtime cache
 workbox.core.setCacheNameDetails({
     prefix: 'nick-maltbie',
-    suffix: 'v1',
+    suffix: 'v1.1',
     precache: 'precache',
     runtime: 'runtime-cache'
 });
@@ -36,9 +36,15 @@ workbox.routing.registerRoute(
     workbox.strategies.cacheFirst()
 );
 
+// use `cacheFirst` strategy for logo
+workbox.routing.registerRoute(
+    /logo/,
+    workbox.strategies.cacheFirst()
+);
+
 // use `networkFirst` strategy for scripts
 workbox.routing.registerRoute(
-    /assets\/scripts\/\.js$/,
+    /assets\/(scripts|js|lib)\/\.js$/,
     workbox.strategies.networkFirst()
 );
 
