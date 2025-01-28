@@ -12,14 +12,6 @@ jobs:
       - name: Create LFS file list
         run: git lfs ls-files -l | cut -d' ' -f1 | sort > .lfs-assets-id
 
-      # Use GitHub Actions' cache to shorten build times and decrease load on servers
-      - uses: actions/cache@v2
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
       - name: Cache git lfs
         uses: actions/cache@v2
         with:
