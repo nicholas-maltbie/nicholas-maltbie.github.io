@@ -12,6 +12,9 @@ workbox.core.setCacheNameDetails({
 workbox.skipWaiting();
 workbox.clientsClaim();
 
+// default to `networkFirst` strategy
+workbox.routing.setDefaultHandler(workbox.strategies.networkFirst());
+
 // let Workbox handle our precache list
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
 
