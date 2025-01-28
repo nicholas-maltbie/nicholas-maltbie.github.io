@@ -1,45 +1,47 @@
+@use "defaults";
+
 .home-nav-link {
   font-size: 1.75em;
   white-space: nowrap;
   float: left;
-  background-color: $button-color;
+  background-color: defaults.$button-color;
   padding: 5px;
   border-radius: 15px;
-  color: $button-text-color;
+  color: defaults.$button-text-color;
   margin-right: 15px;
   margin-bottom: 10px;
-  box-shadow: $button-shadow-bold;
+  box-shadow: defaults.$button-shadow-bold;
 }
 
 .minor-nav-link {
   white-space: nowrap;
-  background-color: $button-color;
+  background-color: defaults.$button-color;
   padding: 5px;
   border-radius: 5px;
-  color: $button-text-color;
+  color: defaults.$button-text-color;
   margin-right: 15px;
   margin-bottom: 10px;
   float: left;
-  box-shadow: $button-shadow-minimum;
+  box-shadow: defaults.$button-shadow-minimum;
 }
 
 .minor-nav-link:visited,
 .home-nav-link:visited {
-  color: $button-text-color;
+  color: defaults.$button-text-color;
 }
 
 .minor-nav-link:hover,
 .home-nav-link:hover,
 .see-more:hover {
-  color: $button-text-color;
-  background-color: $button-color-hover;
+  color: defaults.$button-text-color;
+  background-color: defaults.$button-color-hover;
 }
 
 .home-nav-divider {
   font-size: 1.5em;
   margin-left: 10px;
   margin-right: 10px;
-  color: $grey-color-light;
+  color: defaults.$grey-color-light;
 }
 
 .home-page {

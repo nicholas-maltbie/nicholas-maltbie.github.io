@@ -1,3 +1,5 @@
+@use "defaults";
+
 #resume {
   width: 100%;
 }
@@ -15,7 +17,7 @@
 
 .major-row {
   background-color: white !important;
-  border-bottom: 3px solid $theme-color-1;
+  border-bottom: 3px solid defaults.$theme-color-1;
   padding-right: 10px;
   vertical-align: top;
   margin-bottom: 10px;
@@ -58,7 +60,7 @@
   list-style: none;
 }
 
-@include media-query($on-palm) {
+@include defaults.media-query(defaults.$on-palm) {
   .minor-row-title {
     display: inline-block;
     background-color: white !important;

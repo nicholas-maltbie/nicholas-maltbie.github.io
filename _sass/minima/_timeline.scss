@@ -1,3 +1,5 @@
+@use "defaults";
+
 $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
 
 $gutter: 30px;
@@ -22,7 +24,7 @@ $dot-diameter: 8px;
 
 .timeline {
   width: 100%;
-  max-width: $content-width;
+  max-width: defaults.$content-width;
   background: #fff;
   padding: 100px 0;
   position: relative;
@@ -62,7 +64,7 @@ $dot-diameter: 8px;
       position: absolute;
       width: $dot-diameter;
       height: $dot-diameter;
-      border: $border-width solid $theme-color-1;
+      border: $border-width solid defaults.$theme-color-1;
       background-color: #fff;
       border-radius: 100%;
       top: 15%;
@@ -117,12 +119,12 @@ $dot-diameter: 8px;
   margin-right: 25px;
   margin-bottom: 5px;
 
-  @include media-query($on-palm) {
+  @include defaults.media-query(defaults.$on-palm) {
     display: none;
   }
 }
 
-@include media-query($on-laptop) {
+@include defaults.media-query(defaults.$on-laptop) {
   .timeline {
     padding-top: 50px;
 
@@ -167,14 +169,14 @@ $dot-diameter: 8px;
   margin: 0;
   display: inline-block;
 
-  @include media-query($on-palm) {
+  @include defaults.media-query(defaults.$on-palm) {
     display: none;
   }
 }
 
 .skill {
   float: left;
-  background-color: $theme-color-3;
+  background-color: defaults.$theme-color-3;
   font-size: 15px;
   margin-right: 10px;
   padding: 2px 5px;
@@ -201,7 +203,7 @@ $dot-diameter: 8px;
   padding: 7px;
   margin-bottom: 15px;
   border-style: solid;
-  border-color: $theme-color-1;
+  border-color: defaults.$theme-color-1;
   width: fit-content;
-  @include relative-font-size(1.5);
+  @include defaults.relative-font-size(1.5);
 }

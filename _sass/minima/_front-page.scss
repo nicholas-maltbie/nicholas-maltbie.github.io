@@ -1,9 +1,11 @@
+@use "defaults";
+
 /**
  * Banner images and canvas
  */
 .main-title {
   margin: 0;
-  font-size: 4em;
+  font-size: 2.5em;
   font-style: bold;
 }
 
@@ -43,7 +45,7 @@
   z-index: -1;
   vertical-align: top;
 
-  @include media-query($on-laptop) {
+  @include defaults.media-query(defaults.$on-laptop) {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -79,7 +81,7 @@
   margin: auto;
 }
 
-@include media-query($on-palm) {
+@include defaults.media-query(defaults.$on-palm) {
   .front-image {
     max-height: 85vh;
   }
@@ -133,19 +135,19 @@
 .list-wrapper {
   margin-top: 3px;
   width: 100%;
-  background-color: $theme-color-1;
+  background-color: defaults.$theme-color-1;
 }
 
 .front-list {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: -webkit-calc(#{defaults.$content-width} - (#{defaults.$spacing-unit} * 2));
+  max-width: calc(#{defaults.$content-width} - (#{defaults.$spacing-unit} * 2));
   list-style: none;
   margin: auto;
   overflow: hidden;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  padding-left: defaults.$spacing-unit;
+  padding-right: defaults.$spacing-unit;
 
-  @include media-query($on-laptop) {
+  @include defaults.media-query(defaults.$on-laptop) {
     padding: 0px;
   }
 }
@@ -161,7 +163,7 @@
   border-radius: 10px;
 
   padding: 5px;
-  @include relative-font-size(1.5);
+  @include defaults.relative-font-size(1.5);
 }
 
 .header-wrapper {
