@@ -41,9 +41,19 @@ plugins:
 disqus:
   shortname: nickmaltbie
 
+# See PWA config options here - https://github.com/lavas-project/jekyll-pwa?tab=readme-ov-file#configuration
 pwa:
   enabled: true # Optional
+  sw_src_filepath: service-worker.js # Optional
+  sw_dest_filename: service-worker.js # Optional
+  dest_js_directory: assets/js # Required
   precache_recent_posts_num: 5 # Optional
+  precache_glob_directory: / # Optional
+  precache_glob_patterns: # Optional
+    - "{js,css,fonts}/**/*.{js,css,eot,svg,ttf,woff}"
+    - index.html
+  precache_glob_ignores: # Optional
+    - sw-register.js
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
