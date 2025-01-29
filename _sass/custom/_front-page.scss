@@ -1,0 +1,172 @@
+@use "../variables/defaults";
+
+/**
+ * Banner images and canvas
+ */
+.main-title {
+  margin: 0;
+  font-size: 2.5em;
+  font-style: bold;
+}
+
+.subtitle {
+  margin: 15px;
+  margin-top: 0;
+}
+
+.home-wrapper {
+  background-color: white;
+}
+
+.canvas-container {
+  position: relative;
+}
+
+.front-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  vertical-align: top;
+}
+
+.banner-cover {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: auto;
+  width: 50vw;
+  min-width: 540px;
+  min-height: 80vh;
+  z-index: -1;
+  vertical-align: top;
+
+  @include defaults.media-query(defaults.$on-laptop) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.white-banner {
+  background-color: white;
+}
+
+.banner-img {
+  text-align: center;
+}
+
+.banner-wrapper {
+  flex-direction: row;
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 15px -10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.banner-sector {
+  width: 47%;
+  margin-bottom: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+@include defaults.media-query(defaults.$on-palm) {
+  .front-image {
+    max-height: 85vh;
+  }
+
+  .front-wrapper {
+    width: fit-content;
+    height: 80vh;
+  }
+
+  .banner-cover {
+    width: 100%;
+    min-width: 0px;
+  }
+
+  .main-title {
+    font-size: 2.2em;
+  }
+
+  .subtitle {
+    font-size: 1.2em;
+  }
+
+  @media only screen and (orientation: landscape) {
+    .banner-sector {
+      width: 47%;
+      margin-bottom: 10px;
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  @media only screen and (orientation: portrait) {
+    .banner-sector {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 25px;
+    }
+
+    .banner-wrapper {
+      height: fit-content;
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+/**
+ * Front page stuff
+ */
+.list-wrapper {
+  margin-top: 3px;
+  width: 100%;
+  background-color: defaults.$theme-color-1;
+}
+
+.front-list {
+  max-width: -webkit-calc(#{defaults.$content-width} - (#{defaults.$spacing-unit} * 2));
+  max-width: calc(#{defaults.$content-width} - (#{defaults.$spacing-unit} * 2));
+  list-style: none;
+  margin: auto;
+  overflow: hidden;
+  padding-left: defaults.$spacing-unit;
+  padding-right: defaults.$spacing-unit;
+
+  @include defaults.media-query(defaults.$on-laptop) {
+    padding: 0px;
+  }
+}
+
+.front-link {
+  float: left;
+  margin: 10px;
+  padding: 5px;
+
+  border-color: white;
+  border-style: solid;
+
+  border-radius: 10px;
+
+  padding: 5px;
+  @include defaults.relative-font-size(1.5);
+}
+
+.header-wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}

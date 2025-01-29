@@ -1,0 +1,63 @@
+@use "../variables/defaults";
+
+.home-nav-link {
+  font-size: 1.75em;
+  white-space: nowrap;
+  float: left;
+  background-color: defaults.$button-color;
+  padding: 5px;
+  border-radius: 15px;
+  color: defaults.$button-text-color;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  box-shadow: defaults.$button-shadow-bold;
+}
+
+.minor-nav-link {
+  white-space: nowrap;
+  background-color: defaults.$button-color;
+  padding: 5px;
+  border-radius: 5px;
+  color: defaults.$button-text-color;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  float: left;
+  box-shadow: defaults.$button-shadow-minimum;
+}
+
+.minor-nav-link:visited,
+.home-nav-link:visited {
+  color: defaults.$button-text-color;
+}
+
+.minor-nav-link:hover,
+.home-nav-link:hover,
+.see-more:hover {
+  color: defaults.$button-text-color;
+  background-color: defaults.$button-color-hover;
+}
+
+.home-nav-divider {
+  font-size: 1.5em;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: defaults.$grey-color-light;
+}
+
+.home-page {
+  display: block;
+}
+
+.home-nav-container {
+  list-style: none;
+  margin: 0;
+  padding-top: 15px;
+  height: 60px;
+}
+
+.home-header {
+  // Positioning context for the mobile navigation icon
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

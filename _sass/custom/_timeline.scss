@@ -1,3 +1,5 @@
+@use "../variables/defaults";
+
 $container-shadow: 0.5rem 0.5rem 2rem 0 rgba(black, 0.2);
 
 $gutter: 30px;
@@ -14,37 +16,41 @@ $dot-diameter: 8px;
   font-weight: 300;
   color: #333;
   box-sizing: border-box;
+
   * {
     box-sizing: border-box;
   }
 }
 
 .timeline {
-  width:100%;
-  max-width:$content-width;
-  background:#fff;
+  width: 100%;
+  max-width: defaults.$content-width;
+  background: #fff;
   padding: 100px 0;
   position: relative;
+
   &:before {
     content: '';
     position: absolute;
     top: 0px;
-    left:calc(34% + 6px); //$gutter/2
+    left: calc(34% + 6px); //$gutter/2
     bottom: 0px;
     width: $border-width;
     background: #ddd;
   }
+
   &:after {
     content: "";
     display: table;
     clear: both;
-  } 
+  }
 }
 
 .entry {
   clear: both;
   text-align: left;
   position: relative;
+
   .title {
     margin-bottom: .5em;
     float: left;
@@ -52,42 +58,50 @@ $dot-diameter: 8px;
     padding-right: $gutter;
     text-align: right;
     position: relative;
+
     &:before {
       content: '';
       position: absolute;
       width: $dot-diameter;
       height: $dot-diameter;
-      border: $border-width solid $theme-color-1;
-      background-color:#fff;
-      border-radius:100%;
+      border: $border-width solid defaults.$theme-color-1;
+      background-color: #fff;
+      border-radius: 100%;
       top: 15%;
       right: -16px;
       z-index: 99;
     }
+
     h3 {
       margin: 0;
       font-size: 120%;
     }
+
     p {
       margin: 0;
       font-size: 100%;
     }
   }
+
   .body {
     margin: 0 0 3em;
     float: right;
     width: 66%;
     padding-left: $gutter;
+
     p {
       line-height: 1.4em;
+
       &:first-child {
         margin-top: 0;
         font-weight: 400;
       }
     }
+
     ul {
       padding-left: 0;
       list-style-type: none;
+
       li:before {
         margin-right: .5em;
       }
@@ -95,25 +109,45 @@ $dot-diameter: 8px;
   }
 }
 
-@include media-query($on-laptop) {
+.timeline-icon {
+  float: left;
+  min-width: 55px;
+  min-height: 55px;
+  max-width: 55px;
+  max-height: 55px;
+  border-radius: 5px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+
+  @include defaults.media-query(defaults.$on-palm) {
+    display: none;
+  }
+}
+
+@include defaults.media-query(defaults.$on-laptop) {
   .timeline {
     padding-top: 50px;
+
     &:before {
       left: calc($border-width / 2);
     }
   }
+
   .entry {
     .title {
       width: 100%;
       text-align: left;
       padding-left: $gutter;
       padding-right: 0;
+
       &:before {
         left: calc(-1 * $dot-diameter / 2);
       }
     }
+
     .body {
       width: 100%;
+
       ul {
         margin: 0;
       }
@@ -121,3 +155,55 @@ $dot-diameter: 8px;
   }
 }
 
+/**
+ * Skills within timeline
+ */
+.skills-container {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+}
+
+.timeline-skills-container {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+
+  @include defaults.media-query(defaults.$on-palm) {
+    display: none;
+  }
+}
+
+.skill {
+  float: left;
+  background-color: defaults.$theme-color-3;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  line-height: 2em;
+  box-shadow: 0 0 0 1px;
+}
+
+.cat-title {
+  font-size: 2em;
+  padding-top: 20px;
+}
+
+/**
+ * Job section within timeline
+ */
+
+.job-link {
+  display: block;
+  margin-bottom: 0;
+  border-radius: 15px;
+  padding: 7px;
+  margin-bottom: 15px;
+  border-style: solid;
+  border-color: defaults.$theme-color-1;
+  width: fit-content;
+  @include defaults.relative-font-size(1.5);
+}
