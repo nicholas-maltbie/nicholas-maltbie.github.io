@@ -37,6 +37,7 @@ sections:
         - Evaluated machine learning methods, SVM, Random Forest, LSTM to find protein binding sites.
   Education:
     University of Cincinnati:
+      title: University of Cincinnati
       sub: College of Engineering and Applied Science
       date: Class of 2021
       use_dot: none
