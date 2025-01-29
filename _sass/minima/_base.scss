@@ -1,8 +1,8 @@
 
-@forward "defaults";
+@forward "../variables/defaults";
 
 @use "sass:color";
-@use "defaults" as *;
+@use "../variables/defaults" as *;
 
 /**
  * Override font for website

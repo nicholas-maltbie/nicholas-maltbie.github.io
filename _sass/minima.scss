@@ -1,15 +1,17 @@
 @charset "utf-8";
 
 // Import partials.
-@use "minima/animations";
 @use "minima/base";
-@use "minima/button";
-@use "minima/front-page";
 @use "minima/layout";
-@use "minima/misc";
-@use "minima/nav";
-@use "minima/resume";
 @use "minima/syntax-highlighting";
-@forward "minima/timeline";
 
-@forward "minima/defaults";
+// Custom formats
+@use "custom/animations";
+@use "custom/button";
+@use "custom/front-page";
+@use "custom/misc";
+@use "custom/nav";
+@use "custom/resume";
+@use "custom/timeline";
+
+@forward "variables/defaults";
