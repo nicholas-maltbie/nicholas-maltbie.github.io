@@ -67,3 +67,8 @@ exclude:
     - vendor/cache/
     - vendor/gems/
     - vendor/ruby/
+
+collections:
+  professional:
+    output: true
+    professional: /animal/:title.html
