@@ -4,67 +4,113 @@ layout: default
 <h1 class="cat-title">Professional</h1>
 
 <p>
-I am a Computer Science student at the University of Cincinnati enrolled in a dual Bachenors and Master's Program with a graduation date of 2021.
+  I am a Computer Science student at the University of Cincinnati enrolled in a dual Bachenors and Master's Program with
+  a graduation date of 2021.
 </p>
 <p>
-After finishing my Master's, I am expecting to work in the industry and hopefully pursue my PhD. Possibly go into research based work in the future. 
+  After finishing my Master's, I am expecting to work in the industry and hopefully pursue my PhD. Possibly go into
+  research based work in the future.
 </p>
 <p>
-I am driven to find creative and unique solutions to the world's problems through software and problem solving.
+  I am driven to find creative and unique solutions to the world's problems through software and problem solving.
 </p>
 
-<a href="/resume.html"><h3>link to my resume</h3></a>
+<a href="/resume.html" class="decorated_link">
+  <p>link to my resume</p>
+</a>
 
 <h1 class="cat-title">Work Experience</h1>
 
 click job titles for more info
 
 <div class="timeline-box">
-<div class="timeline">
-{% for post in site.categories.Professional %}
-  <div class="entry">
-    <div class="title">
-      <h3>
-        {%- assign date_format = "%b %Y" -%}
-        {{ post.start_date | date: date_format }} to {{ post.end_date | date: date_format }}
-      </h3>
-      <p>
-        {{ post.employer }}
-      </p>
-    </div>
-    <div class="body">
-      <div class="post-element-row">
+  <div class="timeline">
+    {% assign i = 0 %}
+    {% for post in site.professional reversed %}
+    {% assign last_entry = forloop.last %}
+    <div class="entry{% if i == 0 %} entry-first{% endif %} {% if forloop.last == true and post.promotions == nil %}entry-last{% endif %}">
+      <div class="title">
         {%- if post.icon and post.icon != "" -%}
-        <div class="post-element">
-          <img class="timeline-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
-        </div>
+        <img class="timeline-icon-flip" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
         {%- endif -%}
-        <div class="post-element">
-          <a class="job-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
+        <h3>
+          {%- assign date_format = "%b %Y" -%}
+          {{ post.start_date | date: date_format }} to {{ post.end_date | date: date_format }}
+        </h3>
+        <p>
+          {{ post.employer }}
+        </p>
+      </div>
+      <div class="body-small">
+        <div class="post-element-row">
+          {%- if post.icon and post.icon != "" -%}
+          <div class="post-element">
+            <img class="timeline-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+          </div>
+          {%- endif -%}
+          <div class="post-element">
+            <a class="job-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </div>
         </div>
       </div>
-      {%- if post.skills and post.skills != "" -%}
+    </div>
+
+    {%- if post.promotions -%}
+    {%- for promotion in post.promotions -%}
+    <div class="entry{% if forloop.last == true and last_entry %} entry-last{% endif %}">
+      <div class="title">
+        {%- if post.icon and post.icon != "" -%}
+        <img class="timeline-icon-flip" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+        {%- endif -%}
+        <h3>
+          {%- assign date_format = "%b %Y" -%}
+          {{ promotion.last.start_date | date: date_format }} to {{ promotion.last.end_date | date: date_format }}
+        </h3>
+        <p>
+          {{ post.employer }}
+        </p>
+      </div>
+      <div class="body-small">
+        <div class="post-element-row">
+          {%- if post.icon and post.icon != "" -%}
+          <div class="post-element">
+            <img class="timeline-icon" alt="{{ post.title }} icon" src="{{ post.icon }}"></img>
+          </div>
+          {%- endif -%}
+          <div class="post-element">
+            <a class="job-link" href="{{ post.url | relative_url }}">
+              {{ promotion.last.title | escape }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}
+    {%- endif -%}
+    <div class="entry{% if last_entry == true %} entry-none{% endif %}">
+      <div class="body">
+        {%- if post.skills and post.skills != "" -%}
         <div class="post-element-row">
           <ul class="timeline-skills-container">
             {% assign skills = post.skills | sort %}
             {%- for skill in skills -%}
-              <li class="skill">
-                {{ skill }}
-              </li>
+            <li class="skill">
+              {{ skill }}
+            </li>
             {% endfor %}
           </ul>
         </div>
-      {%- endif -%}
-      {%- if post.summary -%}
-      <div class="post-element-row">
-        {{ post.summary }}
+        {%- endif -%}
+        {%- if post.summary -%}
+        <div class="post-element-row">
+          {{ post.summary }}
+        </div>
+        {%- endif -%}
       </div>
-      {%- endif -%}
     </div>
+    {% assign i = i | plus:1 %}
+    {% endfor %}
   </div>
-{% endfor %}
 </div>
-</div>
-
