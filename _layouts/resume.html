@@ -10,25 +10,25 @@ layout: default
     <p class="header-text"><a href="mailto:{{ site.data.resume.email }}">{{ site.data.resume.email }}</a></p>
     <p class="header-text"><a href="https://{{ site.data.resume.website }}">{{ site.data.resume.website }}</a></p>
   </div>
-  
+
   {% for section in site.data.resume.sections %}
   <div class="major-row">
     <h2 class="resume-heading">{{ section | first }}</h2>
   </div>
-  
+
   {% for elem in section.last %}
   <div class="minor-row-title">
+    <div class="date-box">
+      {% if elem.last.date %}
+      {{ elem.last.date }}
+      {% endif %}
+    </div>
     <div class="title-box">
       <b>{{ elem.last.title }}</b>
     </div>
     <div class="title-box">
       {% if elem.last.sub %}
-        {{ elem.last.sub }}
-      {% endif %}
-    </div>
-    <div class="date-box">
-      {% if elem.last.date %}
-        {{ elem.last.date }}
+      {{ elem.last.sub }}
       {% endif %}
     </div>
   </div>
@@ -36,23 +36,23 @@ layout: default
   {% if elem.last.previous %}
   {% for previous in elem.last.previous %}
   <div class="minor-row-title">
+    <div class="date-box">
+      {% if previous.last.date %}
+      {{ previous.last.date }}
+      {% endif %}
+    </div>
     <div class="title-box">
       <b>{{ previous.last.title }}</b>
     </div>
     <div class="title-box">
       {% if previous.last.sub %}
-        {{ previous.last.sub }}
-      {% endif %}
-    </div>
-    <div class="date-box">
-      {% if previous.last.date %}
-        {{ previous.last.date }}
+      {{ previous.last.sub }}
       {% endif %}
     </div>
   </div>
   {% endfor %}
   {% endif %}
-  
+
   {% if elem.last.header %}
   <div class="minor-row-desc">
     {{ elem.last.header }}
@@ -63,17 +63,16 @@ layout: default
   <div class="minor-row-desc">
     {% if elem.last.use_dot %}
     <ul class="no-dot-list">
-    {% else %}
-    <ul>
-    {% endif %}
-    {% for line in elem.last.desc %}
-      <li>{{ line }}</li>
-    {% endfor %}
-    </ul>
+      {% else %}
+      <ul>
+        {% endif %}
+        {% for line in elem.last.desc %}
+        <li>{{ line }}</li>
+        {% endfor %}
+      </ul>
   </div>
   {% endif %}
   {% endfor %}
   {% endfor %}
-  
-</div>
 
+</div>
