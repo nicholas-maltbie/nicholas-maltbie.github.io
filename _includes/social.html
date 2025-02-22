@@ -16,14 +16,6 @@
   </li>
   {%- endif -%}
   
-  {%- if site.twitter_username -%}
-  <li>
-    <a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}" title="{{ site.twitter_username| escape }}">
-      <img width=32px height=32px class="svg-icon" src="/assets/icons/twitter.svg" alt="twitter social link"></img>
-    </a>
-  </li>
-  {%- endif -%}
-  
   {%- if site.reddit_username -%}
   <li>
     <a href="https://www.reddit.com/u/{{ site.reddit_username| cgi_escape | escape }}" title="{{ site.reddit_username| escape }}">
